@@ -1,10 +1,13 @@
 # Versionsübersicht
 
+**Beta-1-Vorbereitung:** dev20 ist die letzte Dev-Version und Grundlage von **0.1.0-beta1**. Lizenz 1.0 ist freigegeben und liegt in der Beta-JAR bei. [Lizenz](LICENSE.md) · [Lizenz im Wiki](https://github.com/InDance2018/NG-Verkehrs-System/wiki/Lizenz) · [Vorbereiteter Beta-Downloadbeitrag mit Handbuch/PDF-Links](BETA1-RELEASE.md). Noch kein öffentliches Beta-Release.
+
+
 **Spielteststand bestätigt · 15. Oktober 2026:** Der Tester bestätigt alle bisherigen Entwicklungsstände bis einschließlich **0.1.0-dev20**. Damit sind die zuvor offenen dev18-/dev19-/dev20-Spieltests im begleiteten Einzelspieler-Teststand als bestätigt erfasst. Diese Rückmeldung ist die Grundlage des Teststatus; eine stabile Gesamtveröffentlichung ist damit nicht erklärt.
 
 Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Veröffentlichung. Die hier genannten JARs wurden bislang für begleitete Tests bereitgestellt; sie sind noch keine GitHub-Releases.
 
-## 0.1.0-dev21 – Webhandbuch und NeverGate-Angaben
+## Beta-1-Vorbereitung – Webhandbuch und NeverGate-Angaben
 
 - **[Webhandbuch und Katalog](https://nevergate.de/ng-verkehr/)** veröffentlicht und auf der NeverGate-Startseite verlinkt. Deutsch/Englisch umschaltbar, elf Kategorien und Suche.
 - Alle **98 Gegenstände** mit Bildern aus den tatsächlichen Modmodellen/-texturen, Nutzungshinweisen und Rezepten aus den Moddateien. Rezeptdialoge und passende Anleitungslinks.
@@ -13,7 +16,7 @@ Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Ver
 - Autor und Rechtehinweis im Modmenü auf **NeverGate** präzisiert; Website-, Discord- und Handbuchverweise ergänzt. Bestehendes All Rights Reserved bleibt erhalten; keine neue offene/Verkaufslizenz und keine Änderung an Fremdrechten.
 - Vormerkung gemeinsam umgesetzt: Fußgänger-Anforderungstaster im Inventarfeld angehoben und zentriert. Weltmontage und Schaltlogik unverändert.
 
-**Technischer Umfang:** reine Ressourcenfassung auf Basis der bereits reobfuskierten dev20-JAR. Ausschließlich Modmetadaten, Manifest und Taster-Itemmodell geändert; sämtliche Java-Klassen bytegenau identisch. ZIP-/Ressourcen-/Metadatenprüfung bestanden. Die 25 Forge-Servertestergebnisse stammen aus dev20; kein neuer Gradle-Build oder Forge-Testlauf für dev21 behauptet.
+**Technischer Umfang:** reine Ressourcenfassung auf Basis der bereits reobfuskierten dev20-JAR. Ausschließlich Modmetadaten, Manifest und Taster-Itemmodell geändert; sämtliche Java-Klassen bytegenau identisch. ZIP-/Ressourcen-/Metadatenprüfung bestanden. Die 25 Forge-Servertestergebnisse stammen aus dev20; kein neuer Gradle-Build oder Forge-Testlauf für die Beta-Ressourcenfassung behauptet.
 
 **Teststand:** Nutzer bestätigt weiterhin alle Spielstände bis dev20. Neues Taster-Inventarsymbol und neue Metadaten noch im Client ansehen. Web-Sprachwechsel, Suche, Filter und Dialoge per DOM geprüft; eine echte Browser-Sichtprüfung des Layouts war hier nicht verfügbar. Zusätzliche reale Server-Neustart-, Chunk- und Mehrspielerprüfungen für das Basispaket bleiben ein separater offener Arbeitspunkt. Keine Änderung an MC02.
 
