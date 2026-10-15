@@ -26,13 +26,15 @@ Die technischen Systeme sollen funktionieren: Ampeln schalten, Anzeigen lassen s
 
 ## Was bereits vorhanden ist
 
-Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev5**
+Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev6**
 
 - Grundsystem mit **35 registrierten Bauteilen**.
 - Erste Straßenblöcke mit weißen und gelben Linien, Richtungspfeilen und Fußgängerüberweg.
 - Gehwegplatten, Bordsteinplatte, Schildermast und verbindbare Leitplanke.
 - 14 Schildtafeln einschließlich einer unbeschrifteten Tafel; darunter erste Vorfahrt-, Park- und Geschwindigkeitszeichen.
 - Fahrzeugampel mit vier Signalzuständen sowie ein Ampelsteuergerät.
+- Ampel-Verknüpfer: Steuergerät und Ampel per Rechtsklick verbinden, zweite Fahrtrichtung mit Schleichen + Rechtsklick.
+- Start/Stopp direkt am Steuergerät mit leerer Hand.
 - Grundfunktionen für digitale Textanzeige und Parkplatzanzeige mit speicherbaren Werten.
 - Überarbeitete Inventarsymbole für Schilder, Leitplanke, Ampel und Anzeigen.
 - Alle 14 Schildtafeln mit passenden Konturen: Kreise, Dreiecke, Achteck, Raute und rechteckige Tafeln; ohne graue quadratische Außenflächen und mit geformten Metallrückseiten und schmalen Kanten.
@@ -45,7 +47,9 @@ In Einzelspielertests wurden Straßenmarkierungen, erste Schilder, Fahrzeugampel
 
 **Sichtprüfung bestätigt:** Die neuen Leitplanken- und Ampelformen aus dev4 sind im Einzelspieler sichtbar dargestellt. In dev5 zeigen die getesteten Schilder passende Konturen ohne graue Außenflächen; dies wurde anhand eines Testbildes geprüft und vom Tester bestätigt. Build und Ressourcen-/Modellprüfungen sind bestanden. Die Bestätigung betrifft die gezeigten Ansichten, nicht sämtliche Schildrückseiten, Ausrichtungen oder Ampelphasen.
 
-**Weiter offen:** vollständige Funktionsprüfung der Systeme, Prüfung weiterer Ansichten und der Ausbau nach dem [Entwicklungsplan](ROADMAP.md).
+**Funktionstest dev6 bestätigt:** Der Tester meldet eine saubere deutsche Farbfolge, erfolgreiches Verknüpfen per Klick und problemloses Starten/Stoppen. Zwei Ampeln der Gruppen A und B schalten laut Test abwechselnd über ein gemeinsames Steuergerät. Vier automatisierte Servertests sind bestanden.
+
+**Nächster Entwicklungsschritt:** Fußgängerampel und Anforderungstaster. Sie sind in dev6 noch nicht enthalten. Weitere Ansichten, Neustart-/Mehrspielertests und der vollständige Ausbau bleiben offen.
 
 ## Technik und Testversionen
 
