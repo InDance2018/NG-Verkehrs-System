@@ -26,7 +26,7 @@ Die technischen Systeme sollen funktionieren: Ampeln schalten, Anzeigen lassen s
 
 ## Was bereits vorhanden ist
 
-Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev15**
+Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev16**
 
 - Grundsystem mit **46 registrierten Bauteilen**.
 - Erste Straßenblöcke mit weißen und gelben Linien, Richtungspfeilen und Fußgängerüberweg.
@@ -78,16 +78,18 @@ Seit dev15 werden auch Fußgängerampeln, Taster und Warnblinklichter automatisc
 
 **Sechzehn automatisierte Servertests bestanden.** Der Tester meldet nach dem Aufbau mit neuem Steuergerät: Erkennung, Zuordnung und Schaltablauf laufen im getesteten Einzelspieleraufbau. Das bestätigt diesen Aufbau, keine pauschale Freigabe sämtlicher Sondergeometrien, Chunkwechsel oder Mehrspielerfälle.
 
-### Als Nächstes angekündigt: Verbindungen lösen und zurücksetzen
+### Neu in dev16: Verbindungen lösen – nach Ankündigung umgesetzt
 
-Nach bestätigter dev15 und erteilter Freigabe geplant:
-- Ausgewählte Ampel oder Taster einzeln trennen.
-- Alle Verbindungen eines Steuergeräts nach kurzer Bestätigung lösen.
-- Automatische Wiederverbindung nach bewusstem Trennen verhindern.
-- Getrennte regelnde Signale Rot; Taster und Warnblinklichter aus.
-- Gespeicherte Verbindungen auch bei derzeit ungeladenen Geräten zuverlässig entwerten, ohne Weltbereiche zwangsweise zu laden.
+- **Verbindung lösen:** ausgewähltes eigenes Gerät trennen, übrige Verbindungen erhalten. Steuerung stoppt.
+- **Alle lösen:** fünf Sekunden gültige Bestätigung mit Abbrechen; anschließend alle Verbindungen/Anforderungen gelöst, Programm und Automatik aus.
+- Getrennte regelnde Signale Rot, Taster und Warnblinklicht aus. Mitte und Radius bleiben erhalten.
+- Bewusst getrennte Positionen bleiben auch nach dem Laden für normale automatische Suche gesperrt. Erneutes manuelles Verknüpfen gibt das einzelne Gerät frei.
+- **Erneut erkennen:** Trennsperren bewusst freigeben und vorhandenen Bereich automatisch neu erfassen; anschließend prüfen und starten.
+- Eine gespeicherte Verbindungsfassung entwertet beim vollständigen Lösen auch alte Endpunkte, die erst später geladen werden. Keine Chunk-Zwangsladung.
 
-Dieser Ausbau ist angekündigt und freigegeben; Build und Clienttest stehen noch aus. Es gibt weiterhin keine öffentliche GitHub-Test-JAR.
+**Achtzehn Servertests bestanden.** Neue Tests umfassen alle Gerätetypen, gespeicherte Trennsperren, Bestätigung/Abbruch/Zeitablauf, alte wiederhergestellte Endpunktdaten, fremde Verbindungen und bewusstes Wiederverbinden. Das Wiederladen alter Endpunktdaten wurde per NBT simuliert; reale Chunkwechsel und der grafische Clienttest der dev16-Bedienung bleiben offen.
+
+Der Ausbau wurde vor der Umsetzung hier angekündigt und anschließend innerhalb der erteilten Freigabe gebaut. Es gibt weiterhin keine öffentliche GitHub-Test-JAR.
 
 Weitere Ansichten, Neustart-/Mehrspielertests und der vollständige Ausbau bleiben offen.
 
