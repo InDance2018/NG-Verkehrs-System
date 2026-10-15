@@ -51,7 +51,9 @@ In Einzelspielertests wurden Straßenmarkierungen, erste Schilder, Fahrzeugampel
 
 **Funktionstest dev6 bestätigt:** Der Tester meldet eine saubere deutsche Farbfolge, erfolgreiches Verknüpfen per Klick und problemloses Starten/Stoppen. Zwei Ampeln der Gruppen A und B schalten laut Test abwechselnd über ein gemeinsames Steuergerät. Vier automatisierte Servertests sind bestanden.
 
-**Neu in dev7 – Clienttest ausstehend:** Rechtsklick auf den verbundenen Anforderungstaster speichert den Überquerungswunsch. Nach Ende der laufenden Fahrzeugphase folgen mindestens 2 Sekunden Allrot, 6 Sekunden Fußgängergrün und 4 Sekunden Räumzeit; danach startet die nächste Fahrzeuggruppe. Alle Fußgängersignale desselben Steuergeräts teilen sich zunächst diese gemeinsame Phase. Fünf automatisierte Servertests sowie ein Phasentest über 100.000 Ticks sind bestanden. Die neue Bedienung und Darstellung müssen noch im Minecraft-Client getestet werden.
+**Fußgängertest dev7 im Client bestätigt:** Rechtsklick auf den verbundenen Anforderungstaster speichert den Überquerungswunsch. Nach Ende der laufenden Fahrzeugphase folgen mindestens 2 Sekunden Allrot, 6 Sekunden Fußgängergrün und 4 Sekunden Räumzeit; danach startet die nächste Fahrzeuggruppe. Alle Fußgängersignale desselben Steuergeräts teilen sich zunächst diese gemeinsame Phase. Fünf automatisierte Servertests sowie ein Phasentest über 100.000 Ticks sind bestanden. Der Tester bestätigt den Ablauf im Einzelspieler: Fahrzeugampeln Rot → Fußgänger Grün → Fußgänger Rot → Fahrzeugverkehr wieder freigegeben. Diese Bestätigung betrifft die getestete gemeinsame Fußgängerphase; weitere Ansichten und Sonderfälle bleiben offen.
+
+**Nächster geplanter Schritt – Umsetzung wartet auf Freigabe:** Getrennte Fußgängerüberwege A/B mit zugeordneten Tastern und Signalen. Jeder Taster soll nur den eigenen Überweg anfordern; Anforderungen beider Überwege sollen nacheinander abgearbeitet werden. Während jeder Fußgängerfreigabe sollen zunächst weiterhin beide Fahrzeuggruppen Rot bleiben. Parallele Fahrzeugfreigaben sind ein späterer Ausbau.
 
 Weitere Ansichten, Neustart-/Mehrspielertests und der vollständige Ausbau bleiben offen.
 
