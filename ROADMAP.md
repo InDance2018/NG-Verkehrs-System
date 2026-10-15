@@ -56,9 +56,12 @@ Erste Zeichen existieren bereits. Die vollständige Katalogabdeckung ist noch of
 
 - [x] Grundbedienung und Phasenwechsel mit zwei Fahrzeugampeln der Gruppen A/B im Client bestätigt.
 - [ ] Erweiterte Funktions-, Neustart- und Mehrspielertests durchführen.
-- [ ] Fußgängerampel ergänzen – nächster Entwicklungsschritt.
+- [x] Fußgängerampel mit rotem stehendem und grünem gehendem Symbol eingebaut (dev7).
+- [ ] Fußgängerampel und Taster im Client testen.
 - [ ] Fahrrad- und Richtungssignale ergänzen.
-- [ ] Anforderungstaster und sichere Fußgängerphase ergänzen – nächster Entwicklungsschritt.
+- [x] Anforderungstaster mit Warteanzeige, Verknüpfung per Klick und gemeinsamer Fußgängerphase bei Fahrzeug-Allrot eingebaut (dev7).
+- [x] Vorlauf, Fußgängergrün, Räumzeit und nächste Fahrzeuggruppe automatisch getestet; fünf Servertests bestanden.
+- [ ] Getrennte Fußgängergruppen und weitere Kreuzungsprogramme ausbauen.
 - [ ] Einstellbare Kreuzungsschaltungen ausbauen.
 - [ ] Konfliktfreie Phasen, Ausfallverhalten und Verhalten beim Laden von Weltbereichen prüfen.
 - [ ] Mobile Baustellenampeln ergänzen.
