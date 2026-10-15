@@ -83,7 +83,7 @@ Erste Zeichen existieren bereits. Die vollständige Katalogabdeckung ist noch of
 - [x] Rechtsabbieger und Kombipfeile mit eigenen geschützten Programmen ergänzt (dev12); alle neuen Ampelmodelle laut Tester sichtbar/leuchtend.
 - [ ] Weitere einstellbare Kreuzungsschaltungen ausbauen.
 - [ ] Konfliktfreie Phasen, Ausfallverhalten und Verhalten beim Laden von Weltbereichen prüfen.
-- [ ] Mobile Baustellenampeln ergänzen.
+- [x] Mobile zweiteilige Baustellenampel ergänzen (dev19; Clienttest offen).
 
 ### Bestätigter Ausbau bis dev15
 
@@ -116,6 +116,25 @@ Erste Zeichen existieren bereits. Die vollständige Katalogabdeckung ist noch of
 - [x] Automatische Listenaktualisierung im grafischen Minecraft-Client vom Tester bestätigt (dev17).
 
 **dev17 ist als begleiteter Einzelspieler-Teststand bestätigt. Der vollständige Mod-Ausbau bleibt offen.**
+
+## 0.1.0-dev19 – Baustellenausstattung
+
+**Nach Ankündigung im Projektgespräch und Freigabe als Testfassung umgesetzt. dev18- und dev19-Spieltests bleiben offen; dev17 ist weiterhin der zuletzt vom Tester bestätigte Stand.**
+
+- **97 Bauteile insgesamt**, davon 23 neue: zwei Leitbaken, Absperrschranke, Bauzaunsegment, Standplatte, Baustellenleuchte, Richtungspfeiltafel, mobile Ampel, fünf Schildentwürfe und zehn gelbe Markierungen.
+- Rot-weiße Baken und Schranke mit Standfüßen; ausrichtbare Gittersegmente für den Bauzaun. Zwei Segmente übereinander ergeben einen hohen Zaun.
+- **Baustellenleuchte** ohne Steuergerät: Rechtsklick wechselt Blinken → Aus → Dauerlicht → Blinken.
+- **Richtungspfeiltafel** mit blinkenden gelben LED-Pfeilen und Standfuß: Rechtsklick wechselt Links → Rechts → Aus → Links. Links/rechts von der Vorderseite aus gesehen.
+- **Mobile Baustellenampel** mit zwei echten Blockpositionen, Standfuß und Ampelkopf. Verknüpfen am Kopf oder Fuß; genau ein Eintrag im Steuergerät. Automatische Erkennung, Menüzuordnung, Nachtbetrieb, Trennen/Neuerkennen und bestehendes Baustellenwechselprogramm nutzbar. Ein Abbauen entfernt beide Teile und liefert eine vollständige Ampel.
+- Eigene Schildentwürfe für Bauarbeiten, Engstelle, Links-/Rechtsvorbeifahrt und Ende der Beschränkungen; geformte Konturen und transparente Inventargrafiken. Amtliche Detailprüfung bleibt offen.
+- Gelbe Doppellinie, Kurzstriche, fünf Pfeilvarianten, Sperrfläche und zwei Leitlinien. Bisherige gelbe Linien bleiben vorhanden; Markierungen sind volle Fahrbahnblöcke.
+- **Build/Reobf, Ressourcenprüfung für 97 Bauteile und alle 25 Forge-Servertests bestanden.** Neu geprüft: reale Blinkwechsel, Dauerlicht/Aus, Rechtsklickmodi und Baurechte, Modus-/Richtungsdaten, Kopf-Verknüpfung, automatische mobile Erkennung, Wechselverkehr, Trennen und Einzelbeute beim Abbauen. Bisherige Phasentests bleiben unverändert.
+
+**Kleiner Test ohne Kreuzung:** zwei mobile Ampeln gegenüber an einer Engstelle aufstellen, verbinden und im Steuergerät „Baustellenwechsel“ wählen. Nord/Ost = A, Süd/West = B; gegenüberliegende Enden müssen verschiedene Gruppen haben. Fahrzeuggrün zum Test auf 5 Sekunden stellen, prüfen und starten. Baken, Schranke, Zaun, Schilder und Leuchten ergänzen. Leuchte/Pfeiltafel direkt am Bauteil bedienen; sie benötigen keine Verknüpfung und erscheinen nicht in der Geräteliste.
+
+**Offene Clienttests erhalten:** dev18-Straßenbauteile/Ausleger, Programme/Zeiten, Parallelfreigaben, Nachtbetrieb und Speicherplätze sind noch nicht vom Tester bestätigt. Hinzu kommen sämtliche dev19-Ansichten/Ausrichtungen, mobile Ampel samt Kopf-/Fußbedienung und Abbauen, Leuchten-/Pfeiltafelmodi sowie Welt-Neuladen. Automatische Servertests sind keine Bestätigung dieses grafischen Spieltests. Keine Fahrzeug-KI oder automatische Analyse tatsächlich gebauter Fahrwege.
+
+Weiterhin Entwicklungsdokumentation auf GitHub; keine öffentliche Test-JAR und kein öffentlicher Quellcode-Upload.
 
 ## 0.1.0-dev18 – Straßenbau und Kreuzungsprogramme
 
@@ -153,9 +172,9 @@ Im normalen Kreuzungsprogramm gilt N/S = A, O/W = B. Im Baustellenprogramm gilt 
 
 ## 7. Baustellentechnik
 
-- [ ] Baken und Absperrungen ergänzen.
-- [ ] Warnleuchten ergänzen.
-- [ ] Richtungspfeiltafeln ergänzen.
+- [x] Erste Baken, Absperrschranke, Standfüße und Bauzaunsegmente ergänzen (dev19; Clienttest offen).
+- [x] Eigenständig bedienbare gelbe Dauer-/Blinkleuchte ergänzen (dev19; Clienttest offen).
+- [x] Blinkende Richtungspfeiltafel mit Links/Rechts/Aus ergänzen (dev19; Clienttest offen).
 - [ ] Zusammenspiel mit mobilen Ampeln prüfen.
 
 ## 8. Veröffentlichung vorbereiten

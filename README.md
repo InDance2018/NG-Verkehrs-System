@@ -26,9 +26,9 @@ Die technischen Systeme sollen funktionieren: Ampeln schalten, Anzeigen lassen s
 
 ## Was bereits vorhanden ist
 
-Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev18**
+Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev19**
 
-- Grundsystem mit **74 registrierten Bauteilen**.
+- Grundsystem mit **97 registrierten Bauteilen**.
 - Erste Straßenblöcke mit weißen und gelben Linien, Richtungspfeilen und Fußgängerüberweg.
 - Gehwegplatten, Bordsteinplatte, Schildermast und verbindbare Leitplanke.
 - 14 Schildtafeln einschließlich einer unbeschrifteten Tafel; darunter erste Vorfahrt-, Park- und Geschwindigkeitszeichen.
@@ -100,6 +100,25 @@ Die Auswahl bleibt am gleichen Gerät, wenn Zeilen davor verschwinden. Wird das 
 Der Ausbau wurde vor der Umsetzung hier angekündigt und anschließend innerhalb der erteilten Freigabe gebaut. Es gibt weiterhin keine öffentliche GitHub-Test-JAR.
 
 Weitere Ansichten, Neustart-/Mehrspielertests und der vollständige Ausbau bleiben offen.
+
+## 0.1.0-dev19 – Baustellenausstattung
+
+**Nach Ankündigung im Projektgespräch und Freigabe als Testfassung umgesetzt. dev18- und dev19-Spieltests bleiben offen; dev17 ist weiterhin der zuletzt vom Tester bestätigte Stand.**
+
+- **97 Bauteile insgesamt**, davon 23 neue: zwei Leitbaken, Absperrschranke, Bauzaunsegment, Standplatte, Baustellenleuchte, Richtungspfeiltafel, mobile Ampel, fünf Schildentwürfe und zehn gelbe Markierungen.
+- Rot-weiße Baken und Schranke mit Standfüßen; ausrichtbare Gittersegmente für den Bauzaun. Zwei Segmente übereinander ergeben einen hohen Zaun.
+- **Baustellenleuchte** ohne Steuergerät: Rechtsklick wechselt Blinken → Aus → Dauerlicht → Blinken.
+- **Richtungspfeiltafel** mit blinkenden gelben LED-Pfeilen und Standfuß: Rechtsklick wechselt Links → Rechts → Aus → Links. Links/rechts von der Vorderseite aus gesehen.
+- **Mobile Baustellenampel** mit zwei echten Blockpositionen, Standfuß und Ampelkopf. Verknüpfen am Kopf oder Fuß; genau ein Eintrag im Steuergerät. Automatische Erkennung, Menüzuordnung, Nachtbetrieb, Trennen/Neuerkennen und bestehendes Baustellenwechselprogramm nutzbar. Ein Abbauen entfernt beide Teile und liefert eine vollständige Ampel.
+- Eigene Schildentwürfe für Bauarbeiten, Engstelle, Links-/Rechtsvorbeifahrt und Ende der Beschränkungen; geformte Konturen und transparente Inventargrafiken. Amtliche Detailprüfung bleibt offen.
+- Gelbe Doppellinie, Kurzstriche, fünf Pfeilvarianten, Sperrfläche und zwei Leitlinien. Bisherige gelbe Linien bleiben vorhanden; Markierungen sind volle Fahrbahnblöcke.
+- **Build/Reobf, Ressourcenprüfung für 97 Bauteile und alle 25 Forge-Servertests bestanden.** Neu geprüft: reale Blinkwechsel, Dauerlicht/Aus, Rechtsklickmodi und Baurechte, Modus-/Richtungsdaten, Kopf-Verknüpfung, automatische mobile Erkennung, Wechselverkehr, Trennen und Einzelbeute beim Abbauen. Bisherige Phasentests bleiben unverändert.
+
+**Kleiner Test ohne Kreuzung:** zwei mobile Ampeln gegenüber an einer Engstelle aufstellen, verbinden und im Steuergerät „Baustellenwechsel“ wählen. Nord/Ost = A, Süd/West = B; gegenüberliegende Enden müssen verschiedene Gruppen haben. Fahrzeuggrün zum Test auf 5 Sekunden stellen, prüfen und starten. Baken, Schranke, Zaun, Schilder und Leuchten ergänzen. Leuchte/Pfeiltafel direkt am Bauteil bedienen; sie benötigen keine Verknüpfung und erscheinen nicht in der Geräteliste.
+
+**Offene Clienttests erhalten:** dev18-Straßenbauteile/Ausleger, Programme/Zeiten, Parallelfreigaben, Nachtbetrieb und Speicherplätze sind noch nicht vom Tester bestätigt. Hinzu kommen sämtliche dev19-Ansichten/Ausrichtungen, mobile Ampel samt Kopf-/Fußbedienung und Abbauen, Leuchten-/Pfeiltafelmodi sowie Welt-Neuladen. Automatische Servertests sind keine Bestätigung dieses grafischen Spieltests. Keine Fahrzeug-KI oder automatische Analyse tatsächlich gebauter Fahrwege.
+
+Weiterhin Entwicklungsdokumentation auf GitHub; keine öffentliche Test-JAR und kein öffentlicher Quellcode-Upload.
 
 ## 0.1.0-dev18 – Straßenbau und Kreuzungsprogramme
 
