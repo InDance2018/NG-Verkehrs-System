@@ -26,7 +26,7 @@ Die technischen Systeme sollen funktionieren: Ampeln schalten, Anzeigen lassen s
 
 ## Was bereits vorhanden ist
 
-Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev9**
+Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev10**
 
 - Grundsystem mit **37 registrierten Bauteilen**.
 - Erste Straßenblöcke mit weißen und gelben Linien, Richtungspfeilen und Fußgängerüberweg.
@@ -57,7 +57,11 @@ In Einzelspielertests wurden Straßenmarkierungen, erste Schilder, Fahrzeugampel
 
 Sechs automatisierte Servertests und zwei Phasentests über je 100.000 Ticks sind bestanden. Der Tester bestätigt getrennt reagierende Taster sowie den Wechsel von Fahrzeugrot zu Fußgängergrün. **Bestehende dev7-Verbindungen gehören zunächst zu Überweg A:** Ampeln und Taster des zweiten Überwegs einmal schleichend neu verbinden. Parallele Fahrzeugfreigaben sind ein späterer Ausbau.
 
-**Neu in dev9 – Montage im Client noch zu prüfen:** Der kleinere Taster lässt sich direkt seitlich an einen NG-Schildermast setzen. Dazu mit dem Taster-Blockitem auf die gewünschte Mastseite rechtsklicken; anschließend wie bisher mit dem Verknüpfer A/B zuordnen. Mast und Taster sitzen ohne Abstand in derselben Blockposition. Beim normalen Abbauen werden beide Gegenstände zurückgegeben. Wandmontage bleibt möglich. Sieben automatisierte Servertests sind bestanden.
+**Mastmontage seit dev9 – vom Tester bestätigt:** Der kleinere Taster lässt sich direkt seitlich an einen NG-Schildermast setzen. Dazu mit dem Taster-Blockitem auf die gewünschte Mastseite rechtsklicken; anschließend wie bisher mit dem Verknüpfer A/B zuordnen. Mast und Taster sitzen ohne Abstand in derselben Blockposition. Beim normalen Abbauen werden beide Gegenstände zurückgegeben. Wandmontage bleibt möglich. Sieben automatisierte Servertests sind bestanden.
+
+**Neu in dev10 – grafischer Clienttest ausstehend:** Leere Hand + Rechtsklick am Steuergerät öffnet ein Bedienmenü mit Geräteliste, Status, Start/Stopp, Zufahrten Nord/Ost/Süd/West, Fahrtrichtung und Fußgängerüberweg A/B. Schleichen + Rechtsklick bleibt direkter Start/Stopp-Zugriff. Zuordnungen speichern sofort und stoppen die Steuerung; anschließend bewusst neu starten. Neue Geräte erscheinen nach erneutem Öffnen.
+
+Geradeaus nutzt das bisherige Grundprogramm Nord/Süd = A und Ost/West = B. Links-/Rechtsabbieger werden zunächst nur als Vorbereitung gespeichert und bleiben Rot, bis eigene geschützte Abbiegeprogramme und Pfeilampeln folgen. Acht automatisierte Servertests sind bestanden; die Darstellung und Mausbedienung des Menüs müssen noch im Minecraft-Client getestet werden.
 
 Weitere Ansichten, Neustart-/Mehrspielertests und der vollständige Ausbau bleiben offen.
 
