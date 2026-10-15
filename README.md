@@ -26,14 +26,16 @@ Die technischen Systeme sollen funktionieren: Ampeln schalten, Anzeigen lassen s
 
 ## Was bereits vorhanden ist
 
-Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev11**
+Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev15**
 
-- Grundsystem mit **38 registrierten Bauteilen**.
+- Grundsystem mit **46 registrierten Bauteilen**.
 - Erste Straßenblöcke mit weißen und gelben Linien, Richtungspfeilen und Fußgängerüberweg.
 - Gehwegplatten, Bordsteinplatte, Schildermast und verbindbare Leitplanke.
 - 14 Schildtafeln einschließlich einer unbeschrifteten Tafel; darunter erste Vorfahrt-, Park- und Geschwindigkeitszeichen.
 - Fahrzeugampel mit vier Signalzuständen sowie ein Ampelsteuergerät.
-- Linksabbieger-Pfeilampel mit geschützter Einzelphase je Zufahrt (dev11).
+- Links-/Rechts-/Geradeaus-Pfeilampeln, alle Kombinationen dieser Pfeile, Fahrradampel und gelbes Warnblinklicht (dev11/dev12).
+- Kompaktes Steuergerät-Menü mit kleinerer Schrift, Gerätetabelle und Scrollen statt Seitenwechsel (dev13).
+- Automatische Erkennung aller Ampeltypen und Taster mit Mittelpunkt und Radius 16/24/32/48 Blöcke (dev15).
 - Ampel-Verknüpfer: Steuergerät und Ampel per Rechtsklick verbinden, zweite Fahrtrichtung mit Schleichen + Rechtsklick.
 - Start/Stopp direkt am Steuergerät mit leerer Hand.
 - Fußgängerampel mit rotem stehendem/grünem gehendem Symbol und gelber Anforderungstaster mit Warteanzeige (dev7).
@@ -62,13 +64,30 @@ Sechs automatisierte Servertests und zwei Phasentests über je 100.000 Ticks sin
 
 **Bedienmenü dev10 – Clienttest vom Tester bestätigt:** Leere Hand + Rechtsklick am Steuergerät öffnet ein Bedienmenü mit Geräteliste, Status, Start/Stopp, Zufahrten Nord/Ost/Süd/West, Fahrtrichtung und Fußgängerüberweg A/B. Schleichen + Rechtsklick bleibt direkter Start/Stopp-Zugriff. Zuordnungen speichern sofort und stoppen die Steuerung; anschließend bewusst neu starten. Neue Geräte erscheinen nach erneutem Öffnen.
 
-Geradeaus nutzt das bisherige Grundprogramm Nord/Süd = A und Ost/West = B. In dev10 waren Abbiegezuordnungen zunächst vorbereitet. Seit dev11 erhalten Linksabbieger eigene geschützte Phasen; Rechtsabbieger bleiben bis zu ihrem späteren Ausbau Rot. Acht automatisierte Servertests sind bestanden. Der Tester bestätigt im Minecraft-Client: Menüanzeige, Geräteauswahl, Start/Stopp sowie Wechsel eines Tasters von Überweg A auf B. Die Änderung stoppt die Steuerung; nach dem Neustart fordert der Taster den zugewiesenen Überweg an. Die vorbereiteten Fahrzeug-Zufahrten und Abbiegezuordnungen sind damit noch nicht vollständig im Client geprüft.
+Geradeaus nutzt das bisherige Grundprogramm Nord/Süd = A und Ost/West = B. In dev10 waren Abbiegezuordnungen zunächst vorbereitet. Seit dev11 erhalten Linksabbieger eigene geschützte Phasen; seit dev12 gilt dies auch für Rechtsabbieger und Kombipfeile. Acht automatisierte Servertests sind bestanden. Der Tester bestätigt im Minecraft-Client: Menüanzeige, Geräteauswahl, Start/Stopp sowie Wechsel eines Tasters von Überweg A auf B. Die Änderung stoppt die Steuerung; nach dem Neustart fordert der Taster den zugewiesenen Überweg an. Die vorbereiteten Fahrzeug-Zufahrten und Abbiegezuordnungen sind damit noch nicht vollständig im Client geprüft.
 
-**Neu in dev11 – angekündigt, freigegeben und umgesetzt; Clienttest offen:** Linksabbieger-Pfeilampel mit eigenen geschützten Phasen. Mit dem Verknüpfer am vorhandenen Steuergerät anmelden, im Menü die Zufahrt Nord/Ost/Süd/West wählen und starten. Jeweils nur eine Linksabbieger-Zufahrt frei, alle anderen Fahrzeuge und beide Fußgängerüberwege Rot. Mehrere Linksampeln derselben Zufahrt schalten gemeinsam.
+**Linksabbieger dev11 – Clienttest bestätigt:** Der Tester bestätigt, dass die Pfeilampel schaltet und alle anderen Ampeln dabei Rot bleiben.
 
-Je Linksphase: 2 Sekunden Rot-Vorlauf, 1 Sekunde Rot-Gelb, 10 Sekunden Grün, 3 Sekunden Gelb und 2 Sekunden Räumzeit. Nach Nord/Süd-Geradeaus folgen konfigurierte Linksabbieger aus Nord und Süd einzeln; nach Ost/West-Geradeaus folgen Ost und West einzeln. Bereits vor Einschubbeginn wartende Fußgängeranforderungen werden vorher bedient. Danach setzt das Grundprogramm mit der nächsten Fahrzeuggruppe fort.
+**Weitere Ampeltypen dev12:** Rechts-, Geradeaus- und Kombipfeile (Geradeaus/Links, Geradeaus/Rechts, Links/Rechts, alle drei Richtungen), Fahrradampel und gelbes Warnblinklicht. Fahrzeug-/Fahrrad-Geradeaus laufen mit A/B; Abbieger und Kombipfeile erhalten eigene geschützte Phasen. Je Sonderphase 2 Sekunden Rot-Vorlauf, 1 Sekunde Rot-Gelb, 10 Sekunden Grün, 3 Sekunden Gelb, 2 Sekunden Räumzeit. Alle übrigen regelnden Signale Rot. Warnlicht blinkt unabhängig davon. Elf Servertests und ein Test aller 24 geschützten Zufahrt-/Routenkombinationen über 200.000 Ticks bestanden. Der Tester bestätigt die leuchtende Darstellung der neuen Modelle.
 
-Neun automatisierte Servertests und drei Phasentests über je 100.000 Ticks sind bestanden. Neue Pfeilampel und geschützte Linksphasen müssen noch im grafischen Client getestet werden. Es gibt weiterhin keine öffentliche GitHub-Test-JAR.
+**Kompaktes Menü dev13 – vom Tester für den normalen Betrieb akzeptiert:** Schrift auf 75 Prozent verkleinert, schmale Gerätezeilen, kleine Schaltflächen, feste Statusspalte und scrollbare Tabelle statt fünf Geräten pro Seite. Direkte N/O/S/W- und Überweg-A/B-Tasten. Zwölf Servertests einschließlich Auswahl aller 256 Geräteplätze über echte Paketserialisierung bestanden.
+
+**Automatische Erkennung dev14/dev15 – im Einzelspieleraufbau bestätigt:** Steuergerät auswählen, erstes Gerät einmal verbinden und mit dem Verknüpfer per Schleichen/Rechtsklick einen Bodenblock als Kreuzungsmitte festlegen. Radius direkt zwischen 16, 24, 32 und 48 Blöcken wählen; Standard 32. Die Automatik prüft etwa alle zwei Sekunden geladene Weltbereiche, ohne zusätzliche Chunks zu laden. Fahrzeug-/Pfeil-/Fahrradampeln werden nach Position und Ausrichtung zugeordnet. Gegenüberliegende Zufahrten gehören zur selben Fahrzeuggruppe; Querverkehr zur anderen.
+
+Seit dev15 werden auch Fußgängerampeln, Taster und Warnblinklichter automatisch verbunden. Fußgängergruppen folgen der N/S- bzw. O/W-Linsenachse. Taster übernehmen die Gruppe der nahen Fußgängerampel desselben Steuergeräts; ohne nahe Lampe bzw. bei Gleichstand entscheidet die eigene Ausrichtungsachse. Manuelle Korrekturen und fremde Verbindungen bleiben erhalten. Neue/geänderte Zuordnungen stoppen auf Rot; nach Prüfung bewusst starten. Bei überlappenden Automatikbereichen bleiben neue uneindeutige Funde offen.
+
+**Sechzehn automatisierte Servertests bestanden.** Der Tester meldet nach dem Aufbau mit neuem Steuergerät: Erkennung, Zuordnung und Schaltablauf laufen im getesteten Einzelspieleraufbau. Das bestätigt diesen Aufbau, keine pauschale Freigabe sämtlicher Sondergeometrien, Chunkwechsel oder Mehrspielerfälle.
+
+### Als Nächstes angekündigt: Verbindungen lösen und zurücksetzen
+
+Nach bestätigter dev15 und erteilter Freigabe geplant:
+- Ausgewählte Ampel oder Taster einzeln trennen.
+- Alle Verbindungen eines Steuergeräts nach kurzer Bestätigung lösen.
+- Automatische Wiederverbindung nach bewusstem Trennen verhindern.
+- Getrennte regelnde Signale Rot; Taster und Warnblinklichter aus.
+- Gespeicherte Verbindungen auch bei derzeit ungeladenen Geräten zuverlässig entwerten, ohne Weltbereiche zwangsweise zu laden.
+
+Dieser Ausbau ist angekündigt und freigegeben; Build und Clienttest stehen noch aus. Es gibt weiterhin keine öffentliche GitHub-Test-JAR.
 
 Weitere Ansichten, Neustart-/Mehrspielertests und der vollständige Ausbau bleiben offen.
 
