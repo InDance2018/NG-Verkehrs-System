@@ -2,6 +2,45 @@
 
 Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Veröffentlichung. Die hier genannten JARs wurden bislang für begleitete Tests bereitgestellt; sie sind noch keine GitHub-Releases.
 
+## Nächster Schritt – angekündigt und freigegeben
+
+- Einzelne Verbindung lösen; alle Verbindungen nach kurzer Bestätigung zurücksetzen.
+- Automatik darf bewusst getrennte Geräte nicht sofort erneut anmelden.
+- Getrennte Fahrzeug-/Pfeil-/Fahrrad-/Fußgängersignale Rot; Taster und Warnlicht aus.
+- Auch derzeit ungeladene gespeicherte Verbindungen entwerten, ohne Chunks zu laden.
+- Umsetzung, Build und Clienttest noch offen.
+
+## 0.1.0-dev15 – 15. Oktober 2026
+
+- Automatik auf alle vorhandenen Ampeltypen und Taster erweitert, einschließlich Fußgängerampeln und Warnblinklichtern.
+- Taster folgen nahen Fußgängerampeln, unabhängig von ihrer Mastseite. Ohne nahe Lampe bzw. bei gleichen Abständen entscheidet die Ausrichtungsachse.
+- Beliebiger Ampel-/Tastertyp kann das erste verknüpfte Gerät sein.
+- Automatische Zuordnungsänderungen stoppen; manuelle Korrekturen bleiben erhalten.
+- Sechzehn Servertests bestanden, einschließlich vollständigem Aufbau mit allen Signaltypen und beiden Fußgängerüberwegen.
+- **Clienttest bestätigt:** Erkennung, Zuordnung und Schaltablauf laufen laut Tester im neu aufgebauten Einzelspielertest. Sondergeometrien, Chunkwechsel und Mehrspielerfälle bleiben offen.
+
+## 0.1.0-dev14 – 15. Oktober 2026
+
+- Mittelpunkt mit Verknüpfer/Schleichen/Bodenklick festlegen; Radius 16/24/32/48, Standard 32.
+- Automatische Fahrzeug-/Pfeil-/Fahrraderkennung nach Position/Ausrichtung in geladenen Chunks; keine Zwangsladung.
+- Fremde Verbindungen und manuelle Korrekturen geschützt; Überschneidungen bleiben offen.
+- Vierzehn Servertests bestanden. Geräteabdeckung anschließend in dev15 vervollständigt.
+
+## 0.1.0-dev13 – 15. Oktober 2026
+
+- Kompaktes Menü mit 75-Prozent-Schrift, schmalen Zeilen und kleineren Schaltflächen.
+- Gerätetabelle mit festen Statusspalten, Scrollen statt Seitenwechsel, direkte Zufahrts-/Überwegtasten.
+- Zwölf Servertests bestanden, darunter Auswahl aller 256 Geräteplätze über echte Paketserialisierung.
+- **Tester akzeptiert die Übersicht für den normalen Betrieb.**
+
+## 0.1.0-dev12 – 15. Oktober 2026
+
+- Rechts-/Geradeaus-Pfeilampeln, Geradeaus/Links, Geradeaus/Rechts, Links/Rechts und alle drei Richtungen ergänzt.
+- Fahrradampel und gelbes Ein-Linsen-Warnblinklicht ergänzt.
+- Geschützte Einzelphasen für Rechtsabbieger und Kombipfeile; Fahrrad-/Geradeausgruppe im Grundprogramm.
+- 46 Bauteile plus Verknüpfer, elf Servertests und 200.000-Tick-Prüfung aller 24 geschützten Routen bestanden.
+- **Tester bestätigt: Alle neuen Ampeln leuchten.**
+
 ## 0.1.0-dev11 – 15. Oktober 2026
 
 - Vor Umsetzung auf GitHub angekündigt und zur Umsetzung freigegeben.
@@ -15,7 +54,7 @@ Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Ver
 - Vorhandene Kreisampeln mit Linkszuordnung verwenden ebenfalls geschützte Linksphasen. Der Pfeilblock behält seine Linksrolle; Rechtsabbieger bleiben gesperrt.
 - 38 Bauteile plus Verknüpfer. Build und Ressourcenprüfung bestanden.
 - Neun automatisierte Servertests sowie drei Phasentests über je 100.000 Ticks bestanden.
-- **Clienttest der neuen Pfeilampel und geschützten Linksphasen steht aus.**
+- **Clienttest anschließend bestätigt:** Linksampel schaltet, alle anderen bleiben Rot.
 
 ## 0.1.0-dev10 – 15. Oktober 2026
 
