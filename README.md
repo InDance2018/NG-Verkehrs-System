@@ -1,11 +1,10 @@
 # NG-Verkehrs-System
 
-## Angekündigt: 0.1.0-beta2-dev2 – sechs Aufgaben gemeinsam
+## Private Testfassung: 0.1.0-beta2-dev2 – sechs Aufgaben gemeinsam
 
-**Geplant, noch nicht umgesetzt:** Schilderbrücken/Befestigungen; Ausfahrts-, Entfernungs- und Umleitungsschilder; digitale Verkehrsanzeigen; gemeinsame Anzeigensteuerung; Parkleitsystem; automatische Ein-/Ausfahrtszählung. Alle sechs Aufgaben werden in einer privaten Dev-Fassung gebündelt. Fahrzeugmod und Erkennungsumfang der Zählung sind vor deren Umsetzung noch zu klären. [Vollständige Ankündigung](PLAN-BETA2-DEV2.md).
+**Umgesetzt, zum Spieltest bereit:** Schilderbrücken/Befestigungen; Ausfahrts-, Entfernungs- und Umleitungsschilder; digitale Verkehrsanzeigen; gemeinsame Anzeigensteuerung; Parkleitsystem; automatische Ein-/Ausfahrtszählung. **114 Blöcke plus zwei Verknüpfer = 116 Gegenstände**, elf Inventarreiter. Reobf-Build erfolgreich, **37/37 Forge-Servertests bestanden**. Client-Sicht-/Bedienprüfung und reale Mehrspielertests der neuen Systeme stehen noch aus. Fahrzeugerkennung zunächst Boote/Loren, besetzte MISC-Fahrzeugentitäten und erweiterbarer Entity-Type-Tag; konkrete Fahrzeugmods sind noch nicht geprüft. [Umfang und Testanleitung](DEV-BETA2-2.md) · [ursprüngliche Ankündigung](PLAN-BETA2-DEV2.md).
 
-
-**Neue private Testfassung: 0.1.0-beta2-dev1.** Gemeinsam umgesetzt: beschriftbare Orts-/Straßenwegweiser und Autobahntafeln mit drei Zielen und bis zu vier Fahrspuren. 101 Blöcke plus Verknüpfer, elf Reiter, 29 Forge-Servertests bestanden. Client-Sicht-/Bedienprüfung offen. [Umfang und Testanleitung](DEV-BETA2-1.md). Die öffentliche Downloadfassung bleibt Beta 1.
+**Vorherige private Testfassung: 0.1.0-beta2-dev1.** Gemeinsam umgesetzt: beschriftbare Orts-/Straßenwegweiser und Autobahntafeln mit drei Zielen und bis zu vier Fahrspuren. 101 Blöcke plus Verknüpfer, elf Reiter, 29 Forge-Servertests bestanden. Client-Sicht-/Bedienprüfung offen. [Umfang und Testanleitung](DEV-BETA2-1.md). Die öffentliche Downloadfassung bleibt Beta 1.
 
 **Beta 1 veröffentlicht · 15. Oktober 2026:** [0.1.0-beta1 – JAR und Downloadpaket](https://github.com/InDance2018/NG-Verkehrs-System/releases/tag/v0.1.0-beta1). Grundlage ist dev20 als letzte Dev-Version. [Lizenz](LICENSE.md) · [Lizenz im Wiki](https://github.com/InDance2018/NG-Verkehrs-System/wiki/Lizenz) · [Downloadbeitrag mit Handbuch/PDF-Links](BETA1-RELEASE.md).
 
