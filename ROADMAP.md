@@ -76,10 +76,10 @@ Erste Zeichen existieren bereits. Die vollständige Katalogabdeckung ist noch of
 - [x] Menüanzeige, Geräteauswahl und Start/Stopp im Minecraft-Client vom Tester bestätigt (dev10).
 - [x] Überwegwechsel eines Tasters A/B im Menü vom Tester bestätigt: Steuerung stoppt, nach Neustart wird der zugewiesene Überweg angefordert.
 - [ ] Weitere Menüfälle einschließlich Fahrzeug-Zufahrten, Abbiegezuordnung und weiterer Bildschirmgrößen im Client prüfen.
-- [ ] Linksabbieger-Pfeilampel und geschützte Einzelphasen je Zufahrt einbauen – angekündigt und freigegeben.
-- [ ] Dabei übrige Fahrzeugrichtungen und sämtliche Fußgängerüberwege Rot halten; Übergänge und Rückkehr zum Grundprogramm testen.
+- [x] Linksabbieger-Pfeilampel und geschützte Einzelphasen je Zufahrt nach Ankündigung und Freigabe eingebaut (dev11).
+- [x] Übrige Fahrzeugrichtungen und sämtliche Fußgängerüberwege während Linksphasen Rot; Übergänge, Fußgängerwarteschlange, Wiederherstellung und Rückkehr zum Grundprogramm automatisch geprüft. Neun Servertests bestanden.
 - [ ] Neue Linksabbiegerampel im Client testen.
-- [ ] Weitere Pfeilampeln und Abbiegeprogramme ergänzen; bis zur Umsetzung bleiben vorbereitete Richtungen gesperrt.
+- [ ] Weitere Pfeilampeln und Abbiegeprogramme ergänzen; vorbereitete Rechtsabbieger bleiben bis zur Umsetzung Rot.
 - [ ] Weitere einstellbare Kreuzungsschaltungen ausbauen.
 - [ ] Konfliktfreie Phasen, Ausfallverhalten und Verhalten beim Laden von Weltbereichen prüfen.
 - [ ] Mobile Baustellenampeln ergänzen.
