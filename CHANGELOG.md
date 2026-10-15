@@ -2,6 +2,18 @@
 
 Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Veröffentlichung. Die hier genannten JARs wurden bislang für begleitete Tests bereitgestellt; sie sind noch keine GitHub-Releases.
 
+## 0.1.0-dev8 – 15. Oktober 2026
+
+- Getrennte Fußgängerüberwege A/B mit eigenen Tastern und Fußgängerampeln ergänzt.
+- Normaler Rechtsklick mit dem Verknüpfer verbindet A; Schleichen + Rechtsklick verbindet B.
+- Taster fordern nur ihren eigenen Überweg an; Warteanzeigen sind ebenfalls getrennt.
+- Anforderungen werden in Eingangsreihenfolge einzeln bedient. Beide Fahrzeuggruppen bleiben währenddessen Rot; zwischen Fußgängerfreigaben liegen vollständige Räum- und Vorlaufzeiten.
+- Nach höchstens zwei unterschiedlichen Überwegen erhält der Fahrzeugverkehr wieder eine Phase; neu wartende Anforderungen bleiben gespeichert.
+- Gruppen und Warteschlange werden gespeichert. Alte dev7-Verbindungen werden als A übernommen.
+- Build und Ressourcenprüfung bestanden; sechs automatisierte Servertests bestanden.
+- Zwei Phasentests über je 100.000 Ticks bestanden; A/B-Lasttest mit 86 vollständigen Phasen je Überweg, ohne konkurrierende Freigaben.
+- **Clienttest ausstehend:** Fußgängerampeln UND Taster des zweiten Überwegs schleichend neu verbinden. Grafiken und 37 Bauteile bleiben erhalten.
+
 ## 0.1.0-dev7 – 15. Oktober 2026
 
 - Fußgängerampel mit rotem stehendem und grünem gehendem Symbol, schwarzem Gehäuse und Sonnenblenden ergänzt.
@@ -14,7 +26,7 @@ Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Ver
 - Fünf automatisierte Servertests bestanden. Phasentest über 100.000 Ticks mit 108 vollständigen Fußgängerphasen ohne konkurrierende Freigaben bestanden.
 - **Clienttest vom Tester bestätigt:** Fahrzeuge wechseln auf Rot, Fußgänger erhalten Grün; anschließend Fußgänger Rot und Fahrzeugverkehr wieder freigegeben.
 - Zunächst gemeinsame Fußgängerphase bei vollständig gestoppten Fahrzeuggruppen; getrennte Querungen sind noch nicht enthalten.
-- **Nächster geplanter Schritt, noch nicht umgesetzt:** getrennte Überwege A/B mit zugeordneten Tastern, einzeln angeforderten Freigaben und nacheinander abgearbeiteten Anforderungen. Umsetzung wartet auf Freigabe.
+- Getrennte Überwege A/B wurden anschließend nach Freigabe in dev8 umgesetzt.
 
 ## 0.1.0-dev6 – 15. Oktober 2026
 
