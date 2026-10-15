@@ -26,7 +26,7 @@ Die technischen Systeme sollen funktionieren: Ampeln schalten, Anzeigen lassen s
 
 ## Was bereits vorhanden ist
 
-Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev16**
+Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev17**
 
 - Grundsystem mit **46 registrierten Bauteilen**.
 - Erste Straßenblöcke mit weißen und gelben Linien, Richtungspfeilen und Fußgängerüberweg.
@@ -62,7 +62,7 @@ Sechs automatisierte Servertests und zwei Phasentests über je 100.000 Ticks sin
 
 **Mastmontage seit dev9 – vom Tester bestätigt:** Der kleinere Taster lässt sich direkt seitlich an einen NG-Schildermast setzen. Dazu mit dem Taster-Blockitem auf die gewünschte Mastseite rechtsklicken; anschließend wie bisher mit dem Verknüpfer A/B zuordnen. Mast und Taster sitzen ohne Abstand in derselben Blockposition. Beim normalen Abbauen werden beide Gegenstände zurückgegeben. Wandmontage bleibt möglich. Sieben automatisierte Servertests sind bestanden.
 
-**Bedienmenü dev10 – Clienttest vom Tester bestätigt:** Leere Hand + Rechtsklick am Steuergerät öffnet ein Bedienmenü mit Geräteliste, Status, Start/Stopp, Zufahrten Nord/Ost/Süd/West, Fahrtrichtung und Fußgängerüberweg A/B. Schleichen + Rechtsklick bleibt direkter Start/Stopp-Zugriff. Zuordnungen speichern sofort und stoppen die Steuerung; anschließend bewusst neu starten. Neue Geräte erscheinen nach erneutem Öffnen.
+**Bedienmenü dev10 – Clienttest vom Tester bestätigt:** Leere Hand + Rechtsklick am Steuergerät öffnet ein Bedienmenü mit Geräteliste, Status, Start/Stopp, Zufahrten Nord/Ost/Süd/West, Fahrtrichtung und Fußgängerüberweg A/B. Schleichen + Rechtsklick bleibt direkter Start/Stopp-Zugriff. Zuordnungen speichern sofort und stoppen die Steuerung; anschließend bewusst neu starten. Bis dev16 erschienen neue Geräte erst nach erneutem Öffnen; dev17 aktualisiert die Liste im offenen Menü.
 
 Geradeaus nutzt das bisherige Grundprogramm Nord/Süd = A und Ost/West = B. In dev10 waren Abbiegezuordnungen zunächst vorbereitet. Seit dev11 erhalten Linksabbieger eigene geschützte Phasen; seit dev12 gilt dies auch für Rechtsabbieger und Kombipfeile. Acht automatisierte Servertests sind bestanden. Der Tester bestätigt im Minecraft-Client: Menüanzeige, Geräteauswahl, Start/Stopp sowie Wechsel eines Tasters von Überweg A auf B. Die Änderung stoppt die Steuerung; nach dem Neustart fordert der Taster den zugewiesenen Überweg an. Die vorbereiteten Fahrzeug-Zufahrten und Abbiegezuordnungen sind damit noch nicht vollständig im Client geprüft.
 
@@ -77,6 +77,14 @@ Geradeaus nutzt das bisherige Grundprogramm Nord/Süd = A und Ost/West = B. In d
 Seit dev15 werden auch Fußgängerampeln, Taster und Warnblinklichter automatisch verbunden. Fußgängergruppen folgen der N/S- bzw. O/W-Linsenachse. Taster übernehmen die Gruppe der nahen Fußgängerampel desselben Steuergeräts; ohne nahe Lampe bzw. bei Gleichstand entscheidet die eigene Ausrichtungsachse. Manuelle Korrekturen und fremde Verbindungen bleiben erhalten. Neue/geänderte Zuordnungen stoppen auf Rot; nach Prüfung bewusst starten. Bei überlappenden Automatikbereichen bleiben neue uneindeutige Funde offen.
 
 **Sechzehn automatisierte Servertests bestanden.** Der Tester meldet nach dem Aufbau mit neuem Steuergerät: Erkennung, Zuordnung und Schaltablauf laufen im getesteten Einzelspieleraufbau. Das bestätigt diesen Aufbau, keine pauschale Freigabe sämtlicher Sondergeometrien, Chunkwechsel oder Mehrspielerfälle.
+
+### Neu in dev17: Geräteliste aktualisiert sich im geöffneten Menü
+
+Nach dem Test der Trennfunktionen wurde die bisher nötige manuelle Menü-Neuöffnung als Bedienungsproblem gemeldet und der Umbau freigegeben. Getrennte Geräte verschwinden jetzt direkt; Suchen und Erneut erkennen fügen neue Geräte in dieselbe offene Liste ein. Alle lösen leert sie, erneute Erkennung füllt sie wieder. Auch Änderungen durch Verknüpfer, andere Spieler oder den Erkennungsticker werden übernommen.
+
+Die Auswahl bleibt am gleichen Gerät, wenn Zeilen davor verschwinden. Wird das ausgewählte Gerät getrennt, wird die Auswahl aufgehoben; die nächste Ampel übernimmt keine versehentliche Einstellung. Veraltete Zeilenklicks werden abgewiesen. Neue Liste, Positionen, Status und Auswahl werden gemeinsam sichtbar. Kein Schließen/erneutes Öffnen erforderlich.
+
+**Zwanzig Servertests bestanden**, einschließlich Live-Leeren/Wiederbefüllen, Auswahlstabilität, veralteten Klicks, tatsächlich 256 verbundenen Geräten und vollständiger Koordinatenübertragung. **Der grafische Clienttest von dev17 ist noch offen.** Das einzelne Trennen wurde im vorherigen dev16-Test erprobt; eine vollständige Bestätigung aller Resetfälle wird daraus nicht abgeleitet.
 
 ### Neu in dev16: Verbindungen lösen – nach Ankündigung umgesetzt
 
