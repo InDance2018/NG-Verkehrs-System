@@ -2,6 +2,17 @@
 
 Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Veröffentlichung. Die hier genannten JARs wurden bislang für begleitete Tests bereitgestellt; sie sind noch keine GitHub-Releases.
 
+## 0.1.0-dev9 – 15. Oktober 2026
+
+- Anforderungstaster von 6 × 10 × 4 auf 5 × 6 × 2,25 Modellpixel verkleinert.
+- Direkte Montage am NG-Schildermast: mit dem Taster-Blockitem auf die gewünschte Mastseite rechtsklicken.
+- Mast und Taster bilden eine gemeinsame Blockposition; das Gehäuse sitzt direkt am Mast. Die Ampel darüber bleibt erhalten.
+- Wand- und Bodenplatzierung bleiben möglich.
+- Beim normalen Abbauen einer Mastmontage werden ein Taster und ein Mast zurückgegeben; Wand-/Bodentaster erzeugen keine zusätzlichen Masten.
+- Bisherige Verknüpfung und A/B-Bedienung bleiben erhalten. Für Mastmontage alte freistehende Taster abbauen, am Mast neu platzieren und neu verknüpfen.
+- Build und Ressourcenprüfung bestanden; sieben automatisierte Servertests bestanden.
+- **Clienttest der kleineren Bauform und neuen Montage steht aus.**
+
 ## 0.1.0-dev8 – 15. Oktober 2026
 
 - Getrennte Fußgängerüberwege A/B mit eigenen Tastern und Fußgängerampeln ergänzt.
@@ -12,7 +23,8 @@ Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Ver
 - Gruppen und Warteschlange werden gespeichert. Alte dev7-Verbindungen werden als A übernommen.
 - Build und Ressourcenprüfung bestanden; sechs automatisierte Servertests bestanden.
 - Zwei Phasentests über je 100.000 Ticks bestanden; A/B-Lasttest mit 86 vollständigen Phasen je Überweg, ohne konkurrierende Freigaben.
-- **Clienttest ausstehend:** Fußgängerampeln UND Taster des zweiten Überwegs schleichend neu verbinden. Grafiken und 37 Bauteile bleiben erhalten.
+- **Clienttest vom Tester bestätigt:** Taster reagieren getrennt nach Seite; Fahrzeugampeln wechseln Rot und Fußgänger erhalten Grün. Die automatische Prüfung der vollständigen Warteschlange bleibt zusätzlich dokumentiert.
+- Fußgängerampeln UND Taster des zweiten Überwegs werden schleichend als B verbunden. 37 Bauteile bleiben erhalten.
 
 ## 0.1.0-dev7 – 15. Oktober 2026
 
