@@ -2,6 +2,18 @@
 
 Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Veröffentlichung. Die hier genannten JARs wurden bislang für begleitete Tests bereitgestellt; sie sind noch keine GitHub-Releases.
 
+## 0.1.0-dev7 – 15. Oktober 2026
+
+- Fußgängerampel mit rotem stehendem und grünem gehendem Symbol, schwarzem Gehäuse und Sonnenblenden ergänzt.
+- Gelben Anforderungstaster mit Warteanzeige ergänzt.
+- Beide neuen Geräte lassen sich mit dem vorhandenen Ampel-Verknüpfer am Steuergerät anmelden; Rechtsklick auf den Taster fordert Grün an.
+- Gemeinsame Fußgängerphase: reguläres Fahrzeug-Gelb beenden, mindestens 2 Sekunden Allrot, 6 Sekunden Fußgängergrün, 4 Sekunden Räumzeit, anschließend nächste Fahrzeuggruppe.
+- Wiederholtes Drücken verlängert eine laufende Fußgängerphase nicht.
+- Speicherung von Anforderung/Phase sowie Rot-Vorlauf beim Laden einer aktiven Phase ergänzt.
+- 37 Bauteile plus Verknüpfer; Build und Ressourcenprüfung bestanden.
+- Fünf automatisierte Servertests bestanden. Phasentest über 100.000 Ticks mit 108 vollständigen Fußgängerphasen ohne konkurrierende Freigaben bestanden.
+- **Offen:** Clienttest der neuen Geräte und Bedienung. Zunächst gemeinsame Fußgängerphase bei vollständig gestoppten Fahrzeuggruppen; getrennte Querungen sind noch nicht enthalten.
+
 ## 0.1.0-dev6 – 15. Oktober 2026
 
 - Ampel-Verknüpfer mit gespeichertem Steuergerät und automatischer Blockpositionserkennung ergänzt.
