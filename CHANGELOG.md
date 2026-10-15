@@ -2,6 +2,32 @@
 
 Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Veröffentlichung. Die hier genannten JARs wurden bislang für begleitete Tests bereitgestellt; sie sind noch keine GitHub-Releases.
 
+## Nächstes größeres Arbeitspaket: Straßenbau und Kreuzungssteuerung
+
+**Angekündigt; Umsetzung nach Freigabe.** Beide Bereiche werden als zusammenhängendes Paket bis zu einer gemeinsam testbaren Entwicklungsfassung bearbeitet.
+
+**Straßenbau und sichtbare Bauteile**
+- Weitere Fahrbahnmarkierungen für mehrere Spuren und Abbiegestreifen.
+- Verkehrsinseln und ergänzende Bordsteine.
+- Leitplanken-Endstücke und Übergänge.
+- Ampelausleger über der Fahrbahn und passende Befestigungen für Ampeln und Schilder.
+
+**Steuergerät und Programme**
+- Einstellbare Zeiten für Fahrzeug-, Abbieger- und Fußgängergrün.
+- Gleichzeitige Freigabe kompatibler Fahrzeugrichtungen mit Konfliktprüfung.
+- Fußgänger parallel zu passenden Fahrzeugbewegungen, soweit sich die Wege nicht kreuzen; bei unklarer Zuordnung sichere getrennte Phasen.
+- Speichern und Auswählen von Programmen für normale Kreuzung, reine Fußgängerquerung und Baustellen-Wechselverkehr.
+- Nachtbetrieb mit gelbem Blinken und sicherem Übergang zurück in das normale Programm.
+- Verständliche Anzeige der aktuellen und folgenden Phase.
+
+**Zusammenspiel und Abnahme**
+- Bestehende Ampeln und automatische Erkennung auch an den neuen Auslegern nutzbar halten.
+- Vorhandene Verbindungen, Trennfunktionen und Live-Geräteliste berücksichtigen.
+- Bauteile, Speicherung, Übergänge und konkurrierende Freigaben automatisch prüfen; danach gemeinsamer Spieltest.
+- Keine Zwischenfreigabe für jeden einzelnen Unterpunkt vorgesehen.
+
+Dies ist die Ankündigung des vereinbarten nächsten Pakets, kein bereits umgesetzter oder getesteter Funktionsstand. dev17 bleibt der bestätigte bisherige Teststand. Eine stabile Gesamtveröffentlichung oder ein verbindlicher Veröffentlichungstermin ist damit nicht zugesagt.
+
 ## 0.1.0-dev17 – 15. Oktober 2026
 
 - Nach Nutzerfreigabe Bedienungsproblem des dev16-Tests behoben: Geräteliste aktualisiert sich ohne Schließen/erneutes Öffnen.
@@ -11,7 +37,7 @@ Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Ver
 - Zeilenklicks an zuletzt angezeigte Listenfassung gebunden; veraltete Auswahl abweisen.
 - Neue Geräteliste, Status und Auswahl gemeinsam veröffentlichen; volle signierte Koordinaten erhalten.
 - Build/Reobf, Ressourcen-/JAR-Prüfung und zwanzig Servertests bestanden. Bestehende Tests bleiben erfolgreich.
-- **Grafischer Clienttest der automatischen Listenaktualisierung noch offen.** Weiterhin keine öffentliche GitHub-JAR.
+- **Clienttest bestätigt:** Trennen, erneutes Erkennen und automatische Listenaktualisierung funktionieren laut Tester ohne erneutes Öffnen. dev17 als begleiteter Einzelspieler-Teststand abgeschlossen; Chunkwechsel, Sonderfälle und weitere Mehrspielerprüfungen bleiben offen. Weiterhin keine öffentliche GitHub-JAR.
 
 ## 0.1.0-dev16 – 15. Oktober 2026
 
@@ -22,7 +48,7 @@ Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Ver
 - Manuelles Neuverknüpfen oder bewusstes „Erneut erkennen“ gibt Sperren frei; neue Zuordnungen bleiben zunächst gestoppt.
 - Gespeicherte Verbindungsfassung entwertet alte, später geladene Endpunkte ohne Zwangsladung.
 - Build, Ressourcen-/JAR-Prüfung und achtzehn Servertests bestanden; Altverbindungen per NBT-Wiederherstellung simuliert.
-- **Clienttest der dev16-Bedienung sowie reale Chunkwechsel noch offen.** Keine öffentliche GitHub-JAR.
+- **Trenn-/Neuerkennungsbedienung anschließend im dev17-Spieltest bestätigt; reale Chunkwechsel bleiben offen.** Keine öffentliche GitHub-JAR.
 
 ## 0.1.0-dev15 – 15. Oktober 2026
 

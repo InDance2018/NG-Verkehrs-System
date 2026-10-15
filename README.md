@@ -84,7 +84,7 @@ Nach dem Test der Trennfunktionen wurde die bisher nötige manuelle Menü-Neuöf
 
 Die Auswahl bleibt am gleichen Gerät, wenn Zeilen davor verschwinden. Wird das ausgewählte Gerät getrennt, wird die Auswahl aufgehoben; die nächste Ampel übernimmt keine versehentliche Einstellung. Veraltete Zeilenklicks werden abgewiesen. Neue Liste, Positionen, Status und Auswahl werden gemeinsam sichtbar. Kein Schließen/erneutes Öffnen erforderlich.
 
-**Zwanzig Servertests bestanden**, einschließlich Live-Leeren/Wiederbefüllen, Auswahlstabilität, veralteten Klicks, tatsächlich 256 verbundenen Geräten und vollständiger Koordinatenübertragung. **Der grafische Clienttest von dev17 ist noch offen.** Das einzelne Trennen wurde im vorherigen dev16-Test erprobt; eine vollständige Bestätigung aller Resetfälle wird daraus nicht abgeleitet.
+**Zwanzig Servertests bestanden**, einschließlich Live-Leeren/Wiederbefüllen, Auswahlstabilität, veralteten Klicks, tatsächlich 256 verbundenen Geräten und vollständiger Koordinatenübertragung. **Clienttest dev17 bestätigt:** Der Tester bestätigt Trennen, erneutes Erkennen und die automatische Listenaktualisierung ohne Schließen/erneutes Öffnen im getesteten Einzelspieleraufbau. Damit ist dev17 für diesen begleiteten Teststand abgeschlossen. Reale Chunkwechsel, Sondergeometrien und weitere Mehrspielerfälle bleiben offen.
 
 ### Neu in dev16: Verbindungen lösen – nach Ankündigung umgesetzt
 
@@ -95,11 +95,37 @@ Die Auswahl bleibt am gleichen Gerät, wenn Zeilen davor verschwinden. Wird das 
 - **Erneut erkennen:** Trennsperren bewusst freigeben und vorhandenen Bereich automatisch neu erfassen; anschließend prüfen und starten.
 - Eine gespeicherte Verbindungsfassung entwertet beim vollständigen Lösen auch alte Endpunkte, die erst später geladen werden. Keine Chunk-Zwangsladung.
 
-**Achtzehn Servertests bestanden.** Neue Tests umfassen alle Gerätetypen, gespeicherte Trennsperren, Bestätigung/Abbruch/Zeitablauf, alte wiederhergestellte Endpunktdaten, fremde Verbindungen und bewusstes Wiederverbinden. Das Wiederladen alter Endpunktdaten wurde per NBT simuliert; reale Chunkwechsel und der grafische Clienttest der dev16-Bedienung bleiben offen.
+**Achtzehn Servertests bestanden.** Neue Tests umfassen alle Gerätetypen, gespeicherte Trennsperren, Bestätigung/Abbruch/Zeitablauf, alte wiederhergestellte Endpunktdaten, fremde Verbindungen und bewusstes Wiederverbinden. Das Wiederladen alter Endpunktdaten wurde per NBT simuliert; reale Chunkwechsel und weitere Mehrspielerfälle bleiben offen. Die Bedienung der Trenn- und Neuerkennungsfunktionen wurde anschließend im dev17-Spieltest bestätigt.
 
 Der Ausbau wurde vor der Umsetzung hier angekündigt und anschließend innerhalb der erteilten Freigabe gebaut. Es gibt weiterhin keine öffentliche GitHub-Test-JAR.
 
 Weitere Ansichten, Neustart-/Mehrspielertests und der vollständige Ausbau bleiben offen.
+
+## Nächstes größeres Arbeitspaket: Straßenbau und Kreuzungssteuerung
+
+**Angekündigt; Umsetzung nach Freigabe.** Beide Bereiche werden als zusammenhängendes Paket bis zu einer gemeinsam testbaren Entwicklungsfassung bearbeitet.
+
+**Straßenbau und sichtbare Bauteile**
+- Weitere Fahrbahnmarkierungen für mehrere Spuren und Abbiegestreifen.
+- Verkehrsinseln und ergänzende Bordsteine.
+- Leitplanken-Endstücke und Übergänge.
+- Ampelausleger über der Fahrbahn und passende Befestigungen für Ampeln und Schilder.
+
+**Steuergerät und Programme**
+- Einstellbare Zeiten für Fahrzeug-, Abbieger- und Fußgängergrün.
+- Gleichzeitige Freigabe kompatibler Fahrzeugrichtungen mit Konfliktprüfung.
+- Fußgänger parallel zu passenden Fahrzeugbewegungen, soweit sich die Wege nicht kreuzen; bei unklarer Zuordnung sichere getrennte Phasen.
+- Speichern und Auswählen von Programmen für normale Kreuzung, reine Fußgängerquerung und Baustellen-Wechselverkehr.
+- Nachtbetrieb mit gelbem Blinken und sicherem Übergang zurück in das normale Programm.
+- Verständliche Anzeige der aktuellen und folgenden Phase.
+
+**Zusammenspiel und Abnahme**
+- Bestehende Ampeln und automatische Erkennung auch an den neuen Auslegern nutzbar halten.
+- Vorhandene Verbindungen, Trennfunktionen und Live-Geräteliste berücksichtigen.
+- Bauteile, Speicherung, Übergänge und konkurrierende Freigaben automatisch prüfen; danach gemeinsamer Spieltest.
+- Keine Zwischenfreigabe für jeden einzelnen Unterpunkt vorgesehen.
+
+Dies ist die Ankündigung des vereinbarten nächsten Pakets, kein bereits umgesetzter oder getesteter Funktionsstand. dev17 bleibt der bestätigte bisherige Teststand. Eine stabile Gesamtveröffentlichung oder ein verbindlicher Veröffentlichungstermin ist damit nicht zugesagt.
 
 ## Technik und Testversionen
 

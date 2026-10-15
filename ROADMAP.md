@@ -102,7 +102,7 @@ Erste Zeichen existieren bereits. Die vollständige Katalogabdeckung ist noch of
 - [x] Gelöste Verbindungen auch für ungeladene Geräte dauerhaft entwerten; keine Chunk-Zwangsladung.
 - [x] Sichere Zustände, Speicherung, erneutes bewusstes Verknüpfen, Rechte und alte Menüs prüfen.
 - [x] Achtzehn automatisierte Servertests bestanden; alte Endpunktdaten nach Reset per NBT-Wiederherstellung geprüft.
-- [ ] Neue Funktionen im Minecraft-Client testen und bestätigen lassen.
+- [x] Trenn- und Neuerkennungsfunktionen im bestätigten dev17-Spieltest erprobt.
 - [ ] Reale Chunkwechsel und weitere Mehrspielerfälle ergänzend prüfen.
 
 ### Live-Geräteliste – dev17
@@ -112,7 +112,35 @@ Erste Zeichen existieren bereits. Die vollständige Katalogabdeckung ist noch of
 - [x] Auswahl anhand der Geräteposition erhalten; beim Entfernen der Auswahl kein anderes Gerät automatisch wählen.
 - [x] Veraltete Klicks und Teilübertragungen gegen versehentliche Aktionen absichern.
 - [x] Zwanzig Servertests einschließlich Live-Listenabgleich, 256 verbundenen Geräten und voller Koordinatenübertragung bestanden.
-- [ ] Automatische Listenaktualisierung im grafischen Minecraft-Client testen.
+- [x] Automatische Listenaktualisierung im grafischen Minecraft-Client vom Tester bestätigt (dev17).
+
+**dev17 ist als begleiteter Einzelspieler-Teststand bestätigt. Der vollständige Mod-Ausbau bleibt offen.**
+
+## Nächstes größeres Arbeitspaket: Straßenbau und Kreuzungssteuerung
+
+**Angekündigt; Umsetzung nach Freigabe.** Beide Bereiche werden als zusammenhängendes Paket bis zu einer gemeinsam testbaren Entwicklungsfassung bearbeitet.
+
+**Straßenbau und sichtbare Bauteile**
+- Weitere Fahrbahnmarkierungen für mehrere Spuren und Abbiegestreifen.
+- Verkehrsinseln und ergänzende Bordsteine.
+- Leitplanken-Endstücke und Übergänge.
+- Ampelausleger über der Fahrbahn und passende Befestigungen für Ampeln und Schilder.
+
+**Steuergerät und Programme**
+- Einstellbare Zeiten für Fahrzeug-, Abbieger- und Fußgängergrün.
+- Gleichzeitige Freigabe kompatibler Fahrzeugrichtungen mit Konfliktprüfung.
+- Fußgänger parallel zu passenden Fahrzeugbewegungen, soweit sich die Wege nicht kreuzen; bei unklarer Zuordnung sichere getrennte Phasen.
+- Speichern und Auswählen von Programmen für normale Kreuzung, reine Fußgängerquerung und Baustellen-Wechselverkehr.
+- Nachtbetrieb mit gelbem Blinken und sicherem Übergang zurück in das normale Programm.
+- Verständliche Anzeige der aktuellen und folgenden Phase.
+
+**Zusammenspiel und Abnahme**
+- Bestehende Ampeln und automatische Erkennung auch an den neuen Auslegern nutzbar halten.
+- Vorhandene Verbindungen, Trennfunktionen und Live-Geräteliste berücksichtigen.
+- Bauteile, Speicherung, Übergänge und konkurrierende Freigaben automatisch prüfen; danach gemeinsamer Spieltest.
+- Keine Zwischenfreigabe für jeden einzelnen Unterpunkt vorgesehen.
+
+Dies ist die Ankündigung des vereinbarten nächsten Pakets, kein bereits umgesetzter oder getesteter Funktionsstand. dev17 bleibt der bestätigte bisherige Teststand. Eine stabile Gesamtveröffentlichung oder ein verbindlicher Veröffentlichungstermin ist damit nicht zugesagt.
 
 ## 6. Digitale Anzeigen und Parkleitsystem
 
