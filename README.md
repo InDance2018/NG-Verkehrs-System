@@ -26,7 +26,7 @@ Die technischen Systeme sollen funktionieren: Ampeln schalten, Anzeigen lassen s
 
 ## Was bereits vorhanden ist
 
-Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev19**
+Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev20**
 
 - Grundsystem mit **97 registrierten Bauteilen**.
 - Erste Straßenblöcke mit weißen und gelben Linien, Richtungspfeilen und Fußgängerüberweg.
@@ -100,6 +100,28 @@ Die Auswahl bleibt am gleichen Gerät, wenn Zeilen davor verschwinden. Wird das 
 Der Ausbau wurde vor der Umsetzung hier angekündigt und anschließend innerhalb der erteilten Freigabe gebaut. Es gibt weiterhin keine öffentliche GitHub-Test-JAR.
 
 Weitere Ansichten, Neustart-/Mehrspielertests und der vollständige Ausbau bleiben offen.
+
+## 0.1.0-dev20 – Getrennte Inventarreiter
+
+Auf Nutzerwunsch den Sammelreiter durch **elf klar benannte NG-Reiter** ersetzt:
+
+- Straßenbau
+- Markierungen
+- Schilder und Pfosten
+- Gefahrzeichen
+- Gebotszeichen
+- Verbotszeichen
+- Richtzeichen
+- Zusatzzeichen
+- Ampeln und Zubehör
+- Baustelle
+- Anzeigen
+
+**Alle 98 Gegenstände (97 Blöcke plus Verknüpfer) sind genau einmal zugeordnet.** Schilderpfosten, Schildhalter und leere Tafeln stehen bei Schilder und Pfosten. Ampelmasten, Ausleger, Steuergerät, Verknüpfer und Taster stehen bei Ampeln und Zubehör. Mobile Baustellenampel, Warntechnik und gelbe Markierungen stehen bei Baustelle. Schildtafeln sind nach Zeichenart sortiert; Halt/Vorfahrt gewähren sind für diese praktische Inventaraufteilung bei Gebotszeichen eingeordnet.
+
+Eigene passende Symbole, deutsche Reiternamen und feste Reihenfolge. Minecraft kann zusätzliche Reiterseiten anzeigen; die normalen Seitenpfeile bleiben nutzbar. Block-/Itemkennungen und bestehende Weltbauteile bleiben erhalten.
+
+Build/Reobf, Ressourcenprüfung und **alle 25 vorhandenen Forge-Servertests bestanden**. Die Zuordnungsprüfung umfasst Vollständigkeit, Dopplungen, leere Reiter, Symbole und Übersetzungen. **Grafische Reiterprüfung noch offen. Die dev18-/dev19-Spieltests bleiben ebenfalls offen dokumentiert; dev17 bleibt der zuletzt bestätigte Clientstand.** Weiterhin keine öffentliche GitHub-JAR oder Quellcodeveröffentlichung.
 
 ## 0.1.0-dev19 – Baustellenausstattung
 

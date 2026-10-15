@@ -117,6 +117,28 @@ Erste Zeichen existieren bereits. Die vollständige Katalogabdeckung ist noch of
 
 **dev17 ist als begleiteter Einzelspieler-Teststand bestätigt. Der vollständige Mod-Ausbau bleibt offen.**
 
+## 0.1.0-dev20 – Getrennte Inventarreiter
+
+Auf Nutzerwunsch den Sammelreiter durch **elf klar benannte NG-Reiter** ersetzt:
+
+- Straßenbau
+- Markierungen
+- Schilder und Pfosten
+- Gefahrzeichen
+- Gebotszeichen
+- Verbotszeichen
+- Richtzeichen
+- Zusatzzeichen
+- Ampeln und Zubehör
+- Baustelle
+- Anzeigen
+
+**Alle 98 Gegenstände (97 Blöcke plus Verknüpfer) sind genau einmal zugeordnet.** Schilderpfosten, Schildhalter und leere Tafeln stehen bei Schilder und Pfosten. Ampelmasten, Ausleger, Steuergerät, Verknüpfer und Taster stehen bei Ampeln und Zubehör. Mobile Baustellenampel, Warntechnik und gelbe Markierungen stehen bei Baustelle. Schildtafeln sind nach Zeichenart sortiert; Halt/Vorfahrt gewähren sind für diese praktische Inventaraufteilung bei Gebotszeichen eingeordnet.
+
+Eigene passende Symbole, deutsche Reiternamen und feste Reihenfolge. Minecraft kann zusätzliche Reiterseiten anzeigen; die normalen Seitenpfeile bleiben nutzbar. Block-/Itemkennungen und bestehende Weltbauteile bleiben erhalten.
+
+Build/Reobf, Ressourcenprüfung und **alle 25 vorhandenen Forge-Servertests bestanden**. Die Zuordnungsprüfung umfasst Vollständigkeit, Dopplungen, leere Reiter, Symbole und Übersetzungen. **Grafische Reiterprüfung noch offen. Die dev18-/dev19-Spieltests bleiben ebenfalls offen dokumentiert; dev17 bleibt der zuletzt bestätigte Clientstand.** Weiterhin keine öffentliche GitHub-JAR oder Quellcodeveröffentlichung.
+
 ## 0.1.0-dev19 – Baustellenausstattung
 
 **Nach Ankündigung im Projektgespräch und Freigabe als Testfassung umgesetzt. dev18- und dev19-Spieltests bleiben offen; dev17 ist weiterhin der zuletzt vom Tester bestätigte Stand.**
