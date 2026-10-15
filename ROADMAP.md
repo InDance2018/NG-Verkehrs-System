@@ -11,7 +11,9 @@ Der vollständige gewünschte Umfang bleibt das Entwicklungsziel. Die Reihenfolg
 - [x] Neues Fahrzeugampelmodell mit dunklem Gehäuse, drei runden Signalflächen, Sonnenblenden und Halterungen in dev4 gebaut.
 - [x] Build, Ressourcenverweise, vier modellierte Signalzustände und symmetrische Leitplankenanschlüsse geprüft.
 - [x] Neue Leitplanken- und Ampelform in einer Einzelspieleransicht sichtbar bestätigt.
-- [ ] Weitere Ausrichtungen und die vollständige Ampelphasenfolge im Spiel prüfen.
+- [x] Deutsche Farbfolge sowie Verknüpfen und Start/Stopp im Client vom Tester bestätigt (dev6).
+- [x] Zwei Ampeln an einem Steuergerät mit abwechselnden Gruppen A/B im Client vom Tester bestätigt.
+- [ ] Weitere Ausrichtungen und Neustart-/Mehrspielerverhalten prüfen.
 - [ ] Weitere im Test festgestellte Fehler beheben.
 
 **Die neuen Bauformen sind in den gezeigten Ansichten bestätigt. Umfassende Funktions- und Mehransichtenprüfungen bleiben offen.**
@@ -52,9 +54,11 @@ Erste Zeichen existieren bereits. Die vollständige Katalogabdeckung ist noch of
 
 ## 5. Ampelsystem
 
-- [ ] Fahrzeugampeln und Phasenfolge vollständig im Spiel prüfen.
-- [ ] Fußgänger-, Fahrrad- und Richtungssignale ergänzen.
-- [ ] Anforderungstaster ergänzen.
+- [x] Grundbedienung und Phasenwechsel mit zwei Fahrzeugampeln der Gruppen A/B im Client bestätigt.
+- [ ] Erweiterte Funktions-, Neustart- und Mehrspielertests durchführen.
+- [ ] Fußgängerampel ergänzen – nächster Entwicklungsschritt.
+- [ ] Fahrrad- und Richtungssignale ergänzen.
+- [ ] Anforderungstaster und sichere Fußgängerphase ergänzen – nächster Entwicklungsschritt.
 - [ ] Einstellbare Kreuzungsschaltungen ausbauen.
 - [ ] Konfliktfreie Phasen, Ausfallverhalten und Verhalten beim Laden von Weltbereichen prüfen.
 - [ ] Mobile Baustellenampeln ergänzen.
