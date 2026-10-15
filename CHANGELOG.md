@@ -2,11 +2,20 @@
 
 Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Veröffentlichung. Die hier genannten JARs wurden bislang für begleitete Tests bereitgestellt; sie sind noch keine GitHub-Releases.
 
-## Nächster Ausbau – angekündigt und freigegeben
+## 0.1.0-dev11 – 15. Oktober 2026
 
-- Linksabbieger-Pfeilampel mit geschützter Schaltung für die zugewiesene Zufahrt.
-- Erste Ausbaustufe: immer nur eine Linksabbieger-Zufahrt frei, alle anderen Fahrzeuge und Fußgänger Rot.
-- Umsetzung und Tests stehen bei dieser Ankündigung noch aus; noch keine neue fertige Version.
+- Vor Umsetzung auf GitHub angekündigt und zur Umsetzung freigegeben.
+- Linksabbieger-Pfeilampel mit roten, gelben und grünen Pfeilsymbolen sowie vier Signalzuständen ergänzt.
+- Zufahrt Nord/Ost/Süd/West im vorhandenen Steuergerät-Menü zuordnen.
+- Jeweils nur eine Linksabbieger-Zufahrt freigegeben; andere Fahrzeuge und beide Fußgängerüberwege Rot.
+- Linksphasen: 2 Sekunden Vorlauf, 1 Sekunde Rot-Gelb, 10 Sekunden Grün, 3 Sekunden Gelb, 2 Sekunden Räumzeit.
+- Nach Nord/Süd-Geradeaus folgen Nord-/Süd-Linksabbieger einzeln; nach Ost/West-Geradeaus folgen Ost/West einzeln. Bereits vor Einschubbeginn wartende Fußgängeranforderungen werden vorher bedient.
+- Nächste Fahrzeuggruppe setzt anschließend fort. Ohne Linksabbieger bleibt das bisherige Programm unverändert.
+- Linksphasen und Warteschlange werden gespeichert; geladene aktive Phasen beginnen mit erneutem Rot-Vorlauf. Stoppen/fehlende Steuerung erzwingen Rot.
+- Vorhandene Kreisampeln mit Linkszuordnung verwenden ebenfalls geschützte Linksphasen. Der Pfeilblock behält seine Linksrolle; Rechtsabbieger bleiben gesperrt.
+- 38 Bauteile plus Verknüpfer. Build und Ressourcenprüfung bestanden.
+- Neun automatisierte Servertests sowie drei Phasentests über je 100.000 Ticks bestanden.
+- **Clienttest der neuen Pfeilampel und geschützten Linksphasen steht aus.**
 
 ## 0.1.0-dev10 – 15. Oktober 2026
 
