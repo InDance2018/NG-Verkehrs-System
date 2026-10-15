@@ -2,6 +2,16 @@
 
 Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Veröffentlichung. Die hier genannten JARs wurden bislang für begleitete Tests bereitgestellt; sie sind noch keine GitHub-Releases.
 
+## 0.1.0-dev6 – 15. Oktober 2026
+
+- Ampel-Verknüpfer mit gespeichertem Steuergerät und automatischer Blockpositionserkennung ergänzt.
+- Rechtsklick verbindet Gruppe A; Schleichen + Rechtsklick verbindet Gruppe B.
+- Leere Hand + Rechtsklick am Steuergerät startet oder stoppt die Steuerung.
+- Meldungen bei fehlender Auswahl, falschem Ziel, falscher Dimension, zu großer Entfernung oder fehlendem Steuergerät.
+- Vier automatisierte Servertests bestanden.
+- **Clienttest vom Tester bestätigt:** deutsche Farbfolge, Verknüpfen, Start/Stopp und wechselnde Gruppen A/B mit zwei Ampeln an einem Steuergerät.
+- Fußgängerampel und Anforderungstaster folgen als nächster Entwicklungsschritt.
+
 ## 0.1.0-dev5 – 15. Oktober 2026
 
 - Alle 14 vorhandenen Schildtafeln mit passenden runden, dreieckigen, achteckigen, rautenförmigen oder rechteckigen Konturen versehen.
