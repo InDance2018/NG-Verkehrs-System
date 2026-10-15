@@ -1,5 +1,7 @@
 # Entwicklungsplan
 
+**Neue private Testfassung: 0.1.0-beta2-dev1.** Gemeinsam umgesetzt: beschriftbare Orts-/Straßenwegweiser und Autobahntafeln mit drei Zielen und bis zu vier Fahrspuren. 101 Blöcke plus Verknüpfer, elf Reiter, 29 Forge-Servertests bestanden. Client-Sicht-/Bedienprüfung offen. [Umfang und Testanleitung](DEV-BETA2-1.md). Die öffentliche Downloadfassung bleibt Beta 1.
+
 **Beta 1 veröffentlicht · 15. Oktober 2026:** [0.1.0-beta1 – JAR und Downloadpaket](https://github.com/InDance2018/NG-Verkehrs-System/releases/tag/v0.1.0-beta1). Grundlage ist dev20 als letzte Dev-Version. [Lizenz](LICENSE.md) · [Lizenz im Wiki](https://github.com/InDance2018/NG-Verkehrs-System/wiki/Lizenz) · [Downloadbeitrag mit Handbuch/PDF-Links](BETA1-RELEASE.md).
 
 **Beta-Spieltests vom Nutzer bestätigt:** Einzelspieler mit erneutem Weltbeitritt, zwei Spieler mit unabhängig aufgebauten und verknüpften Ampelanlagen, Verlassen/Neubeitritt, zwei Server-Neustarts sowie Entfernungstest mit 1.500 Blöcken Abstand und zwei Minuten Wartezeit. Alles vorhanden und funktionsfähig. Dies bestätigt die getesteten Aufbauten; tatsächliche Chunk-Entladung wurde nicht protokolliert. Weitere Sonderfälle bleiben Teil der Beta-Erprobung.
