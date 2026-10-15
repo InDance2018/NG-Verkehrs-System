@@ -26,13 +26,14 @@ Die technischen Systeme sollen funktionieren: Ampeln schalten, Anzeigen lassen s
 
 ## Was bereits vorhanden ist
 
-Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev10**
+Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev11**
 
-- Grundsystem mit **37 registrierten Bauteilen**.
+- Grundsystem mit **38 registrierten Bauteilen**.
 - Erste Straßenblöcke mit weißen und gelben Linien, Richtungspfeilen und Fußgängerüberweg.
 - Gehwegplatten, Bordsteinplatte, Schildermast und verbindbare Leitplanke.
 - 14 Schildtafeln einschließlich einer unbeschrifteten Tafel; darunter erste Vorfahrt-, Park- und Geschwindigkeitszeichen.
 - Fahrzeugampel mit vier Signalzuständen sowie ein Ampelsteuergerät.
+- Linksabbieger-Pfeilampel mit geschützter Einzelphase je Zufahrt (dev11).
 - Ampel-Verknüpfer: Steuergerät und Ampel per Rechtsklick verbinden, zweite Fahrtrichtung mit Schleichen + Rechtsklick.
 - Start/Stopp direkt am Steuergerät mit leerer Hand.
 - Fußgängerampel mit rotem stehendem/grünem gehendem Symbol und gelber Anforderungstaster mit Warteanzeige (dev7).
@@ -61,9 +62,13 @@ Sechs automatisierte Servertests und zwei Phasentests über je 100.000 Ticks sin
 
 **Bedienmenü dev10 – Clienttest vom Tester bestätigt:** Leere Hand + Rechtsklick am Steuergerät öffnet ein Bedienmenü mit Geräteliste, Status, Start/Stopp, Zufahrten Nord/Ost/Süd/West, Fahrtrichtung und Fußgängerüberweg A/B. Schleichen + Rechtsklick bleibt direkter Start/Stopp-Zugriff. Zuordnungen speichern sofort und stoppen die Steuerung; anschließend bewusst neu starten. Neue Geräte erscheinen nach erneutem Öffnen.
 
-Geradeaus nutzt das bisherige Grundprogramm Nord/Süd = A und Ost/West = B. Links-/Rechtsabbieger werden zunächst nur als Vorbereitung gespeichert und bleiben Rot, bis eigene geschützte Abbiegeprogramme und Pfeilampeln folgen. Acht automatisierte Servertests sind bestanden. Der Tester bestätigt im Minecraft-Client: Menüanzeige, Geräteauswahl, Start/Stopp sowie Wechsel eines Tasters von Überweg A auf B. Die Änderung stoppt die Steuerung; nach dem Neustart fordert der Taster den zugewiesenen Überweg an. Die vorbereiteten Fahrzeug-Zufahrten und Abbiegezuordnungen sind damit noch nicht vollständig im Client geprüft.
+Geradeaus nutzt das bisherige Grundprogramm Nord/Süd = A und Ost/West = B. In dev10 waren Abbiegezuordnungen zunächst vorbereitet. Seit dev11 erhalten Linksabbieger eigene geschützte Phasen; Rechtsabbieger bleiben bis zu ihrem späteren Ausbau Rot. Acht automatisierte Servertests sind bestanden. Der Tester bestätigt im Minecraft-Client: Menüanzeige, Geräteauswahl, Start/Stopp sowie Wechsel eines Tasters von Überweg A auf B. Die Änderung stoppt die Steuerung; nach dem Neustart fordert der Taster den zugewiesenen Überweg an. Die vorbereiteten Fahrzeug-Zufahrten und Abbiegezuordnungen sind damit noch nicht vollständig im Client geprüft.
 
-**Angekündigt und zur Umsetzung freigegeben:** Als nächster Ausbau folgt eine Linksabbieger-Pfeilampel mit eigener geschützter Phase und Zuordnung zur Zufahrt im Steuergerät-Menü. In dieser ersten Ausbaustufe wird jeweils nur eine Linksabbieger-Zufahrt freigegeben; alle anderen Fahrzeuge und Fußgänger bleiben Rot. Build und Spieltests folgen nach der Umsetzung. Noch keine fertige Funktion oder veröffentlichte Testversion.
+**Neu in dev11 – angekündigt, freigegeben und umgesetzt; Clienttest offen:** Linksabbieger-Pfeilampel mit eigenen geschützten Phasen. Mit dem Verknüpfer am vorhandenen Steuergerät anmelden, im Menü die Zufahrt Nord/Ost/Süd/West wählen und starten. Jeweils nur eine Linksabbieger-Zufahrt frei, alle anderen Fahrzeuge und beide Fußgängerüberwege Rot. Mehrere Linksampeln derselben Zufahrt schalten gemeinsam.
+
+Je Linksphase: 2 Sekunden Rot-Vorlauf, 1 Sekunde Rot-Gelb, 10 Sekunden Grün, 3 Sekunden Gelb und 2 Sekunden Räumzeit. Nach Nord/Süd-Geradeaus folgen konfigurierte Linksabbieger aus Nord und Süd einzeln; nach Ost/West-Geradeaus folgen Ost und West einzeln. Bereits vor Einschubbeginn wartende Fußgängeranforderungen werden vorher bedient. Danach setzt das Grundprogramm mit der nächsten Fahrzeuggruppe fort.
+
+Neun automatisierte Servertests und drei Phasentests über je 100.000 Ticks sind bestanden. Neue Pfeilampel und geschützte Linksphasen müssen noch im grafischen Client getestet werden. Es gibt weiterhin keine öffentliche GitHub-Test-JAR.
 
 Weitere Ansichten, Neustart-/Mehrspielertests und der vollständige Ausbau bleiben offen.
 
