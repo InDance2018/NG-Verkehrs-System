@@ -1,5 +1,3 @@
-> Vorbereiteter Downloadbeitrag. Die Beta-JAR ist damit noch nicht öffentlich veröffentlicht.
-
 # NG-Verkehrs-System – 0.1.0-beta1
 
 Erste Beta auf Grundlage des bestätigten Entwicklungsstands **0.1.0-dev20**. dev20 ist die letzte Dev-Version.
@@ -27,7 +25,18 @@ Lizenz 1.0 und Fremdlizenzhinweise beigelegt, NeverGate-Angaben und Handbuchverw
 
 Alle 35 Java-Klassen sind bytegenau identisch mit dev20. Ressourcen-, Metadaten- und ZIP-Prüfungen bestanden; alle 98 Gegenstände sind genau einem der elf Reiter zugeordnet. Die 25 dokumentierten Forge-Servertests und die Einzelspielerbestätigung stammen aus dev20. Für diese Ressourcenfassung wurde kein neuer Forge-Testlauf durchgeführt.
 
-Die Beta ist kein abgeschlossener Vollausbau. Sichtprüfung der Symbolkorrektur sowie zusätzliche reale Server-Neustart-, Chunk- und Mehrspielertests bleiben offen. Vor Verwendung bestehende Welten sichern.
+### Bestätigte Spieltests am 15. Oktober 2026
+
+Vom Nutzer auf Grundlage eigener Tests bestätigt:
+
+- Modangaben im Spiel geprüft und in Ordnung.
+- Einzelspieler: Anlagen aufgebaut und verknüpft; nach Verlassen und erneutem Betreten der Testwelt vollständig vorhanden und funktionsfähig.
+- Minecraft-1.20.2-Server mit zwei Spielern: Beide können unabhängig Ampeln bauen und verlinken; alle getesteten Ampeln laufen.
+- Nach Verlassen und erneutem Beitreten bleiben Aufbauten und Verbindungen erhalten und laufen weiter.
+- Zwei vollständige Server-Neustarts ohne Verlust der getesteten Anlagen oder Funktionen.
+- Entfernungstest: 1.500 Blöcke wegteleportiert, zwei Minuten gewartet und zurückgekehrt; alles vorhanden und funktionsfähig. Eine tatsächliche Chunk-Entladung wurde dabei nicht durch Serverprotokollierung gemessen.
+
+Diese Bestätigungen beziehen sich auf die getesteten Aufbauten und sind keine pauschale Zusage für jede Serverkonfiguration. Die Beta ist kein abgeschlossener Vollausbau. Vor Verwendung bestehende Welten sichern.
 
 ---
 
@@ -108,3 +117,4 @@ Links auf die offiziellen Ausgaben dürfen geteilt werden. Eine anderweitige Ver
 Maßgeblich ist die der jeweiligen Modfassung beigefügte Lizenz. Spätere Änderungen gelten nicht automatisch rückwirkend für bereits unter dieser Fassung erteilte Rechte.
 
 Weitergehende Erlaubnisse können schriftlich über die auf https://nevergate.de/ angegebenen Kontaktmöglichkeiten vereinbart werden.
+
