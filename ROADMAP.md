@@ -105,6 +105,15 @@ Erste Zeichen existieren bereits. Die vollständige Katalogabdeckung ist noch of
 - [ ] Neue Funktionen im Minecraft-Client testen und bestätigen lassen.
 - [ ] Reale Chunkwechsel und weitere Mehrspielerfälle ergänzend prüfen.
 
+### Live-Geräteliste – dev17
+
+- [x] Nach Nutzerfreigabe Trennen, Suchen und Erneut erkennen ohne manuelle Menü-Neuöffnung anzeigen.
+- [x] Liste bei vollständigem Lösen leeren und bei Neuerkennung im selben Menü wieder füllen.
+- [x] Auswahl anhand der Geräteposition erhalten; beim Entfernen der Auswahl kein anderes Gerät automatisch wählen.
+- [x] Veraltete Klicks und Teilübertragungen gegen versehentliche Aktionen absichern.
+- [x] Zwanzig Servertests einschließlich Live-Listenabgleich, 256 verbundenen Geräten und voller Koordinatenübertragung bestanden.
+- [ ] Automatische Listenaktualisierung im grafischen Minecraft-Client testen.
+
 ## 6. Digitale Anzeigen und Parkleitsystem
 
 - [ ] Änderbare Textanzeigen ausbauen und ihre Lesbarkeit verbessern.
