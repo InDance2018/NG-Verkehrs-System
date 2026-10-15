@@ -26,15 +26,17 @@ Die technischen Systeme sollen funktionieren: Ampeln schalten, Anzeigen lassen s
 
 ## Was bereits vorhanden ist
 
-Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev6**
+Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev7**
 
-- Grundsystem mit **35 registrierten Bauteilen**.
+- Grundsystem mit **37 registrierten Bauteilen**.
 - Erste Straßenblöcke mit weißen und gelben Linien, Richtungspfeilen und Fußgängerüberweg.
 - Gehwegplatten, Bordsteinplatte, Schildermast und verbindbare Leitplanke.
 - 14 Schildtafeln einschließlich einer unbeschrifteten Tafel; darunter erste Vorfahrt-, Park- und Geschwindigkeitszeichen.
 - Fahrzeugampel mit vier Signalzuständen sowie ein Ampelsteuergerät.
 - Ampel-Verknüpfer: Steuergerät und Ampel per Rechtsklick verbinden, zweite Fahrtrichtung mit Schleichen + Rechtsklick.
 - Start/Stopp direkt am Steuergerät mit leerer Hand.
+- Fußgängerampel mit rotem stehendem/grünem gehendem Symbol und gelber Anforderungstaster mit Warteanzeige (dev7).
+- Beide neuen Geräte lassen sich mit dem vorhandenen Verknüpfer an dasselbe Steuergerät anschließen.
 - Grundfunktionen für digitale Textanzeige und Parkplatzanzeige mit speicherbaren Werten.
 - Überarbeitete Inventarsymbole für Schilder, Leitplanke, Ampel und Anzeigen.
 - Alle 14 Schildtafeln mit passenden Konturen: Kreise, Dreiecke, Achteck, Raute und rechteckige Tafeln; ohne graue quadratische Außenflächen und mit geformten Metallrückseiten und schmalen Kanten.
@@ -49,7 +51,9 @@ In Einzelspielertests wurden Straßenmarkierungen, erste Schilder, Fahrzeugampel
 
 **Funktionstest dev6 bestätigt:** Der Tester meldet eine saubere deutsche Farbfolge, erfolgreiches Verknüpfen per Klick und problemloses Starten/Stoppen. Zwei Ampeln der Gruppen A und B schalten laut Test abwechselnd über ein gemeinsames Steuergerät. Vier automatisierte Servertests sind bestanden.
 
-**Nächster Entwicklungsschritt:** Fußgängerampel und Anforderungstaster. Sie sind in dev6 noch nicht enthalten. Weitere Ansichten, Neustart-/Mehrspielertests und der vollständige Ausbau bleiben offen.
+**Neu in dev7 – Clienttest ausstehend:** Rechtsklick auf den verbundenen Anforderungstaster speichert den Überquerungswunsch. Nach Ende der laufenden Fahrzeugphase folgen mindestens 2 Sekunden Allrot, 6 Sekunden Fußgängergrün und 4 Sekunden Räumzeit; danach startet die nächste Fahrzeuggruppe. Alle Fußgängersignale desselben Steuergeräts teilen sich zunächst diese gemeinsame Phase. Fünf automatisierte Servertests sowie ein Phasentest über 100.000 Ticks sind bestanden. Die neue Bedienung und Darstellung müssen noch im Minecraft-Client getestet werden.
+
+Weitere Ansichten, Neustart-/Mehrspielertests und der vollständige Ausbau bleiben offen.
 
 ## Technik und Testversionen
 
