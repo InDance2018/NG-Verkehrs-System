@@ -26,13 +26,13 @@ Die technischen Systeme sollen funktionieren: Ampeln schalten, Anzeigen lassen s
 
 ## Was bereits vorhanden ist
 
-Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev17**
+Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev18**
 
-- Grundsystem mit **46 registrierten Bauteilen**.
+- Grundsystem mit **74 registrierten Bauteilen**.
 - Erste Straßenblöcke mit weißen und gelben Linien, Richtungspfeilen und Fußgängerüberweg.
 - Gehwegplatten, Bordsteinplatte, Schildermast und verbindbare Leitplanke.
 - 14 Schildtafeln einschließlich einer unbeschrifteten Tafel; darunter erste Vorfahrt-, Park- und Geschwindigkeitszeichen.
-- Fahrzeugampel mit vier Signalzuständen sowie ein Ampelsteuergerät.
+- Fahrzeugampel mit vier Regelzuständen und dunklem Blinkzustand sowie ein Ampelsteuergerät.
 - Links-/Rechts-/Geradeaus-Pfeilampeln, alle Kombinationen dieser Pfeile, Fahrradampel und gelbes Warnblinklicht (dev11/dev12).
 - Kompaktes Steuergerät-Menü mit kleinerer Schrift, Gerätetabelle und Scrollen statt Seitenwechsel (dev13).
 - Automatische Erkennung aller Ampeltypen und Taster mit Mittelpunkt und Radius 16/24/32/48 Blöcke (dev15).
@@ -101,31 +101,29 @@ Der Ausbau wurde vor der Umsetzung hier angekündigt und anschließend innerhalb
 
 Weitere Ansichten, Neustart-/Mehrspielertests und der vollständige Ausbau bleiben offen.
 
-## Nächstes größeres Arbeitspaket: Straßenbau und Kreuzungssteuerung
+## 0.1.0-dev18 – Straßenbau und Kreuzungsprogramme
 
-**Angekündigt; Umsetzung nach Freigabe.** Beide Bereiche werden als zusammenhängendes Paket bis zu einer gemeinsam testbaren Entwicklungsfassung bearbeitet.
+**Nach Ankündigung und Freigabe als gemeinsame Testfassung umgesetzt. Clienttest noch offen.** dev17 bleibt der vom Tester bestätigte bisherige Stand.
 
-**Straßenbau und sichtbare Bauteile**
-- Weitere Fahrbahnmarkierungen für mehrere Spuren und Abbiegestreifen.
-- Verkehrsinseln und ergänzende Bordsteine.
-- Leitplanken-Endstücke und Übergänge.
-- Ampelausleger über der Fahrbahn und passende Befestigungen für Ampeln und Schilder.
+- **74 Bauteile insgesamt:** 14 neue Markierungen und 14 Straßen-/Befestigungsteile. Darunter Leitlinien, Sperrflächen, Bus-/Radmarkierung, Wartelinie, zusätzliche Pfeile, Parkbucht, Verkehrsinseln, Bordsteinabsenkung, Leitplankenende/-übergang, verstärkter Mast und mehrteiliger Ampelausleger.
+- Eigene kompakte **Programmansicht** im Steuergerät; Geräteliste bleibt live und scrollbar.
+- Fahrzeuggrün 5–120 s, Abbiegergrün 5–60 s, Fußgängergrün 6–60 s; geschützte Gelb-/Rot-Gelb-/Räumzeiten.
+- **Kreuzung**, **Fußgängerüberweg** und **Baustellenwechselverkehr**, dazu drei speicherbare Einstellungsplätze. Ändern/Laden stoppt; anschließend bewusst starten.
+- Zuschaltbare parallele geschützte Fahrzeugrouten mit konservativer Konfliktmatrix. Fußgänger parallel nur zur passenden expliziten Geradeaus-/Fahrradgruppe; gewöhnliche Kreisampeln oder ungeladene Endpunkte erzwingen getrennte Freigaben. Die Prüfung verwendet Zufahrt/Fahrtrichtung und Überweggruppe, keine Analyse real gebauter Fahrwege. Aufbau und manuelle Zuordnungen müssen dazu passen.
+- Nachtblinken manuell oder automatisch bei Weltzeit 13000–23000; Fußgänger Rot, Anforderungen aus. Rückkehr über mindestens 2 s Allrot und 1 s Rot-Gelb.
+- Aktuelle/nächste Phase mit Restzeit, dauerhafte Einstellungen und Speicherplätze.
+- Automatische Erkennung vorhandener Signale auch am hohen Ausleger; Tastermontage zusätzlich am verstärkten Mast. Verbindungen, Trennsperren und Live-Geräteliste bleiben erhalten.
+- **Build/Reobf, Ressourcenprüfung (74 Blöcke), sechs deterministische Phasentests und 23 Forge-Servertests bestanden.** Dazu gespeicherte Programme, Nachtübergänge, reale Leitplankenanschlüsse, Auslegererkennung und Rückfall bei unklarer Kreisampel geprüft.
 
-**Steuergerät und Programme**
-- Einstellbare Zeiten für Fahrzeug-, Abbieger- und Fußgängergrün.
-- Gleichzeitige Freigabe kompatibler Fahrzeugrichtungen mit Konfliktprüfung.
-- Fußgänger parallel zu passenden Fahrzeugbewegungen, soweit sich die Wege nicht kreuzen; bei unklarer Zuordnung sichere getrennte Phasen.
-- Speichern und Auswählen von Programmen für normale Kreuzung, reine Fußgängerquerung und Baustellen-Wechselverkehr.
-- Nachtbetrieb mit gelbem Blinken und sicherem Übergang zurück in das normale Programm.
-- Verständliche Anzeige der aktuellen und folgenden Phase.
+### Kurzer Testaufbau
 
-**Zusammenspiel und Abnahme**
-- Bestehende Ampeln und automatische Erkennung auch an den neuen Auslegern nutzbar halten.
-- Vorhandene Verbindungen, Trennfunktionen und Live-Geräteliste berücksichtigen.
-- Bauteile, Speicherung, Übergänge und konkurrierende Freigaben automatisch prüfen; danach gemeinsamer Spieltest.
-- Keine Zwischenfreigabe für jeden einzelnen Unterpunkt vorgesehen.
+Steuergerät öffnen → oben **Programm**. Für einen schnellen Test Fahrzeuggrün auf 5 s stellen, anschließend Starten. Änderungen stoppen die Steuerung. S1–S3 speichern/laden eigene Einstellungen.
 
-Dies ist die Ankündigung des vereinbarten nächsten Pakets, kein bereits umgesetzter oder getesteter Funktionsstand. dev17 bleibt der bestätigte bisherige Teststand. Eine stabile Gesamtveröffentlichung oder ein verbindlicher Veröffentlichungstermin ist damit nicht zugesagt.
+Auslegeransatz oben auf verstärkte Masten setzen, gerade Segmente anschließen, Abschluss mit Aufhängung am Ende und Ampel direkt darunter. Ampel zu ankommenden Fahrzeugen ausrichten. Verknüpfer/Mitte/Radius funktionieren wie bisher; nach automatischer Zuordnung prüfen und starten.
+
+Im normalen Kreuzungsprogramm gilt N/S = A, O/W = B. Im Baustellenprogramm gilt **N/O = A, S/W = B**, damit gegenüberliegende Enden wechseln. Für den reinen Fußgängerüberweg Fahrzeugampeln beider Straßenrichtungen als A verbinden; Fahrzeuggruppe B bleibt Rot. Keine automatische Erkennung einer real gebauten Engstelle.
+
+**Gemeinsamer dev18-Spieltest steht aus:** neue Modelle und Ausrichtungen, Programme, Zeiten, Parallelfreigaben, Nachtbetrieb und Speicherplätze im Minecraft-Client prüfen. Dies ist keine stabile Gesamtveröffentlichung. Weiterhin keine öffentliche GitHub-Test-JAR und kein öffentlicher Quellcode-Upload.
 
 ## Technik und Testversionen
 
