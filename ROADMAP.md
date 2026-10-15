@@ -94,14 +94,16 @@ Erste Zeichen existieren bereits. Die vollständige Katalogabdeckung ist noch of
 - [x] Erkennung, Zuordnung und Schaltablauf im aufgebauten Einzelspielertest vom Tester bestätigt (dev15).
 - [ ] Sondergeometrien, Chunkwechsel und Mehrspielerfälle weiter prüfen.
 
-### Nächster freigegebener Schritt – angekündigt
+### Verbindungen lösen – vor Umsetzung angekündigt, in dev16 gebaut
 
-- [ ] Einzelne Verbindung im Steuergerät-Menü lösen.
-- [ ] Alle Verbindungen nach kurzer Bestätigung lösen.
-- [ ] Bewusst getrennte Geräte von sofortiger automatischer Wiederverbindung ausnehmen.
-- [ ] Gelöste Verbindungen auch für ungeladene Geräte dauerhaft entwerten; keine Chunk-Zwangsladung.
-- [ ] Sichere Zustände, Speicherung, erneutes bewusstes Verknüpfen, Rechte und alte Menüs prüfen.
+- [x] Einzelne Verbindung im Steuergerät-Menü lösen.
+- [x] Alle Verbindungen nach kurzer Bestätigung lösen.
+- [x] Bewusst getrennte Geräte von sofortiger automatischer Wiederverbindung ausnehmen.
+- [x] Gelöste Verbindungen auch für ungeladene Geräte dauerhaft entwerten; keine Chunk-Zwangsladung.
+- [x] Sichere Zustände, Speicherung, erneutes bewusstes Verknüpfen, Rechte und alte Menüs prüfen.
+- [x] Achtzehn automatisierte Servertests bestanden; alte Endpunktdaten nach Reset per NBT-Wiederherstellung geprüft.
 - [ ] Neue Funktionen im Minecraft-Client testen und bestätigen lassen.
+- [ ] Reale Chunkwechsel und weitere Mehrspielerfälle ergänzend prüfen.
 
 ## 6. Digitale Anzeigen und Parkleitsystem
 
