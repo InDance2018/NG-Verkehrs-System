@@ -2,6 +2,19 @@
 
 Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Veröffentlichung. Die hier genannten JARs wurden bislang für begleitete Tests bereitgestellt; sie sind noch keine GitHub-Releases.
 
+## 0.1.0-dev10 – 15. Oktober 2026
+
+- Steuergerät-Menü mit Geräteliste, Statusanzeigen, fünf Geräten pro Seite und kleiner Kreuzungsübersicht ergänzt.
+- Leere Hand + normaler Rechtsklick öffnet das Menü. Start/Stopp im Menü oder direkt mit Schleichen + Rechtsklick.
+- Zufahrt Nord/Ost/Süd/West und Fahrtrichtung Geradeaus/Links/Rechts für Fahrzeugampeln speichern.
+- Geradeaus bleibt im bisherigen Grundprogramm Nord/Süd = A, Ost/West = B. Vorbereitete Abbieger bleiben Rot, bis eigene geschützte Programme und Pfeilampeln folgen.
+- Fußgängerampeln und Taster können ihren Überweg A/B im Menü wechseln.
+- Zuordnungsänderungen stoppen die Steuerung; anschließend gezielt neu starten.
+- Automatische Erfassung bestehender geladener Verbindungen und Speicherung der Geräteliste.
+- Menüaktionen prüfen Rechte, Entfernung, Steuergerät und tatsächliche Geräteverbindung. Neu verknüpfte Geräte nach erneutem Öffnen.
+- Build und Ressourcenprüfung bestanden. Acht automatisierte Servertests bestanden.
+- **Grafischer Clienttest des Menüs steht aus.**
+
 ## 0.1.0-dev9 – 15. Oktober 2026
 
 - Anforderungstaster von 6 × 10 × 4 auf 5 × 6 × 2,25 Modellpixel verkleinert.
@@ -11,7 +24,7 @@ Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Ver
 - Beim normalen Abbauen einer Mastmontage werden ein Taster und ein Mast zurückgegeben; Wand-/Bodentaster erzeugen keine zusätzlichen Masten.
 - Bisherige Verknüpfung und A/B-Bedienung bleiben erhalten. Für Mastmontage alte freistehende Taster abbauen, am Mast neu platzieren und neu verknüpfen.
 - Build und Ressourcenprüfung bestanden; sieben automatisierte Servertests bestanden.
-- **Clienttest der kleineren Bauform und neuen Montage steht aus.**
+- **Clienttest vom Tester bestätigt:** Taster sitzt am Mast und lässt sich betätigen. Weitere Ansichten bleiben offen.
 
 ## 0.1.0-dev8 – 15. Oktober 2026
 
