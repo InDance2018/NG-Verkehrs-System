@@ -63,6 +63,8 @@ Sechs automatisierte Servertests und zwei Phasentests über je 100.000 Ticks sin
 
 Geradeaus nutzt das bisherige Grundprogramm Nord/Süd = A und Ost/West = B. Links-/Rechtsabbieger werden zunächst nur als Vorbereitung gespeichert und bleiben Rot, bis eigene geschützte Abbiegeprogramme und Pfeilampeln folgen. Acht automatisierte Servertests sind bestanden. Der Tester bestätigt im Minecraft-Client: Menüanzeige, Geräteauswahl, Start/Stopp sowie Wechsel eines Tasters von Überweg A auf B. Die Änderung stoppt die Steuerung; nach dem Neustart fordert der Taster den zugewiesenen Überweg an. Die vorbereiteten Fahrzeug-Zufahrten und Abbiegezuordnungen sind damit noch nicht vollständig im Client geprüft.
 
+**Angekündigt und zur Umsetzung freigegeben:** Als nächster Ausbau folgt eine Linksabbieger-Pfeilampel mit eigener geschützter Phase und Zuordnung zur Zufahrt im Steuergerät-Menü. In dieser ersten Ausbaustufe wird jeweils nur eine Linksabbieger-Zufahrt freigegeben; alle anderen Fahrzeuge und Fußgänger bleiben Rot. Build und Spieltests folgen nach der Umsetzung. Noch keine fertige Funktion oder veröffentlichte Testversion.
+
 Weitere Ansichten, Neustart-/Mehrspielertests und der vollständige Ausbau bleiben offen.
 
 ## Technik und Testversionen
