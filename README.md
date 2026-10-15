@@ -26,7 +26,7 @@ Die technischen Systeme sollen funktionieren: Ampeln schalten, Anzeigen lassen s
 
 ## Was bereits vorhanden ist
 
-Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev8**
+Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev9**
 
 - Grundsystem mit **37 registrierten Bauteilen**.
 - Erste Straßenblöcke mit weißen und gelben Linien, Richtungspfeilen und Fußgängerüberweg.
@@ -53,9 +53,11 @@ In Einzelspielertests wurden Straßenmarkierungen, erste Schilder, Fahrzeugampel
 
 **Fußgängertest dev7 im Client bestätigt:** Rechtsklick auf den verbundenen Anforderungstaster speichert den Überquerungswunsch. Nach Ende der laufenden Fahrzeugphase folgen mindestens 2 Sekunden Allrot, 6 Sekunden Fußgängergrün und 4 Sekunden Räumzeit; danach startet die nächste Fahrzeuggruppe. Alle Fußgängersignale desselben Steuergeräts teilen sich zunächst diese gemeinsame Phase. Fünf automatisierte Servertests sowie ein Phasentest über 100.000 Ticks sind bestanden. Der Tester bestätigt den Ablauf im Einzelspieler: Fahrzeugampeln Rot → Fußgänger Grün → Fußgänger Rot → Fahrzeugverkehr wieder freigegeben. Diese Bestätigung betrifft die getestete gemeinsame Fußgängerphase; weitere Ansichten und Sonderfälle bleiben offen.
 
-**Neu in dev8 – Clienttest ausstehend:** Getrennte Fußgängerüberwege A/B sind eingebaut. Mit dem Verknüpfer werden Fußgängerampeln und zugehörige Taster per normalem Rechtsklick A oder per Schleichen + Rechtsklick B zugeordnet. Jeder Taster fordert nur den eigenen Überweg an. Beide Anforderungen werden in Eingangsreihenfolge nacheinander bedient; dazwischen bleiben beide Überwege Rot. Während jeder Fußgängerfreigabe bleiben beide Fahrzeuggruppen Rot. Nach höchstens zwei unterschiedlichen Überwegen wird die nächste Fahrzeuggruppe bedient; weitere Wünsche bleiben für den folgenden Durchlauf gespeichert.
+**Getrennte Überwege seit dev8 – Clienttest bestätigt:** Getrennte Fußgängerüberwege A/B sind eingebaut. Mit dem Verknüpfer werden Fußgängerampeln und zugehörige Taster per normalem Rechtsklick A oder per Schleichen + Rechtsklick B zugeordnet. Jeder Taster fordert nur den eigenen Überweg an. Beide Anforderungen werden in Eingangsreihenfolge nacheinander bedient; dazwischen bleiben beide Überwege Rot. Während jeder Fußgängerfreigabe bleiben beide Fahrzeuggruppen Rot. Nach höchstens zwei unterschiedlichen Überwegen wird die nächste Fahrzeuggruppe bedient; weitere Wünsche bleiben für den folgenden Durchlauf gespeichert.
 
-Sechs automatisierte Servertests und zwei Phasentests über je 100.000 Ticks sind bestanden. Die neue A/B-Bedienung muss noch im Client getestet werden. **Bestehende dev7-Verbindungen gehören zunächst zu Überweg A:** Ampeln und Taster des zweiten Überwegs einmal schleichend neu verbinden. Parallele Fahrzeugfreigaben sind ein späterer Ausbau.
+Sechs automatisierte Servertests und zwei Phasentests über je 100.000 Ticks sind bestanden. Der Tester bestätigt getrennt reagierende Taster sowie den Wechsel von Fahrzeugrot zu Fußgängergrün. **Bestehende dev7-Verbindungen gehören zunächst zu Überweg A:** Ampeln und Taster des zweiten Überwegs einmal schleichend neu verbinden. Parallele Fahrzeugfreigaben sind ein späterer Ausbau.
+
+**Neu in dev9 – Montage im Client noch zu prüfen:** Der kleinere Taster lässt sich direkt seitlich an einen NG-Schildermast setzen. Dazu mit dem Taster-Blockitem auf die gewünschte Mastseite rechtsklicken; anschließend wie bisher mit dem Verknüpfer A/B zuordnen. Mast und Taster sitzen ohne Abstand in derselben Blockposition. Beim normalen Abbauen werden beide Gegenstände zurückgegeben. Wandmontage bleibt möglich. Sieben automatisierte Servertests sind bestanden.
 
 Weitere Ansichten, Neustart-/Mehrspielertests und der vollständige Ausbau bleiben offen.
 
