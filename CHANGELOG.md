@@ -2,6 +2,17 @@
 
 Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Veröffentlichung. Die hier genannten JARs wurden bislang für begleitete Tests bereitgestellt; sie sind noch keine GitHub-Releases.
 
+## 0.1.0-dev17 – 15. Oktober 2026
+
+- Nach Nutzerfreigabe Bedienungsproblem des dev16-Tests behoben: Geräteliste aktualisiert sich ohne Schließen/erneutes Öffnen.
+- Einzeltrennung entfernt Zeilen direkt; Suchen/erneute Erkennung ergänzt sie, vollständiges Lösen leert die Liste.
+- Externe Verknüpfungsänderungen im offenen Menü übernehmen.
+- Auswahl bleibt am selben Gerät. Entfernte Auswahl wird aufgehoben, nachrückende Geräte werden nicht versehentlich bearbeitet.
+- Zeilenklicks an zuletzt angezeigte Listenfassung gebunden; veraltete Auswahl abweisen.
+- Neue Geräteliste, Status und Auswahl gemeinsam veröffentlichen; volle signierte Koordinaten erhalten.
+- Build/Reobf, Ressourcen-/JAR-Prüfung und zwanzig Servertests bestanden. Bestehende Tests bleiben erfolgreich.
+- **Grafischer Clienttest der automatischen Listenaktualisierung noch offen.** Weiterhin keine öffentliche GitHub-JAR.
+
 ## 0.1.0-dev16 – 15. Oktober 2026
 
 - Vor Umsetzung auf GitHub angekündigt, anschließend freigegeben und gebaut.
