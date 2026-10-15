@@ -100,4 +100,13 @@ Erste Zeichen existieren bereits. Die vollständige Katalogabdeckung ist noch of
 - [ ] Rückmeldungen auswerten und Fehler beheben.
 - [ ] Erste stabile Version veröffentlichen.
 
+## 9. Nach Fertigstellung: Rechte, Zusatzmods und Kostendeckung klären
+
+- [ ] Nach Fertigstellung der vollständigen Mod die Aufteilung in eine kostenlose, einzeln nutzbare Basismod und separate Zusatzmods konkret festlegen.
+- [ ] Dann die aktuellen Minecraft-Bedingungen erneut prüfen und eine schriftliche Anfrage an Mojang/Microsoft zur möglichen Abgabe von Zusatzmods über einen Download-Dienst gegen einen Beitrag zur reinen Kostendeckung vorbereiten.
+- [ ] Antwort beziehungsweise belastbare rechtliche Klärung auswerten, bevor über kostenpflichtige Downloads oder Freischaltungen entschieden wird.
+- [ ] Anschließend passende Nutzungs-, Weitergabe- und Lizenzbedingungen für eigene Bestandteile festlegen und dokumentieren.
+
+Dieser Punkt ist für die Zeit nach Fertigstellung vorgemerkt. Ein Verkauf ist weder beschlossen noch als erlaubt bestätigt; eine Anfrage wurde noch nicht versandt.
+
 Es gibt derzeit keinen fest zugesagten Termin für die fertige Mod.
