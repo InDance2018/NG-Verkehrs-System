@@ -2,13 +2,16 @@
 
 Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Veröffentlichung. Die hier genannten JARs wurden bislang für begleitete Tests bereitgestellt; sie sind noch keine GitHub-Releases.
 
-## Nächster Schritt – angekündigt und freigegeben
+## 0.1.0-dev16 – 15. Oktober 2026
 
-- Einzelne Verbindung lösen; alle Verbindungen nach kurzer Bestätigung zurücksetzen.
-- Automatik darf bewusst getrennte Geräte nicht sofort erneut anmelden.
-- Getrennte Fahrzeug-/Pfeil-/Fahrrad-/Fußgängersignale Rot; Taster und Warnlicht aus.
-- Auch derzeit ungeladene gespeicherte Verbindungen entwerten, ohne Chunks zu laden.
-- Umsetzung, Build und Clienttest noch offen.
+- Vor Umsetzung auf GitHub angekündigt, anschließend freigegeben und gebaut.
+- Einzelne Verbindung lösen; alle Verbindungen nach fünf Sekunden gültiger Bestätigung zurücksetzen. Abbruch und Schutz gegen unbestätigte/abgelaufene oder wiederholte Bestätigung.
+- Getrennte Fahrzeug-/Pfeil-/Fahrrad-/Fußgängersignale Rot, Taster und Warnlicht aus.
+- Trennsperren speichern und normale automatische Wiederverbindung verhindern. Vollreset schaltet Programm und Automatik aus; Mitte/Radius bleiben erhalten.
+- Manuelles Neuverknüpfen oder bewusstes „Erneut erkennen“ gibt Sperren frei; neue Zuordnungen bleiben zunächst gestoppt.
+- Gespeicherte Verbindungsfassung entwertet alte, später geladene Endpunkte ohne Zwangsladung.
+- Build, Ressourcen-/JAR-Prüfung und achtzehn Servertests bestanden; Altverbindungen per NBT-Wiederherstellung simuliert.
+- **Clienttest der dev16-Bedienung sowie reale Chunkwechsel noch offen.** Keine öffentliche GitHub-JAR.
 
 ## 0.1.0-dev15 – 15. Oktober 2026
 
