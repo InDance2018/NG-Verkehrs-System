@@ -61,10 +61,11 @@ Erste Zeichen existieren bereits. Die vollständige Katalogabdeckung ist noch of
 - [ ] Fahrrad- und Richtungssignale ergänzen.
 - [x] Anforderungstaster mit Warteanzeige, Verknüpfung per Klick und gemeinsamer Fußgängerphase bei Fahrzeug-Allrot eingebaut (dev7).
 - [x] Vorlauf, Fußgängergrün, Räumzeit und nächste Fahrzeuggruppe automatisch getestet; fünf Servertests bestanden.
-- [ ] Getrennte Fußgängerüberwege A/B umsetzen – wartet auf Freigabe.
-- [ ] Taster und Fußgängerampeln je Überweg zuordnen; jeder Taster fordert nur seinen Überweg an.
-- [ ] Gleichzeitige Anforderungen nacheinander abarbeiten; während jeder Fußgängerfreigabe zunächst beide Fahrzeuggruppen Rot halten.
-- [ ] Getrennte Überwege automatisch und im Client prüfen.
+- [x] Getrennte Fußgängerüberwege A/B nach Freigabe eingebaut (dev8).
+- [x] Taster und Fußgängerampeln je Überweg per Rechtsklick A / Schleichen + Rechtsklick B zuordnen; Taster fordern nur ihren eigenen Überweg an.
+- [x] Beide Anforderungen in Eingangsreihenfolge nacheinander abarbeiten; beide Fahrzeuggruppen bleiben während Fußgängerfreigaben Rot.
+- [x] Getrennte Überwege, Warteschlange, gespeicherte Gruppenzuordnung und Altverbindungen automatisch geprüft; sechs Servertests bestanden.
+- [ ] Getrennte Überwege A/B im Client prüfen.
 - [ ] Passende Fahrzeugrichtungen erst in einem späteren Ausbau parallel freigeben.
 - [ ] Einstellbare Kreuzungsschaltungen ausbauen.
 - [ ] Konfliktfreie Phasen, Ausfallverhalten und Verhalten beim Laden von Weltbereichen prüfen.
