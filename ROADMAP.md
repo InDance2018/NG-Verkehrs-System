@@ -1,6 +1,8 @@
 # Entwicklungsplan
 
-**Beta-1-Vorbereitung:** dev20 ist die letzte Dev-Version und Grundlage von **0.1.0-beta1**. Lizenz 1.0 ist freigegeben und liegt in der Beta-JAR bei. [Lizenz](LICENSE.md) · [Lizenz im Wiki](https://github.com/InDance2018/NG-Verkehrs-System/wiki/Lizenz) · [Vorbereiteter Beta-Downloadbeitrag mit Handbuch/PDF-Links](BETA1-RELEASE.md). Noch kein öffentliches Beta-Release.
+**Beta 1 veröffentlicht · 15. Oktober 2026:** [0.1.0-beta1 – JAR und Downloadpaket](https://github.com/InDance2018/NG-Verkehrs-System/releases/tag/v0.1.0-beta1). Grundlage ist dev20 als letzte Dev-Version. [Lizenz](LICENSE.md) · [Lizenz im Wiki](https://github.com/InDance2018/NG-Verkehrs-System/wiki/Lizenz) · [Downloadbeitrag mit Handbuch/PDF-Links](BETA1-RELEASE.md).
+
+**Beta-Spieltests vom Nutzer bestätigt:** Einzelspieler mit erneutem Weltbeitritt, zwei Spieler mit unabhängig aufgebauten und verknüpften Ampelanlagen, Verlassen/Neubeitritt, zwei Server-Neustarts sowie Entfernungstest mit 1.500 Blöcken Abstand und zwei Minuten Wartezeit. Alles vorhanden und funktionsfähig. Dies bestätigt die getesteten Aufbauten; tatsächliche Chunk-Entladung wurde nicht protokolliert. Weitere Sonderfälle bleiben Teil der Beta-Erprobung.
 
 
 **Spielteststand bestätigt · 15. Oktober 2026:** Der Tester bestätigt alle bisherigen Entwicklungsstände bis einschließlich **0.1.0-dev20**. Damit sind die zuvor offenen dev18-/dev19-/dev20-Spieltests im begleiteten Einzelspieler-Teststand als bestätigt erfasst. Diese Rückmeldung ist die Grundlage des Teststatus; eine stabile Gesamtveröffentlichung ist damit nicht erklärt.
