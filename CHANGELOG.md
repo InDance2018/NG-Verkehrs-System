@@ -2,6 +2,12 @@
 
 Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Veröffentlichung. Die hier genannten JARs wurden bislang für begleitete Tests bereitgestellt; sie sind noch keine GitHub-Releases.
 
+## Nächster Ausbau – angekündigt und freigegeben
+
+- Linksabbieger-Pfeilampel mit geschützter Schaltung für die zugewiesene Zufahrt.
+- Erste Ausbaustufe: immer nur eine Linksabbieger-Zufahrt frei, alle anderen Fahrzeuge und Fußgänger Rot.
+- Umsetzung und Tests stehen bei dieser Ankündigung noch aus; noch keine neue fertige Version.
+
 ## 0.1.0-dev10 – 15. Oktober 2026
 
 - Steuergerät-Menü mit Geräteliste, Statusanzeigen, fünf Geräten pro Seite und kleiner Kreuzungsübersicht ergänzt.
