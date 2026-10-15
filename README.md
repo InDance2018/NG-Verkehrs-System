@@ -26,7 +26,7 @@ Die technischen Systeme sollen funktionieren: Ampeln schalten, Anzeigen lassen s
 
 ## Was bereits vorhanden ist
 
-Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev4**
+Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev5**
 
 - Grundsystem mit **35 registrierten Bauteilen**.
 - Erste Straßenblöcke mit weißen und gelben Linien, Richtungspfeilen und Fußgängerüberweg.
@@ -35,6 +35,7 @@ Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev4**
 - Fahrzeugampel mit vier Signalzuständen sowie ein Ampelsteuergerät.
 - Grundfunktionen für digitale Textanzeige und Parkplatzanzeige mit speicherbaren Werten.
 - Überarbeitete Inventarsymbole für Schilder, Leitplanke, Ampel und Anzeigen.
+- Alle 14 Schildtafeln mit passenden Konturen: Kreise, Dreiecke, Achteck, Raute und rechteckige Tafeln; ohne graue quadratische Außenflächen und mit geformten Metallrückseiten und schmalen Kanten.
 
 ### Was davon geprüft wurde
 
@@ -42,7 +43,9 @@ Die erste Entwicklungsfassung bestand drei automatisierte Servertests: sicheres 
 
 In Einzelspielertests wurden Straßenmarkierungen, erste Schilder, Fahrzeugampel, Anzeigen und verbundene Leitplanken sichtbar dargestellt. Das bestätigt die Darstellung dieser Teststände, noch keinen vollständigen Funktionstest aller Systeme.
 
-**Aktuell im Test:** dev4 mit Wellenprofil für die Leitplanke und einem dunklen Ampelgehäuse mit runden Leuchten und Sonnenblenden. Build und Ressourcen-/Modellprüfungen sind bestanden; die Sichtprüfung dieser neuen Bauformen im Minecraft-Client steht noch aus.
+**Sichtprüfung bestätigt:** Die neuen Leitplanken- und Ampelformen aus dev4 sind im Einzelspieler sichtbar dargestellt. In dev5 zeigen die getesteten Schilder passende Konturen ohne graue Außenflächen; dies wurde anhand eines Testbildes geprüft und vom Tester bestätigt. Build und Ressourcen-/Modellprüfungen sind bestanden. Die Bestätigung betrifft die gezeigten Ansichten, nicht sämtliche Schildrückseiten, Ausrichtungen oder Ampelphasen.
+
+**Weiter offen:** vollständige Funktionsprüfung der Systeme, Prüfung weiterer Ansichten und der Ausbau nach dem [Entwicklungsplan](ROADMAP.md).
 
 ## Technik und Testversionen
 
