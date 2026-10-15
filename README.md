@@ -1,5 +1,7 @@
 # NG-Verkehrs-System
 
+**Handbuch:** [Deutsch / English – Katalog und Anleitungen](https://nevergate.de/ng-verkehr/) · [PDF DE](https://nevergate.de/ng-verkehr/downloads/NG-Verkehrs-System-Handbuch-DE.pdf) · [PDF EN](https://nevergate.de/ng-verkehr/downloads/NG-Verkehrs-System-Handbuch-EN.pdf)
+
 **Spielteststand bestätigt · 15. Oktober 2026:** Der Tester bestätigt alle bisherigen Entwicklungsstände bis einschließlich **0.1.0-dev20**. Damit sind die zuvor offenen dev18-/dev19-/dev20-Spieltests im begleiteten Einzelspieler-Teststand als bestätigt erfasst. Diese Rückmeldung ist die Grundlage des Teststatus; eine stabile Gesamtveröffentlichung ist damit nicht erklärt.
 ## Deutsche Straßen und Verkehrstechnik für Minecraft
 
@@ -28,7 +30,7 @@ Die technischen Systeme sollen funktionieren: Ampeln schalten, Anzeigen lassen s
 
 ## Was bereits vorhanden ist
 
-Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev20**
+Stand: **15. Oktober 2026 · Entwicklungsfassung 0.1.0-dev21**
 
 - Grundsystem mit **97 registrierten Bauteilen**.
 - Erste Straßenblöcke mit weißen und gelben Linien, Richtungspfeilen und Fußgängerüberweg.
@@ -102,6 +104,21 @@ Die Auswahl bleibt am gleichen Gerät, wenn Zeilen davor verschwinden. Wird das 
 Der Ausbau wurde vor der Umsetzung hier angekündigt und anschließend innerhalb der erteilten Freigabe gebaut. Es gibt weiterhin keine öffentliche GitHub-Test-JAR.
 
 Weitere Ansichten, Neustart-/Mehrspielertests und der vollständige Ausbau bleiben offen.
+
+## 0.1.0-dev21 – Webhandbuch und NeverGate-Angaben
+
+- **[Webhandbuch und Katalog](https://nevergate.de/ng-verkehr/)** veröffentlicht und auf der NeverGate-Startseite verlinkt. Deutsch/Englisch umschaltbar, elf Kategorien und Suche.
+- Alle **98 Gegenstände** mit Bildern aus den tatsächlichen Modmodellen/-texturen, Nutzungshinweisen und Rezepten aus den Moddateien. Rezeptdialoge und passende Anleitungslinks.
+- **14 zweisprachige Anleitungen**, unter anderem zu Installation, Aufbau, Verknüpfung/Automatik, Fußgängern, Programmen/Zeiten, Parallelbetrieb, Nachtbetrieb, Baustellen, Leuchten, Anzeigen und Fehlersuche.
+- Vollständige PDFs mit je **35 Seiten**: [Deutsch](https://nevergate.de/ng-verkehr/downloads/NG-Verkehrs-System-Handbuch-DE.pdf) · [English](https://nevergate.de/ng-verkehr/downloads/NG-Verkehrs-System-Handbuch-EN.pdf). Alle Seiten gerendert und visuell kontrolliert, Inhaltsübersicht und Schriftlizenzhinweis enthalten.
+- Autor und Rechtehinweis im Modmenü auf **NeverGate** präzisiert; Website-, Discord- und Handbuchverweise ergänzt. Bestehendes All Rights Reserved bleibt erhalten; keine neue offene/Verkaufslizenz und keine Änderung an Fremdrechten.
+- Vormerkung gemeinsam umgesetzt: Fußgänger-Anforderungstaster im Inventarfeld angehoben und zentriert. Weltmontage und Schaltlogik unverändert.
+
+**Technischer Umfang:** reine Ressourcenfassung auf Basis der bereits reobfuskierten dev20-JAR. Ausschließlich Modmetadaten, Manifest und Taster-Itemmodell geändert; sämtliche Java-Klassen bytegenau identisch. ZIP-/Ressourcen-/Metadatenprüfung bestanden. Die 25 Forge-Servertestergebnisse stammen aus dev20; kein neuer Gradle-Build oder Forge-Testlauf für dev21 behauptet.
+
+**Teststand:** Nutzer bestätigt weiterhin alle Spielstände bis dev20. Neues Taster-Inventarsymbol und neue Metadaten noch im Client ansehen. Web-Sprachwechsel, Suche, Filter und Dialoge per DOM geprüft; eine echte Browser-Sichtprüfung des Layouts war hier nicht verfügbar. Zusätzliche reale Server-Neustart-, Chunk- und Mehrspielerprüfungen für das Basispaket bleiben ein separater offener Arbeitspunkt. Keine Änderung an MC02.
+
+Öffentlich bereitgestellt sind Handbuch, Bilder und PDF-Ausgaben. Weiterhin kein öffentlicher GitHub-JAR- oder Quellcode-Upload.
 
 ## 0.1.0-dev20 – Getrennte Inventarreiter
 
