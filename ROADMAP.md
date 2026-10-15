@@ -4,16 +4,17 @@
 
 Der vollständige gewünschte Umfang bleibt das Entwicklungsziel. Die Reihenfolge kann sich durch Tests und technische Abhängigkeiten ändern. Eine Testfassung bedeutet noch keine abgeschlossene Entwicklungsstufe.
 
-## 1. Aktueller Schritt: Leitplanke und Fahrzeugampel
+## 1. Leitplanke und Fahrzeugampel – neue Formen sichtbar bestätigt
 
 - [x] Erste Leitplanke mit Verbindungen zwischen benachbarten Blöcken erstellt.
 - [x] Neues Leitplankenmodell mit abgestuftem Wellenprofil und Stahlpfosten in dev4 gebaut.
 - [x] Neues Fahrzeugampelmodell mit dunklem Gehäuse, drei runden Signalflächen, Sonnenblenden und Halterungen in dev4 gebaut.
 - [x] Build, Ressourcenverweise, vier modellierte Signalzustände und symmetrische Leitplankenanschlüsse geprüft.
-- [ ] Beide neuen Bauformen im Minecraft-Client prüfen.
-- [ ] Sichtbare Fehler aus diesem Test beheben.
+- [x] Neue Leitplanken- und Ampelform in einer Einzelspieleransicht sichtbar bestätigt.
+- [ ] Weitere Ausrichtungen und die vollständige Ampelphasenfolge im Spiel prüfen.
+- [ ] Weitere im Test festgestellte Fehler beheben.
 
-**Zuerst werden diese beiden Bauteile geprüft und angepasst. Danach folgt der weitere Ausbau.**
+**Die neuen Bauformen sind in den gezeigten Ansichten bestätigt. Umfassende Funktions- und Mehransichtenprüfungen bleiben offen.**
 
 ## 2. Grundsystem und Bedienung ausbauen
 
@@ -21,7 +22,9 @@ Der vollständige gewünschte Umfang bleibt das Entwicklungsziel. Die Reihenfolg
 - [x] Deutsche Bezeichnungen und Inventarsymbole für die bisherigen Testbauteile angelegt.
 - [x] Erste automatische Tests für Ampelausfall und gespeicherte Anzeigen bestanden.
 - [ ] Alle bisherigen Bauteile im Client auf Darstellung, Platzierung und Bedienung prüfen.
-- [ ] Schildformen ohne graue quadratische Außenflächen modellieren.
+- [x] Alle 14 Schildtafeln ohne graue quadratische Außenflächen modelliert (dev5), einschließlich geformter Metallrückseiten und schmaler Kanten.
+- [x] Sichtprüfung der gezeigten Schildformen im Client vom Tester bestätigt.
+- [ ] Sämtliche Schildvarianten, Rückseiten und Ausrichtungen im Spiel prüfen.
 - [ ] Anzeigenlesbarkeit in verschiedenen Richtungen und Entfernungen prüfen.
 - [ ] Bedienung und Einstellungen verständlich dokumentieren.
 
