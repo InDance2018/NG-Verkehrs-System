@@ -13,7 +13,8 @@ Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Ver
 - Automatische Erfassung bestehender geladener Verbindungen und Speicherung der Geräteliste.
 - Menüaktionen prüfen Rechte, Entfernung, Steuergerät und tatsächliche Geräteverbindung. Neu verknüpfte Geräte nach erneutem Öffnen.
 - Build und Ressourcenprüfung bestanden. Acht automatisierte Servertests bestanden.
-- **Grafischer Clienttest des Menüs steht aus.**
+- **Clienttest vom Tester bestätigt:** Menüanzeige, Geräteauswahl und Start/Stopp funktionieren. Ein Taster lässt sich im Menü von Überweg A auf B ändern; die Steuerung stoppt dabei, und nach Neustart fordert der Taster den zugewiesenen Überweg an.
+- Weitere Clienttests der Fahrzeug-Zufahrten, vorbereiteten Abbiegezuordnungen und anderer Bildschirmgrößen bleiben offen.
 
 ## 0.1.0-dev9 – 15. Oktober 2026
 
