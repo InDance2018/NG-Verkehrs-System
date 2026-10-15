@@ -12,7 +12,9 @@ Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Ver
 - Speicherung von Anforderung/Phase sowie Rot-Vorlauf beim Laden einer aktiven Phase ergänzt.
 - 37 Bauteile plus Verknüpfer; Build und Ressourcenprüfung bestanden.
 - Fünf automatisierte Servertests bestanden. Phasentest über 100.000 Ticks mit 108 vollständigen Fußgängerphasen ohne konkurrierende Freigaben bestanden.
-- **Offen:** Clienttest der neuen Geräte und Bedienung. Zunächst gemeinsame Fußgängerphase bei vollständig gestoppten Fahrzeuggruppen; getrennte Querungen sind noch nicht enthalten.
+- **Clienttest vom Tester bestätigt:** Fahrzeuge wechseln auf Rot, Fußgänger erhalten Grün; anschließend Fußgänger Rot und Fahrzeugverkehr wieder freigegeben.
+- Zunächst gemeinsame Fußgängerphase bei vollständig gestoppten Fahrzeuggruppen; getrennte Querungen sind noch nicht enthalten.
+- **Nächster geplanter Schritt, noch nicht umgesetzt:** getrennte Überwege A/B mit zugeordneten Tastern, einzeln angeforderten Freigaben und nacheinander abgearbeiteten Anforderungen. Umsetzung wartet auf Freigabe.
 
 ## 0.1.0-dev6 – 15. Oktober 2026
 
