@@ -1,6 +1,8 @@
 # NG-Verkehrs-System
 
-**Beta-1-Vorbereitung:** dev20 ist die letzte Dev-Version und Grundlage von **0.1.0-beta1**. Lizenz 1.0 ist freigegeben und liegt in der Beta-JAR bei. [Lizenz](LICENSE.md) · [Lizenz im Wiki](https://github.com/InDance2018/NG-Verkehrs-System/wiki/Lizenz) · [Vorbereiteter Beta-Downloadbeitrag mit Handbuch/PDF-Links](BETA1-RELEASE.md). Noch kein öffentliches Beta-Release.
+**Beta 1 veröffentlicht · 15. Oktober 2026:** [0.1.0-beta1 – JAR und Downloadpaket](https://github.com/InDance2018/NG-Verkehrs-System/releases/tag/v0.1.0-beta1). Grundlage ist dev20 als letzte Dev-Version. [Lizenz](LICENSE.md) · [Lizenz im Wiki](https://github.com/InDance2018/NG-Verkehrs-System/wiki/Lizenz) · [Downloadbeitrag mit Handbuch/PDF-Links](BETA1-RELEASE.md).
+
+**Beta-Spieltests vom Nutzer bestätigt:** Einzelspieler mit erneutem Weltbeitritt, zwei Spieler mit unabhängig aufgebauten und verknüpften Ampelanlagen, Verlassen/Neubeitritt, zwei Server-Neustarts sowie Entfernungstest mit 1.500 Blöcken Abstand und zwei Minuten Wartezeit. Alles vorhanden und funktionsfähig. Dies bestätigt die getesteten Aufbauten; tatsächliche Chunk-Entladung wurde nicht protokolliert. Weitere Sonderfälle bleiben Teil der Beta-Erprobung.
 
 
 **Handbuch:** [Deutsch / English – Katalog und Anleitungen](https://nevergate.de/ng-verkehr/) · [PDF DE](https://nevergate.de/ng-verkehr/downloads/NG-Verkehrs-System-Handbuch-DE.pdf) · [PDF EN](https://nevergate.de/ng-verkehr/downloads/NG-Verkehrs-System-Handbuch-EN.pdf)
@@ -33,7 +35,7 @@ Die technischen Systeme sollen funktionieren: Ampeln schalten, Anzeigen lassen s
 
 ## Was bereits vorhanden ist
 
-Stand: **15. Oktober 2026 · letzte Entwicklungsfassung 0.1.0-dev20; Beta 0.1.0-beta1 vorbereitet**
+Stand: **15. Oktober 2026 · letzte Entwicklungsfassung 0.1.0-dev20; Beta 0.1.0-beta1 veröffentlicht**
 
 - Grundsystem mit **97 registrierten Bauteilen**.
 - Erste Straßenblöcke mit weißen und gelben Linien, Richtungspfeilen und Fußgängerüberweg.
@@ -197,9 +199,9 @@ Im normalen Kreuzungsprogramm gilt N/S = A, O/W = B. Im Baustellenprogramm gilt 
 | Java | 17 |
 | Mod-ID | `ng_verkehr` |
 
-Aktuell finden die Spieltests im Einzelspieler statt. Testfassungen können sich noch ändern. Vor dem Austausch einer Test-JAR Minecraft schließen und die vorherige Fassung entfernen, damit nicht zwei Versionen gleichzeitig geladen werden.
+Einzelspieler- und Zwei-Spieler-Servertests der Beta 1 sind vom Nutzer bestätigt. Testfassungen können sich noch ändern. Vor dem Austausch einer Test-JAR Minecraft schließen und die vorherige Fassung entfernen, damit nicht zwei Versionen gleichzeitig geladen werden.
 
-Dieses Repository enthält zunächst die **Projektankündigung und Entwicklungsdokumentation**. Öffentliche JAR-Downloads und Quellcode sind hier derzeit noch nicht bereitgestellt. Ein Download wird erst angekündigt, wenn er tatsächlich veröffentlicht wurde.
+Dieses Repository enthält zunächst die **Projektankündigung und Entwicklungsdokumentation**. Die öffentliche Beta-JAR und das Downloadpaket stehen unter [Releases](https://github.com/InDance2018/NG-Verkehrs-System/releases/tag/v0.1.0-beta1) bereit. Der Mod-Quellcode wird hier weiterhin nicht veröffentlicht.
 
 ## Entwicklung verfolgen und Fehler melden
 
