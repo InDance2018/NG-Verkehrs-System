@@ -2,6 +2,15 @@
 
 Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Veröffentlichung. Die hier genannten JARs wurden bislang für begleitete Tests bereitgestellt; sie sind noch keine GitHub-Releases.
 
+## 0.1.0-dev5 – 15. Oktober 2026
+
+- Alle 14 vorhandenen Schildtafeln mit passenden runden, dreieckigen, achteckigen, rautenförmigen oder rechteckigen Konturen versehen.
+- Graue quadratische Außenflächen entfernt; Inventargrafiken besitzen transparente Außenbereiche.
+- Weltmodelle entlang der sichtbaren Kontur mit Metallrückseite und schmalen Seitenkanten modelliert.
+- Build und Ressourcenprüfung bestanden; Modellkonturen gegen die deckenden Texturpixel aller 14 Tafeln geprüft.
+- **Sichtprüfung bestätigt:** Die gezeigten Schildformen werden im Einzelspieler ohne graue Außenflächen dargestellt; vom Tester ausdrücklich bestätigt.
+- **Weiter offen:** sämtliche Schildvarianten, Rückseiten und Ausrichtungen im Spiel prüfen. Auswahl- und Kollisionsumrisse sind weiterhin vereinfacht.
+
 ## 0.1.0-dev4 – 15. Oktober 2026
 
 - Leitplanke mit abgestuftem Wellenprofil, verzinkter Oberfläche und Stahlprofil-Pfosten überarbeitet.
@@ -9,7 +18,7 @@ Dieses Dokument trennt gebaute Entwicklungsfassungen von einer öffentlichen Ver
 - Inventarmodell der Ampel auf die neue 3D-Bauform umgestellt.
 - Auswahlumriss der Fahrzeugampel an das größere Modell angepasst.
 - Build und Ressourcen-/Modellprüfungen bestanden.
-- **Offen:** Sichtprüfung der neuen Bauformen im Minecraft-Client.
+- **Sichtprüfung bestätigt:** Neue Leitplanken- und Ampelform in einer Einzelspieleransicht sichtbar dargestellt. Dies bestätigt noch keine vollständige Funktionsprüfung aller Ampelphasen.
 
 ## 0.1.0-dev3 – 15. Oktober 2026
 
