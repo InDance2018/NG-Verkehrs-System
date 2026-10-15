@@ -68,9 +68,14 @@ Erste Zeichen existieren bereits. Die vollständige Katalogabdeckung ist noch of
 - [x] Getrennte Tasterreaktionen und Wechsel Fahrzeugrot/Fußgängergrün im Client vom Tester bestätigt (dev8).
 - [x] Kleinere Taster mit direkter Mastmontage und Wandplatzierung eingebaut (dev9).
 - [x] Vier Mastseiten, Platzierung, Verbrauch, Rückgabe beider Teile und weitere A/B-Funktion automatisch geprüft; sieben Servertests bestanden.
-- [ ] Kleinere Taster und Mastmontage im Client prüfen.
+- [x] Mastmontage und Betätigung des montierten Tasters vom Tester bestätigt (dev9).
 - [ ] Passende Fahrzeugrichtungen erst in einem späteren Ausbau parallel freigeben.
-- [ ] Einstellbare Kreuzungsschaltungen ausbauen.
+- [x] Bedienmenü mit Geräteliste, Statusanzeigen, Start/Stopp und kleiner Kreuzungsübersicht eingebaut (dev10).
+- [x] Zufahrten und Fahrtrichtungen für Fahrzeugampeln sowie Überwege A/B für Fußgängergeräte im Menü zuweisen und speichern; Änderungen stoppen die Steuerung.
+- [x] Menüaktionen, Seitenauswahl, gespeicherte Zuordnungen und Rechte/Entfernung automatisch geprüft; acht Servertests bestanden.
+- [ ] Darstellung und Mausbedienung des Menüs im Minecraft-Client prüfen.
+- [ ] Eigene Pfeilampeln und geschützte Abbiegeprogramme ergänzen; vorbereitete Abbieger bleiben bis dahin Rot.
+- [ ] Weitere einstellbare Kreuzungsschaltungen ausbauen.
 - [ ] Konfliktfreie Phasen, Ausfallverhalten und Verhalten beim Laden von Weltbereichen prüfen.
 - [ ] Mobile Baustellenampeln ergänzen.
 
