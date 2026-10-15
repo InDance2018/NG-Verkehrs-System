@@ -58,7 +58,7 @@ Erste Zeichen existieren bereits. Die vollständige Katalogabdeckung ist noch of
 - [ ] Erweiterte Funktions-, Neustart- und Mehrspielertests durchführen.
 - [x] Fußgängerampel mit rotem stehendem und grünem gehendem Symbol eingebaut (dev7).
 - [x] Gemeinsame Fußgängerphase im Client vom Tester bestätigt: Fahrzeuge Rot, Fußgänger Grün, Fußgänger Rot, Fahrzeuge wieder freigegeben.
-- [ ] Fahrrad- und Richtungssignale ergänzen.
+- [x] Fahrrad-, Geradeaus-, Rechts- und sämtliche vereinbarten Kombipfeilsignale sowie Warnblinklicht ergänzt (dev12).
 - [x] Anforderungstaster mit Warteanzeige, Verknüpfung per Klick und gemeinsamer Fußgängerphase bei Fahrzeug-Allrot eingebaut (dev7).
 - [x] Vorlauf, Fußgängergrün, Räumzeit und nächste Fahrzeuggruppe automatisch getestet; fünf Servertests bestanden.
 - [x] Getrennte Fußgängerüberwege A/B nach Freigabe eingebaut (dev8).
@@ -78,11 +78,30 @@ Erste Zeichen existieren bereits. Die vollständige Katalogabdeckung ist noch of
 - [ ] Weitere Menüfälle einschließlich Fahrzeug-Zufahrten, Abbiegezuordnung und weiterer Bildschirmgrößen im Client prüfen.
 - [x] Linksabbieger-Pfeilampel und geschützte Einzelphasen je Zufahrt nach Ankündigung und Freigabe eingebaut (dev11).
 - [x] Übrige Fahrzeugrichtungen und sämtliche Fußgängerüberwege während Linksphasen Rot; Übergänge, Fußgängerwarteschlange, Wiederherstellung und Rückkehr zum Grundprogramm automatisch geprüft. Neun Servertests bestanden.
-- [ ] Neue Linksabbiegerampel im Client testen.
-- [ ] Weitere Pfeilampeln und Abbiegeprogramme ergänzen; vorbereitete Rechtsabbieger bleiben bis zur Umsetzung Rot.
+- [x] Neue Linksabbiegerampel im Client getestet: schaltet, während andere Ampeln Rot bleiben (dev11).
+- [x] Rechtsabbieger und Kombipfeile mit eigenen geschützten Programmen ergänzt (dev12); alle neuen Ampelmodelle laut Tester sichtbar/leuchtend.
 - [ ] Weitere einstellbare Kreuzungsschaltungen ausbauen.
 - [ ] Konfliktfreie Phasen, Ausfallverhalten und Verhalten beim Laden von Weltbereichen prüfen.
 - [ ] Mobile Baustellenampeln ergänzen.
+
+### Bestätigter Ausbau bis dev15
+
+- [x] Kompaktes Menü mit kleinerer Schrift/Buttons und scrollbarer Tabelle statt Seitenwechsel (dev13).
+- [x] Übersicht vom Tester für den normalen Kreuzungsbetrieb akzeptiert.
+- [x] Mittelpunkt und Radiuswahl 16/24/32/48, Standard 32 (dev14).
+- [x] Automatische Erkennung aller Fahrzeug-/Pfeil-/Fahrrad-/Fußgängerampeln, Taster und Warnlichter (dev15).
+- [x] Automatische Überwegzuordnung, Speicherung, manuelle Korrekturen und Schutz fremder Verbindungen eingebaut; sechzehn Servertests bestanden.
+- [x] Erkennung, Zuordnung und Schaltablauf im aufgebauten Einzelspielertest vom Tester bestätigt (dev15).
+- [ ] Sondergeometrien, Chunkwechsel und Mehrspielerfälle weiter prüfen.
+
+### Nächster freigegebener Schritt – angekündigt
+
+- [ ] Einzelne Verbindung im Steuergerät-Menü lösen.
+- [ ] Alle Verbindungen nach kurzer Bestätigung lösen.
+- [ ] Bewusst getrennte Geräte von sofortiger automatischer Wiederverbindung ausnehmen.
+- [ ] Gelöste Verbindungen auch für ungeladene Geräte dauerhaft entwerten; keine Chunk-Zwangsladung.
+- [ ] Sichere Zustände, Speicherung, erneutes bewusstes Verknüpfen, Rechte und alte Menüs prüfen.
+- [ ] Neue Funktionen im Minecraft-Client testen und bestätigen lassen.
 
 ## 6. Digitale Anzeigen und Parkleitsystem
 
