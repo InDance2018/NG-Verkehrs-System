@@ -1,5 +1,7 @@
 # NG-Verkehrs-System
 
+**Partnerprojekt in Entwicklung:** [NG-Fahrzeuge](https://github.com/InDance2018/NG-Fahrzeuge) – eigene NeverGate-Fahrzeugmod mit NG City, NG Family und NG Transporter. Eigenständig nutzbar; optionale Parksystem-Anbindung geplant und noch nicht gemeinsam geprüft. Das Fahrzeug-Repository ist derzeit privat und nur mit Zugriffsrecht erreichbar.
+
 ## Private Testfassung: 0.1.0-beta2-dev6 – Parksystem mit Stellplätzen und Schranke
 
 **Gebaut: 64/64 Forge-Servertests bestanden.** Live-Menü, automatische Anzeigen, Stellplatzsensoren, automatische Schranke, Höhenanzeige und gezielte Zonenwegweisung. **Echter Serverneustart, tatsächliche Chunk-Entladung/-Rückkehr und zwei gleichzeitig verbundene Minecraft-Clients geprüft.** 281 Blöcke plus zwei Verknüpfer. Konkrete Fahrzeugmod bleibt offen; Menüs und sichtbare Anzeigenfronten wurden zusätzlich anhand echter Spielbilder geprüft. [Alle elf Punkte, Bedienung und Prüfgrenzen](DEV-BETA2-6.md) · [Ankündigung vor Umsetzung](PLAN-BETA2-DEV6.md). Schilderausbau pausiert; öffentliche Downloadfassung bleibt Beta 1.
