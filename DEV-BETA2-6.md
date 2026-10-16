@@ -9,7 +9,7 @@ Private Testfassung vom 16. Oktober 2026 für Minecraft Java **1.20.2 / Forge 48
 | 1 | Konkrete Fahrzeugmod prüfen | Filter und Diagnosebefehl vorhanden; echter Fremdmod-Kompatibilitätstest offen, da noch keine konkrete Fahrzeugmod festgelegt/nachgewiesen ist. |
 | 2 | Rechner-Menü und Verbindungsstatus live | Umgesetzt; mit zwei verbundenen Minecraft-Clients geprüft. Ungespeicherte Eingaben bleiben erhalten. |
 | 3 | Automatische Anzeigeumschaltung | Umgesetzt und servertestgeprüft: frei/gesperrt nach Parkplatzbelegung. |
-| 4 | Darstellung und Bedienung im Client | Zwei echte Minecraft-Clients gestartet; Rendering, Widgetgrenzen, Live-Menü und Höhenbedienung automatisiert geprüft. Testbilder erzeugt; abschließende visuelle Sichtung dieser Bilder bleibt offen. |
+| 4 | Darstellung und Bedienung im Client | Zwei echte Minecraft-Clients gestartet; Rendering, Widgetgrenzen, Live-Menü und Höhenbedienung automatisiert geprüft. Anschließend Sammelrechner-/Höhenmenü und sichtbare Anzeigenfronten/Schranke anhand echter Spielaufnahmen visuell geprüft. |
 | 5 | Echter Serverneustart | Bestanden: gespeicherte Zähler, Filter, Verbindungen und Höhenwerte nach vollständigem Prozessneustart wiederhergestellt. |
 | 6 | Tatsächliche Chunk-Entladung | Bestanden: entfernte Zone wirklich entladen, Offline-Status weitergegeben und nach Nachladen korrekt wiederhergestellt. |
 | 7 | Mehrspielerbetrieb | Im isolierten Test mit zwei gleichzeitig verbundenen Minecraft-Clients bestanden: Live-Werte, geschützte veraltete Klicks und Speichern mit anschließendem Update des zweiten Clients. |
@@ -18,7 +18,7 @@ Private Testfassung vom 16. Oktober 2026 für Minecraft Java **1.20.2 / Forge 48
 | 10 | Einstellbare Höhenanzeige | Umgesetzt; lokale Werte 1,5–6,5 m. Änderung über Client/Server und Übernahme beim zweiten Client geprüft. |
 | 11 | Wegweisung zu freien Parkzonen | Umgesetzt und servertestgeprüft; feste Zielzone oder automatische Auswahl einer freien Zone. |
 
-Damit sind neun Punkte im beschriebenen Umfang umgesetzt/geprüft; Punkt 1 und die abschließende visuelle Prüfung von Punkt 4 bleiben teilweise offen. Automatisierte Tests gelten nicht als allgemeine Freigabe aller Fahrzeugmods oder sämtlicher Spielaufbauten.
+Damit sind zehn Punkte im beschriebenen Umfang umgesetzt/geprüft; Punkt 1 bleibt bis zum Test mit einer konkret festgelegten Fahrzeugmod teilweise offen. Automatisierte Tests gelten nicht als allgemeine Freigabe aller Fahrzeugmods oder sämtlicher Spielaufbauten.
 
 ## Bedienung
 
@@ -34,7 +34,7 @@ Der Sensor ordnet die Bodenposition der Fahrzeug-Wurzelentität genau einem Bode
 
 Neue **Automatische Parkschranke** mit dem Rechner der eigenen Zone verbinden. Sie öffnet für erkannte Fahrzeuge bei freien Plätzen und passender Höhe. Bei voller oder nicht erreichbarer Zone öffnet sie nicht regulär. Ein Hindernis im Schließbereich hält eine offene Schranke offen; kurze Nachlaufzeit verhindert Flackern. Die geschlossene Schranke hat eine echte Kollision. Ein Element belegt einen Block; für breitere Einfahrten mehrere Elemente passend aufstellen und demselben Rechner zuordnen.
 
-Schranke mit leerer Hand öffnen → **Parkoptionen** → maximale Höhe einstellen. Klick erhöht um 0,1 m; nach 6,5 m beginnt die Auswahl bei 1,5 m. Berücksichtigt werden physische Entity-Höhe und mitfahrende Passagiere. Fremdmods mit abweichenden Physikobjekten oder unpassenden Bounding-Boxen müssen konkret geprüft werden.
+Schranke mit leerer Hand öffnen; die Höheneinstellung erscheint direkt. Über **Grundeinstellung/Parkoptionen** lassen sich die Ansichten wechseln. Klick erhöht um 0,1 m; nach 6,5 m beginnt die Auswahl bei 1,5 m. Berücksichtigt werden physische Entity-Höhe und mitfahrende Passagiere. Fremdmods mit abweichenden Physikobjekten oder unpassenden Bounding-Boxen müssen konkret geprüft werden.
 
 Die neue **Einstellbare Höhenanzeige** zeigt einen lokal einstellbaren Wert und benötigt für die reine Anzeige keinen Rechner. Den gleichen Grenzwert separat an der Schranke einstellen. Die Tafel erzeugt keine unsichtbare Höhenbarriere.
 
@@ -54,13 +54,15 @@ Operatorbefehl: `/ngverkehr vehiclecheck X Y Z`. Einen Parkrechner oder ein verb
 
 ## Prüfung
 
-- **63/63 Forge-Servertests bestanden**, einschließlich elf neuer Ausbauprüfungen.
+- **64/64 Forge-Servertests bestanden**, einschließlich zwölf neuer Ausbauprüfungen.
 - Alle acht vorhandenen deterministischen Testprogramme bestanden.
 - Build/Reobf erfolgreich; **1.519 JSON-Dateien**, Modelle, Texturverweise, Rezepte, Beute, Übersetzungen und vollständige Inventarzuordnung geprüft.
 - Isolierter dedizierter Forge-Server tatsächlich beendet und mit derselben gespeicherten Welt neu gestartet; gespeicherte Werte und Verbindungen korrekt.
 - Entfernte Zone tatsächlich entladen; Sammler/Tafel anschließend offline; nach erneutem Laden korrekte Zähler und Verbindung.
 - Zwei unabhängige Minecraft-Clients gleichzeitig am isolierten Server verbunden. Live-Belegung, Erhalt nicht gespeicherter Namenseingaben, Ablehnung veralteter Entfernungsanfragen, Höhenänderung über echtes Netzwerk und Übernahme im zweiten Client bestanden.
-- Client-Menü bei 1280 × 800 und GUI-Skalierung 2 ohne außerhalb des Fensters liegende Widgets geprüft; Welt und Menüs gerendert, Testbilder erzeugt. Abschließende visuelle Auswertung dieser Bilder noch offen. Die Testumgebung hatte keine Audioausgabe; Audiofunktionen waren nicht Gegenstand dieser Prüfung.
+- Sammelrechner-Menü bei 1280 × 800 und GUI-Skalierung 2 ohne außerhalb des Fensters liegende Widgets geprüft; Sammelrechner-/Höhenmenü und sichtbare Anzeigenfronten/Schranke anschließend anhand echter Spielbilder visuell kontrolliert. Dies bestätigt die geprüften Ansichten, nicht jede Ausrichtung und jede Bildschirmauflösung. Die Testumgebung hatte keine Audioausgabe; Audiofunktionen waren nicht Gegenstand dieser Prüfung.
+
+Die Sichtprüfung führte zu einer zusätzlichen Korrektur: Live-Zonenzeilen und Gesamtsumme werden jetzt aus demselben aktuellen Stand übertragen. Ein zusätzlicher Regressionstest verhindert alte Summen neben bereits aktualisierten Zonenwerten. Die Höheneinstellung öffnet direkt und zeigt keine sachfremden Parkplatz-Zählerwerte.
 
 Die echte Chunk-Prüfung führte zu einer Korrektur: Fernzugriffe verwenden jetzt ausschließlich bereits geladene Chunks und erneuern keine Ladetickets durch normale Rechnerabfragen.
 
