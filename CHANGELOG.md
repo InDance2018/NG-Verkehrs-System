@@ -1,3 +1,7 @@
+# 0.1.0-beta2-dev5 – 16. Oktober 2026
+
+Private Testfassung: gespeicherter Doppelzählungsschutz, freie/belegte/gesamte Plätze auf Parkanzeigen und verbesserte Zonenübersicht. **52/52 Forge-Servertests und acht deterministische Testprogramme bestanden; Build/Reobf erfolgreich.** Konkrete Fahrzeugmod, Clientprüfung und echte Neustart-/Chunk-/Mehrspielertests bleiben offen. Schilderausbau pausiert. [Details](DEV-BETA2-5.md).
+
 # Versionsübersicht
 
 ## Private Testfassung: 0.1.0-beta2-dev3 – Verkehrszeichen haben Vorrang
