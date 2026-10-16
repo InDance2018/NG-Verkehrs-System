@@ -1,6 +1,6 @@
 # NG-Verkehr · Beta 2 dev10
 
-Bauauftrag vom 17. Oktober 2026. Ausgangsstand: beta2-dev9. Status: begonnen.
+Bauauftrag vom 17. Oktober 2026. Ausgangsstand: beta2-dev9. Status: als private dev10-Testfassung gebaut. 156/156 Servertests und zehn Ablaufprüfungen bestanden. Zwei echte Clients haben jeweils alle 20 Bedienoberflächen samt synchronisierter Einstellung geprüft. Echter Neustart und tatsächliche Chunk-Entladung/Rückkehr sind bestätigt.
 
 ## 20 Verkehrsbauten
 
@@ -34,3 +34,11 @@ Neue Wirtschaftsfunktionen bleiben im privaten Schnittstellen-Repository vorgeme
 ## Prüfung
 
 Gezielte Server-Funktionstests und Regressionstests, Ressourcenprüfung und Client-Bedienung. Tatsächliche Ergebnisse und offene Gegenstellen werden vor Lieferung nachgetragen.
+
+## Ergebnis und verbleibende Anbindungen
+
+Die Verkehrsseite aller 20 Geräte ist gebaut und geprüft. Der Waschablauf wurde mit einem echten Spieler und einem ausschließlich für Tests verwendeten Anbieter vollständig sowie mit Abbruch geprüft. Die Funktionsklassen und Ressourcen der Liefer-JAR entsprechen der Client-Testfassung; Testklassen sind aus der Lieferung entfernt.
+
+Echte NG-Fahrzeuge-Gegenstellen für Kennzeichen, Kraftstoff, Reinigung und Elektroantrieb sowie der Wirtschaftsanbieter bleiben offen. Kostenpflichtiges Laden/Tanken/Waschen bleibt gesperrt. Die Ladeparksteuerung bietet Geräte-/Sitzungsübersicht; eine gemeinsame Leistungsbudget-Verteilung ist nicht enthalten. Busanzeigen zeigen Planzeiten und lokale Bus-Erkennung, keine Fahrzeugpositions-Prognose. Warnanlagen geben Hinweise und Redstone aus; sie erzwingen keine Fahrzeugbremsung.
+
+MC02 und öffentliche Downloads wurden nicht geändert. Private JAR: `ng_verkehr-0.1.0-beta2-dev10.jar`, SHA-256: `7cc480dd73854a3ec0b6366ec69e8a07de7b8fb308b1fc3bded403d849161962`.
