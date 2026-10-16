@@ -1,3 +1,20 @@
+
+## Parksystem – elf freigegebene Punkte, Stand beta2-dev6
+
+- [ ] Konkrete Fahrzeugmod: Diagnose/Filter vorbereitet, tatsächliche Fremdmod noch festzulegen und zu testen.
+- [x] Live-Menü und Verbindungsstatus im Zwei-Client-Test.
+- [x] Automatische Frei-/Gesperrt-Umschaltung.
+- [ ] Client-Darstellung: Render-/Bedienprüfung automatisiert bestanden; abschließende Sichtung der Testbilder offen.
+- [x] Echter Serverneustart mit gespeicherten Werten/Verbindungen.
+- [x] Tatsächliche Chunk-Entladung, Offline-Status und Rückkehr.
+- [x] Zwei gleichzeitig verbundene Minecraft-Clients mit Live-Updates und Speichern.
+- [x] Einzelne Stellplätze mit eigenem Sensor überwachen.
+- [x] Automatische Einfahrtsschranke mit Kollision und Hindernisschutz.
+- [x] Einstellbare Höhenanzeige und Höhenwert an der Schranke.
+- [x] Feste/freie Zielzone auf Parkplatzwegweisern.
+
+[Bedienung, Tests und Grenzen](DEV-BETA2-6.md). 63/63 Forge-Servertests bestanden. Schilderausbau pausiert.
+
 # Entwicklungsplan
 
 ## Private Testfassung: 0.1.0-beta2-dev3 – Verkehrszeichen haben Vorrang
