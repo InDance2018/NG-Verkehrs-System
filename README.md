@@ -1,6 +1,10 @@
 # NG-Verkehrs-System
 
-## Private Testfassung: 0.1.0-beta2-dev5 – Parkzonen und Belegungsanzeigen
+## Private Testfassung: 0.1.0-beta2-dev6 – Parksystem mit Stellplätzen und Schranke
+
+**Gebaut: 63/63 Forge-Servertests bestanden.** Live-Menü, automatische Anzeigen, Stellplatzsensoren, automatische Schranke, Höhenanzeige und gezielte Zonenwegweisung. **Echter Serverneustart, tatsächliche Chunk-Entladung/-Rückkehr und zwei gleichzeitig verbundene Minecraft-Clients geprüft.** 281 Blöcke plus zwei Verknüpfer. Konkrete Fahrzeugmod und abschließende visuelle Sichtung der Testbilder bleiben offen. [Alle elf Punkte, Bedienung und Prüfgrenzen](DEV-BETA2-6.md) · [Ankündigung vor Umsetzung](PLAN-BETA2-DEV6.md). Schilderausbau pausiert; öffentliche Downloadfassung bleibt Beta 1.
+
+## Vorherige private Testfassung: 0.1.0-beta2-dev5 – Parkzonen und Belegungsanzeigen
 
 **Gebaut; 52/52 Forge-Servertests bestanden.** Doppelzählungsschutz bleibt beim Laden erhalten; Parkplatztafeln zeigen freie, belegte und gesamte Plätze. Zonenübersicht mit vier Zonen pro Seite und eindeutiger Offline-Anzeige. Die Fahrzeugfilter und bis zu 16 getrennten Parkzonen aus dev4 sind enthalten. **Offen:** konkrete Fahrzeugmod, Client-Sicht-/Bedienprüfung, echter Neustart-/Chunk-/Mehrspielertest. Schilderausbau pausiert bei 181 festen Schildvarianten. [Änderungen und Testanleitung](DEV-BETA2-5.md). Öffentliche Downloadfassung bleibt Beta 1.
 
