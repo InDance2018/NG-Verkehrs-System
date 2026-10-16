@@ -4,7 +4,7 @@
 - [ ] Konkrete Fahrzeugmod: Diagnose/Filter vorbereitet, tatsächliche Fremdmod noch festzulegen und zu testen.
 - [x] Live-Menü und Verbindungsstatus im Zwei-Client-Test.
 - [x] Automatische Frei-/Gesperrt-Umschaltung.
-- [ ] Client-Darstellung: Render-/Bedienprüfung automatisiert bestanden; abschließende Sichtung der Testbilder offen.
+- [x] Client-Darstellung: Render-/Bedienprüfung mit zwei Clients und visuelle Sichtung geprüfter Menü-/Anzeigenansichten bestanden.
 - [x] Echter Serverneustart mit gespeicherten Werten/Verbindungen.
 - [x] Tatsächliche Chunk-Entladung, Offline-Status und Rückkehr.
 - [x] Zwei gleichzeitig verbundene Minecraft-Clients mit Live-Updates und Speichern.
@@ -13,7 +13,7 @@
 - [x] Einstellbare Höhenanzeige und Höhenwert an der Schranke.
 - [x] Feste/freie Zielzone auf Parkplatzwegweisern.
 
-[Bedienung, Tests und Grenzen](DEV-BETA2-6.md). 63/63 Forge-Servertests bestanden. Schilderausbau pausiert.
+[Bedienung, Tests und Grenzen](DEV-BETA2-6.md). 64/64 Forge-Servertests bestanden. Schilderausbau pausiert.
 
 # Entwicklungsplan
 
