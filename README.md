@@ -2,7 +2,7 @@
 
 ## Private Testfassung: 0.1.0-beta2-dev6 – Parksystem mit Stellplätzen und Schranke
 
-**Gebaut: 63/63 Forge-Servertests bestanden.** Live-Menü, automatische Anzeigen, Stellplatzsensoren, automatische Schranke, Höhenanzeige und gezielte Zonenwegweisung. **Echter Serverneustart, tatsächliche Chunk-Entladung/-Rückkehr und zwei gleichzeitig verbundene Minecraft-Clients geprüft.** 281 Blöcke plus zwei Verknüpfer. Konkrete Fahrzeugmod und abschließende visuelle Sichtung der Testbilder bleiben offen. [Alle elf Punkte, Bedienung und Prüfgrenzen](DEV-BETA2-6.md) · [Ankündigung vor Umsetzung](PLAN-BETA2-DEV6.md). Schilderausbau pausiert; öffentliche Downloadfassung bleibt Beta 1.
+**Gebaut: 64/64 Forge-Servertests bestanden.** Live-Menü, automatische Anzeigen, Stellplatzsensoren, automatische Schranke, Höhenanzeige und gezielte Zonenwegweisung. **Echter Serverneustart, tatsächliche Chunk-Entladung/-Rückkehr und zwei gleichzeitig verbundene Minecraft-Clients geprüft.** 281 Blöcke plus zwei Verknüpfer. Konkrete Fahrzeugmod bleibt offen; Menüs und sichtbare Anzeigenfronten wurden zusätzlich anhand echter Spielbilder geprüft. [Alle elf Punkte, Bedienung und Prüfgrenzen](DEV-BETA2-6.md) · [Ankündigung vor Umsetzung](PLAN-BETA2-DEV6.md). Schilderausbau pausiert; öffentliche Downloadfassung bleibt Beta 1.
 
 ## Vorherige private Testfassung: 0.1.0-beta2-dev5 – Parkzonen und Belegungsanzeigen
 
