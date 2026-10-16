@@ -1,6 +1,6 @@
 # NG-Verkehr · Planung Beta 2 dev9
 
-Bauauftrag vom 16. Oktober 2026, auf Basis dev8. Status: angekündigt, Umsetzung freigegeben. Die Liste beschreibt geplante Funktionen und ist keine Fertigmeldung.
+Bauauftrag vom 16. Oktober 2026, auf Basis dev8. Status: als private dev9-Testfassung umgesetzt. 123/123 Servertests bestanden; zwei echte Clients haben jeweils alle 15 Bedienansichten geprüft. Echter Neustart und tatsächliche Chunk-Entladung/Rückkehr sind bestätigt. Die endgültigen Funktionsklassen entsprechen der Client-Testfassung.
 
 1. Parkscheinautomat: Parkdauer wählen, Zahlung anfordern und gültigen Parkschein ausgeben.
 2. Einfahrtsticket-Automat: personengebundenes Ticket mit Einfahrtszeit und Parkzone.
@@ -24,4 +24,9 @@ Die Währung wird ausschließlich im eigenständigen **NG-Wirtschaftssystem** en
 
 ## Lieferung und Prüfung
 
-Geplant: private dev9-JAR für Minecraft 1.20.2 / Forge 48.1.0 / Java 17, deutsche Anleitung, gezielte Funktions- und Regressionstests. Persistenz, Rechte, Ticketvalidierung, Hindernisschutz und sichere Ampelphasen werden geprüft. Die öffentliche Downloadversion wird durch diesen Bauauftrag nicht automatisch geändert.
+Gebaut: private dev9-JAR für Minecraft 1.20.2 / Forge 48.1.0 / Java 17, deutsche Anleitung, gezielte Funktions- und Regressionstests. Persistenz, Rechte, Ticketvalidierung, Hindernisschutz und sichere Ampelphasen werden geprüft. Die öffentliche Downloadversion wird durch diesen Bauauftrag nicht automatisch geändert.
+
+
+## Grenzen und Installation
+
+Die Zahlungsanbieter-Schnittstelle ist implementiert. Eine echte Belastung über NG-Wirtschaftssystem bleibt bis zu dessen passender Anbindung offen; positive Beträge werden ohne Anbieter abgewiesen. Die Erkennung einer konkreten externen Fahrzeugmod ist nicht pauschal bestätigt. MC02 wurde durch diesen dev9-Bauauftrag nicht geändert. Private JAR-Prüfsumme (SHA-256): `28b31e41ffbf7053fafb86d129d151a66323e89382170e573a9f2495287b41a5`.
