@@ -1,6 +1,6 @@
 # 0.1.0-beta2-dev6 – 16. Oktober 2026
 
-Live-Parkmenü, automatische Verkehrsanzeigen, Stellplatzsensoren mit eigenem Zählmodus, automatische Schranke, einstellbare Höhenanzeige, freie/feste Zonenwegweisung und Fahrzeugdiagnose. Fernzugriffe korrigiert, damit entfernte Chunks tatsächlich entladen können. **63/63 Forge-Servertests, acht deterministische Testprogramme, echter Serverneustart, tatsächliches Entladen/Wiederladen und zwei verbundene Minecraft-Clients geprüft.** Konkrete Fahrzeugmod und abschließende visuelle Bildprüfung bleiben offen. [Alle elf Punkte und Bedienung](DEV-BETA2-6.md).
+Live-Parkmenü, automatische Verkehrsanzeigen, Stellplatzsensoren mit eigenem Zählmodus, automatische Schranke, einstellbare Höhenanzeige, freie/feste Zonenwegweisung und Fahrzeugdiagnose. Fernzugriffe korrigiert, damit entfernte Chunks tatsächlich entladen können. **64/64 Forge-Servertests, acht deterministische Testprogramme, echter Serverneustart, tatsächliches Entladen/Wiederladen und zwei verbundene Minecraft-Clients geprüft.** Konkrete Fahrzeugmod bleibt offen. Menü-/Anzeigenansichten visuell geprüft; Live-Zonenwerte und Gesamtsumme werden gemeinsam aktualisiert. [Alle elf Punkte und Bedienung](DEV-BETA2-6.md).
 
 # 0.1.0-beta2-dev5 – 16. Oktober 2026
 
