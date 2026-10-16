@@ -1,6 +1,10 @@
 # NG-Verkehrs-System
 
-## Private Testfassung: 0.1.0-beta2-dev3 – Verkehrszeichen haben Vorrang
+## Private Testfassung: 0.1.0-beta2-dev5 – Parkzonen und Belegungsanzeigen
+
+**Gebaut; 52/52 Forge-Servertests bestanden.** Doppelzählungsschutz bleibt beim Laden erhalten; Parkplatztafeln zeigen freie, belegte und gesamte Plätze. Zonenübersicht mit vier Zonen pro Seite und eindeutiger Offline-Anzeige. Die Fahrzeugfilter und bis zu 16 getrennten Parkzonen aus dev4 sind enthalten. **Offen:** konkrete Fahrzeugmod, Client-Sicht-/Bedienprüfung, echter Neustart-/Chunk-/Mehrspielertest. Schilderausbau pausiert bei 181 festen Schildvarianten. [Änderungen und Testanleitung](DEV-BETA2-5.md). Öffentliche Downloadfassung bleibt Beta 1.
+
+## Vorherige private Testfassung: 0.1.0-beta2-dev3 – Verkehrszeichen haben Vorrang
 
 **163 zusätzliche feste Schildvarianten umgesetzt; insgesamt 181.** Die Mod enthält jetzt **277 Blöcke und zwei Verknüpfer = 279 Gegenstände** in elf Reitern. Fehlende Tempolimits mit Aufhebung, Mindestgeschwindigkeiten, Steigungen/Gefälle, häufige Gefahr-/Gebots-/Verbotszeichen und weitere Richtzeichen. Forge-Build/reobf erfolgreich, **38/38 Forge-Servertests bestanden**. Sichtprüfung im Minecraft-Client und reale Spieltests dieser Fassung stehen noch aus. Eigene stilisierte Modgrafiken; vollständige amtliche Zeichenabdeckung bleibt ein Entwicklungsziel. [Umfang, Installation und Testanleitung](DEV-BETA2-3.md) · [Ankündigung](PLAN-BETA2-DEV3.md).
 
