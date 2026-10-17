@@ -1,3 +1,48 @@
+# Entwicklungsplan – NG-Verkehrs-System
+
+Stand: **17. Oktober 2026 · 0.1.0-beta2-dev12 · Entwicklungs-/Testfassung**.
+
+## Aktueller Projekt- und Serverstand
+
+Verkehr beta2-dev12 ist auf MC02 installiert, in der Modliste aktiviert und nach Neustart live als geladen bestätigt. Verkehr dev8 ist deaktiviert. Die aktuelle optionale Gegenstelle ist NG-Fahrzeuge dev12.
+
+[Umfang und Prüfgrenzen](DEV-BETA2-12.md) · [MC02-Installationsnachweis](MC02-2026-10-17.md).
+
+| Bereich | Aktueller Stand |
+|---|---|
+| Straßen, Zeichen, Ampeln und Wegweisung | Vorhandene Grundlage; 181 feste Schildvarianten, vollständige amtliche Abdeckung bleibt offen |
+| Parksystem | Stellplätze, Sensoren, Schranken, Höhenprüfung, Parkzonen und Anzeigen |
+| Baustelle / dev7 | Vorwarnanhänger, Lauflicht, Sperren, Absperrgitter, Brücken, Lichtmasten und Zufahrtskontrolle |
+| Verkehrsbetrieb / dev8 | Tempo/Stau, Bahnübergang, Bus-/Einsatzvorrang, Tunnel, Umleitung und Verkehrszählung |
+| Parkbetrieb / dev9 | Tickets, Tarife und Berechtigungen; bestätigte Zahlungen benötigen einen Wirtschafts-Anbieter |
+| Betriebsgeräte / dev10 | 20 Geräte für Service, Zufahrt, Busbetrieb, Warnungen, Tunnelnotruf, Fluchtweg und Leitstelle |
+| Fahrzeuganbindung / dev11 | Tatsächlicher Fahrer/Besitzer, gebundene Kennzeichenzufahrt, vorhandener Tank/Schmutz und Buslinie |
+| Wartung / dev12 | Explizite Versionsunterstützung für Fahrzeuge dev12, lesender Zugriff auf elf Fahrzeugtypen |
+
+## Belegter aktueller Prüfstand
+
+- [x] 16 gezielte gemeinsame Forge-Servertests mit Fahrzeuge dev12.
+- [x] Getrennte Schreib-/Lese-Serverprozesse bestätigen native Fahrzeug- und Belegpersistenz.
+- [x] Tatsächliche Chunk-Entladung/Rückkehr und Wiederholschutz ohne zweite Tank-/Waschleistung.
+- [x] Unbekannte Fahrzeugversionen bleiben gesperrt.
+- [x] MC02-Installation nach vollständiger Sicherung; zurückgelesene JARs und geladene Laufzeitversionen geprüft.
+
+Historisch: Verkehr dev11/Fahrzeuge dev11 besitzt einen eigenen Nachweis mit 171 Servertests und zwei echten Clients an 20 Verkehrsbedienungen. Dieser Nachweis ist kein vollständiger Zwei-Client-Nachweis für dev12.
+
+## Noch offen
+
+- [ ] Vollständiger Spieltest des aktuellen Versionspaars mit zwei echten Fahrern.
+- [ ] Alle Sattelzug-Parkgeometrien und Fahrzeugabmessungen gemeinsam erproben.
+- [ ] Wirtschafts-Anbieter für Euro-Zahlungen und bestätigte kostenpflichtige Leistungen.
+- [ ] Elektrofahrzeug-Gegenstelle für tatsächliches Laden.
+- [ ] Vollständige amtliche Verkehrszeichenabdeckung; der feste Schilderausbau bleibt pausiert.
+- [ ] Stabile Gesamtveröffentlichung nach weiterer Erprobung.
+
+Öffentliche Beta-1-Downloads bleiben separat. Ohne passende Gegenstelle werden keine kostenpflichtigen externen Leistungen oder scheinbare Elektro-Ladevorgänge freigegeben.
+
+<details>
+<summary>Historische Entwicklungspläne bis beta2-dev6 und ältere Einzelstände</summary>
+
 
 ## Parksystem – elf freigegebene Punkte, Stand beta2-dev6
 
@@ -267,3 +312,5 @@ Im normalen Kreuzungsprogramm gilt N/S = A, O/W = B. Im Baustellenprogramm gilt 
 Dieser Punkt ist für die Zeit nach Fertigstellung vorgemerkt. Ein Verkauf ist weder beschlossen noch als erlaubt bestätigt; eine Anfrage wurde noch nicht versandt.
 
 Es gibt derzeit keinen fest zugesagten Termin für die fertige Mod.
+
+</details>
