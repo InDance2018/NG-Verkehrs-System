@@ -1,3 +1,17 @@
+# 0.1.0-beta2-dev12 – 17. Oktober 2026
+
+Explizite Unterstützung für NG-Fahrzeuge dev12; unbekannte Versionen bleiben gesperrt. Bestehende Fahrzeugansicht auch für dev12 verwenden. 16 gezielte gemeinsame Servertests bestanden, einschließlich aller elf Fahrzeugtypen. [Details](DEV-BETA2-12.md) · [MC02-Nachweis](MC02-2026-10-17.md).
+
+# 0.1.0-beta2-dev11 – 17. Oktober 2026
+
+Konkrete Anbindung an Fahrzeuge dev11 für Fahrer/Besitzer, gebundene Kennzeichenzufahrt, kostenloses Tanken/Waschen und Buslinie. Historisch 171 Servertests, zehn Ablaufprogramme, Neustart/Chunk-Rückkehr und zwei echte Clients mit 20 Verkehrsbedienungen. [Nachweis](PLAN-BETA2-DEV11.md).
+
+# 0.1.0-beta2-dev10 – 17. Oktober 2026
+
+20 neue Betriebsgeräte für Service, Zufahrt, Busbetrieb, Warnungen und Leitstelle. [Umfang](PLAN-BETA2-DEV10.md).
+
+# Frühere Entwicklungsstände
+
 # 0.1.0-beta2-dev6 – 16. Oktober 2026
 
 Live-Parkmenü, automatische Verkehrsanzeigen, Stellplatzsensoren mit eigenem Zählmodus, automatische Schranke, einstellbare Höhenanzeige, freie/feste Zonenwegweisung und Fahrzeugdiagnose. Fernzugriffe korrigiert, damit entfernte Chunks tatsächlich entladen können. **64/64 Forge-Servertests, acht deterministische Testprogramme, echter Serverneustart, tatsächliches Entladen/Wiederladen und zwei verbundene Minecraft-Clients geprüft.** Konkrete Fahrzeugmod bleibt offen. Menü-/Anzeigenansichten visuell geprüft; Live-Zonenwerte und Gesamtsumme werden gemeinsam aktualisiert. [Alle elf Punkte und Bedienung](DEV-BETA2-6.md).
