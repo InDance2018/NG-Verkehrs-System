@@ -1,8 +1,14 @@
 # NG-Verkehrs-System
 
-**Partnerprojekt in Entwicklung:** [NG-Fahrzeuge](https://github.com/InDance2018/NG-Fahrzeuge) – eigene NeverGate-Fahrzeugmod mit NG City, NG Family und NG Transporter. Eigenständig nutzbar; optionale Parksystem-Anbindung geplant und noch nicht gemeinsam geprüft. Das Fahrzeug-Repository ist derzeit privat und nur mit Zugriffsrecht erreichbar.
+**Partnerprojekt in Entwicklung:** [NG-Fahrzeuge](https://github.com/InDance2018/NG-Fahrzeuge) – eigene NeverGate-Fahrzeugmod mit NG City, NG Family und NG Transporter. Eigenständig nutzbar; optionale Anbindung mit versionsgebundenen Prüfständen. Das Fahrzeug-Repository ist öffentlich.
 
-## Private Testfassung: 0.1.0-beta2-dev6 – Parksystem mit Stellplätzen und Schranke
+## Aktuelle Entwicklungsfassung: 0.1.0-beta2-dev12
+
+**17. Oktober 2026:** Wartungsfassung für **NG-Fahrzeuge 0.1.0-dev12**. Enthält Verkehr dev11, die 20 Betriebsgeräte aus dev10 sowie Parkticket-, Baustellen- und Verkehrsbetriebsfunktionen. **16 gezielte Integrationstests mit Fahrzeuge dev12 bestanden**, darunter Zustandszugriff auf alle elf Fahrzeugtypen. Unbekannte Versionen bleiben gesperrt. [Umfang und Prüfgrenzen](DEV-BETA2-12.md).
+
+Der aktuelle MC02-Installationsstand und die exakten JAR-Prüfsummen stehen im [Installationsnachweis](MC02-2026-10-17.md). Entwicklungsfassung und öffentliche Beta-1-Downloadfassung werden getrennt geführt.
+
+## Frühere private Testfassung: 0.1.0-beta2-dev6 – Parksystem mit Stellplätzen und Schranke
 
 **Gebaut: 64/64 Forge-Servertests bestanden.** Live-Menü, automatische Anzeigen, Stellplatzsensoren, automatische Schranke, Höhenanzeige und gezielte Zonenwegweisung. **Echter Serverneustart, tatsächliche Chunk-Entladung/-Rückkehr und zwei gleichzeitig verbundene Minecraft-Clients geprüft.** 281 Blöcke plus zwei Verknüpfer. Konkrete Fahrzeugmod bleibt offen; Menüs und sichtbare Anzeigenfronten wurden zusätzlich anhand echter Spielbilder geprüft. [Alle elf Punkte, Bedienung und Prüfgrenzen](DEV-BETA2-6.md) · [Ankündigung vor Umsetzung](PLAN-BETA2-DEV6.md). Schilderausbau pausiert; öffentliche Downloadfassung bleibt Beta 1.
 
