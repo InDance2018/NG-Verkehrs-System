@@ -1,23 +1,18 @@
-# NG-Verkehr · Beta2 dev11 · Fertigstellung der 20 Betriebsgeräte
+# NG-Verkehr · Beta2 dev11 · Fortsetzung der 20 Betriebsgeräte
 
-Bauauftrag: 17. Oktober 2026, Fortsetzung der 20 Bauten aus dev10. Basis: beta2-dev10. Status: als private Testfassung gebaut und mit NG-Fahrzeuge dev11 im unten genannten Umfang geprüft.
+Bauauftrag vom 17. Oktober 2026. Basis: beta2-dev10. Status: gebaut und mit NG-Fahrzeuge 0.1.0-dev11 im beschriebenen Umfang geprüft.
 
-- Tatsächliche Fahrerzuordnung der NG-Fahrzeuge verwenden; normale Minecraft-Zuordnung genügt dort nicht.
-- Vorhandene Kennzeichen, Besitzer, Tankwerte in Litern und Verschmutzung lesend anbinden.
-- Kostenloses Tanken und Waschen über die vorhandenen Fahrzeugoperationen anbinden, mit Berechtigungsprüfung, Mengenbeleg, dauerhafter Transaktionssperre und Wiederholschutz.
-- Gegenstelle vorerst auf den konkret geprüften Fahrzeuge-Stand begrenzen; unbekannte Versionen sichtbar ablehnen.
-- Echte gemeinsame Prüfung mit einer isolierten Fahrzeuge-dev10-Testfixture. Fertigen Fahrzeuge-dev11-Build verwenden, ohne Fahrzeugquellcode zu verändern.
-- Fehlende Elektroantriebs- und Wirtschaftsgegenstellen bleiben offen. Keine Starterbatterie als Traktionsakku verwenden, keine Ersatzwährung erzeugen.
+Die 20 Geräte werden durch die konkrete Fahrzeuganbindung ergänzt: tatsächlicher Fahrer und Besitzer, vorhandene Kennzeichen, Tankinhalt und Kapazität, Verschmutzung sowie Buslinien. Kostenloses Tanken und Waschen verwenden die vorhandenen Fahrzeugoperationen mit Berechtigungsprüfung, dauerhaftem Vorgangsbeleg und Wiederholschutz.
 
-Diese Fortsetzung ersetzt nicht die parallele Entwicklung von NG-Fahrzeuge. Die 35 Wirtschaftsvorschläge bleiben Planung. MC02-Installation und öffentliche Downloads sind nicht Teil dieses Bauauftrags.
+Kennzeichenfreigaben sind an Fahrzeug-UUID und Besitzer-UUID gebunden. Ein anderes Fahrzeug mit kopiertem Kennzeichen erhält keine Zufahrt. Bei der Registrierung muss das tatsächliche Fahrzeug am Leser stehen; alte ungebundene Listen aus dev10 müssen neu registriert werden.
 
-Aktualisierung: Fahrzeuge dev11 ist inzwischen fertig; die Anbindung wird deshalb gegen den aktuellen Stand geprüft. Buslinien aus dem Fahrzeug werden ebenfalls berücksichtigt. Ältere oder unbekannte Fahrzeuge-Versionen werden nicht als kompatibel angenommen.
+## Prüfung
 
-## Ergebnis
+171/171 Servertests bestanden, darin 15 gezielte Integrationstests; außerdem zehn Ablaufprogramme. Die Fahrzeuge-Test-JAR entspricht exakt der aktuellen dev11-JAR. Zwei echte Clients mit beiden Mods haben jeweils alle 20 Verkehrsbedienungen und die gemeinsame Einstellung geprüft. Ein echter Fahrzeug-Waschvorgang und dessen Abbruch wurden bestätigt. Native Fahrzeugwerte und gespeicherte Servicebelege überstehen echten Neustart und tatsächliche Chunk-Entladung/Rückkehr; wiederholte Vorgänge führen keine zweite Leistung aus.
 
-170/170 Servertests bestanden, darunter 14 konkrete Integrationstests; zehn Ablaufprogramme ebenfalls bestanden. Die Fahrzeuge-Test-JAR entspricht exakt der aktuellen dev11-JAR. Zwei echte Clients mit beiden Mods haben jeweils alle 20 Verkehrsbedienungen und die gemeinsame Einstellung geprüft. Ein echter Fahrzeug-Waschvorgang und dessen Abbruch wurden bestätigt. Native Fahrzeugwerte und gespeicherte Servicebelege überstehen echten Neustart und tatsächliche Chunk-Entladung/Rückkehr; Wiederholungen erzeugen keine zweite Leistung.
+Die ausgelieferte Fassung enthält dieselben funktionalen Klassen und Ressourcen wie die Client-Testfassung; Testklassen und Fahrzeugfixture sind ausgeschlossen. Geprüfter Umfang: Fahrer-/Besitzertrennung, gebundene Kennzeichenzufahrt, kostenloses Tanken/Waschen und Buslinien-Abgleich. Dies ist kein vollständiger Zwei-Fahrer-Test aller Fahrzeugfunktionen.
 
-Geprüft sind Fahrer-/Besitzertrennung, Kennzeichenzufahrt, kostenloses Tanken/Waschen und Buslinien-Abgleich. Es wird damit kein vollständiger Zwei-Fahrer-Test aller Fahrzeuge-Funktionen behauptet. Elektroantrieb und Euro-Anbieter bleiben offen; kostenpflichtige Services gesperrt. MC02 und öffentliche Downloads wurden nicht geändert.
+Nur Fahrzeuge dev11 ist für diese konkrete Anbindung freigegeben. Elektroantrieb und Wirtschafts-Anbieter bleiben offen; eine Starterbatterie wird nicht als Traktionsakku behandelt. Kostenpflichtige Services bleiben gesperrt. Die 35 Wirtschaftsvorschläge bleiben Planung. MC02 und öffentliche Downloads wurden nicht geändert.
 
-Verkehrs-JAR SHA256: `99b3a8300a34050f2e147ebb71235fe83b951ea6fd13880bd55fe658a72fbf9b`.
+Verkehrs-JAR SHA256: `f2bcacfc1619f08ca91251813d1f194fb2c844f8cfec5f48b1fa70c7325475a6`.
 Fahrzeuge-dev11-JAR SHA256: `ee8e463506766783cf1a331e2ec5a70601a04d45d81a1fa5bb3e2839aa28f8ee`.
