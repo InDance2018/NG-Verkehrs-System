@@ -15,7 +15,7 @@ Diese Wartungsfassung ergänzt die explizite Unterstützung von NG-Fahrzeuge 0.1
 
 ## Prüfung dieser Wartungsfassung
 
-16 gezielte Forge-Integrationstests mit dem aus GitHub-Commit c64dac83465389bfe71eac6473073e5476143c2b gebauten Fahrzeuge dev12: Fahrer/Besitzer, Kennzeichen, Tank/Reinigung, Berechtigungen, Buslinie, Versionssperre sowie Zustandszugriff bei allen elf Fahrzeugtypen. Separate Neustart-/Chunk-/Belegprüfung und MC02-Abschluss siehe Installationsnachweis.
+16 gezielte Forge-Integrationstests mit dem aus GitHub-Commit c64dac83465389bfe71eac6473073e5476143c2b gebauten Fahrzeuge dev12: Fahrer/Besitzer, Kennzeichen, Tank/Reinigung, Berechtigungen, Buslinie, Versionssperre sowie Zustandszugriff bei allen elf Fahrzeugtypen. Zusätzlich bestanden: separate Schreib-/Lese-Serverprozesse, Wiederholung ohne zweite Tank-/Waschleistung, tatsächliche Chunk-Entladung und Rückkehr. MC02-Abschluss siehe Installationsnachweis.
 
 Die früheren 171 Tests, zwei echten Clients und 20 Bedienansichten gehören zum historischen Verkehr-dev11/Fahrzeuge-dev11-Nachweis. Sie werden nicht als vollständiger Zwei-Client-Nachweis des neuen Versionspaars ausgegeben.
 
