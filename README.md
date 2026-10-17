@@ -1,12 +1,12 @@
 # NG-Verkehrs-System
 
-**Partnerprojekt in Entwicklung:** [NG-Fahrzeuge](https://github.com/InDance2018/NG-Fahrzeuge) – eigene NeverGate-Fahrzeugmod mit NG City, NG Family und NG Transporter. Eigenständig nutzbar; optionale Anbindung mit versionsgebundenen Prüfständen. Das Fahrzeug-Repository ist öffentlich.
+**Partnerprojekt in Entwicklung:** [NG-Fahrzeuge](https://github.com/InDance2018/NG-Fahrzeuge) – eigene NeverGate-Fahrzeugmod mit elf Fahrzeugtypen bis zum Sattelzug. Eigenständig nutzbar; optionale Anbindung mit versionsgebundenen Prüfständen. Das Fahrzeug-Repository ist öffentlich.
 
 ## Aktuelle Entwicklungsfassung: 0.1.0-beta2-dev12
 
 **17. Oktober 2026:** Wartungsfassung für **NG-Fahrzeuge 0.1.0-dev12**. Enthält Verkehr dev11, die 20 Betriebsgeräte aus dev10 sowie Parkticket-, Baustellen- und Verkehrsbetriebsfunktionen. **16 gezielte Integrationstests mit Fahrzeuge dev12 bestanden**, darunter Zustandszugriff auf alle elf Fahrzeugtypen. Unbekannte Versionen bleiben gesperrt. [Umfang und Prüfgrenzen](DEV-BETA2-12.md).
 
-Der aktuelle MC02-Installationsstand und die exakten JAR-Prüfsummen stehen im [Installationsnachweis](MC02-2026-10-17.md). Entwicklungsfassung und öffentliche Beta-1-Downloadfassung werden getrennt geführt.
+**MC02: beta2-dev12 installiert, in der Modliste aktiviert und live geladen; ältere Verkehrsfassungen sind deaktiviert.** Auch der Client benötigt die passende neue JAR. Der aktuelle MC02-Installationsstand und die exakten JAR-Prüfsummen stehen im [Installationsnachweis](MC02-2026-10-17.md). Entwicklungsfassung und öffentliche Beta-1-Downloadfassung werden getrennt geführt.
 
 ## Frühere private Testfassung: 0.1.0-beta2-dev6 – Parksystem mit Stellplätzen und Schranke
 
@@ -59,9 +59,9 @@ Die technischen Systeme sollen funktionieren: Ampeln schalten, Anzeigen lassen s
 
 **Eigener Code, eigene Modelle und eigene Texturen gehören zum Projektkonzept.** Die vollständige Zeichenabdeckung soll anhand des amtlichen Katalogs nachvollziehbar geprüft werden.
 
-## Was bereits vorhanden ist
+## Historische Grundlage der öffentlichen Beta 1
 
-Stand: **15. Oktober 2026 · letzte Entwicklungsfassung 0.1.0-dev20; Beta 0.1.0-beta1 veröffentlicht**
+Die folgende Übersicht beschreibt die Basis vom **15. Oktober 2026 (dev20 / Beta 1)**. Der aktuelle Entwicklungs- und MC02-Stand ist **beta2-dev12**; siehe oben und [aktueller Entwicklungsplan](ROADMAP.md).
 
 - Grundsystem mit **97 registrierten Bauteilen**.
 - Erste Straßenblöcke mit weißen und gelben Linien, Richtungspfeilen und Fußgängerüberweg.
