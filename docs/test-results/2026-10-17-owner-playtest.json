@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-17",
+  "result": "passed",
+  "evidence_type": "project_owner_report",
+  "reported_by": "InDance2018",
+  "confirmation_received_at": "2026-10-17T20:04:05+02:00",
+  "report": "../../PRAXISTEST-2026-10-17.md",
+  "current_documented_versions": {
+    "NG-Verkehrs-System": "0.1.0-beta2-dev12",
+    "NG-Fahrzeuge": "0.1.0-dev12"
+  },
+  "mc02_all_previous_dev_versions_and_functions": "passed_as_confirmed_by_project_owner",
+  "external_server": {
+    "minecraft": "1.20.2",
+    "players": 3,
+    "multiplayer": "passed",
+    "chunk_load_unload": {
+      "minutes": 15,
+      "players": 3,
+      "result": "passed"
+    },
+    "server_restarts": {
+      "count": 4,
+      "after_building": true,
+      "all_builds_present_and_working": "passed"
+    },
+    "distribution": null,
+    "jar_sha256": null
+  },
+  "automated_evidence": {
+    "vehicles_dev12_required_game_tests_passed": 129,
+    "vehicles_dev12_required_game_tests_failed": 0,
+    "traffic_dev12_vehicle_dev12_targeted_integration_tests_passed": 16
+  },
+  "historical_reports_preserved": true
+}

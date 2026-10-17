@@ -29,9 +29,20 @@ Verkehr beta2-dev12 ist auf MC02 installiert, in der Modliste aktiviert und nach
 
 Historisch: Verkehr dev11/Fahrzeuge dev11 besitzt einen eigenen Nachweis mit 171 Servertests und zwei echten Clients an 20 Verkehrsbedienungen. Dieser Nachweis ist kein vollständiger Zwei-Client-Nachweis für dev12.
 
+## Am 17. Oktober 2026 zusätzlich abgeschlossen
+
+- [x] Alle bisherigen DEV-Stände und beschriebenen Funktionen auf MC02 vom Projektinhaber getestet und bestätigt.
+- [x] Mehrspieler-Spieltest mit drei Spielern auf einem externen Minecraft-1.20.2-Server bestanden.
+- [x] Chunk-Laden und -Entladen über 15 Minuten mit drei Spielern bestanden.
+- [x] Vier Serverneustarts nach dem Aufbau: alles vorhanden und weiterhin funktionsfähig.
+- [x] Webkatalog mit 350 Einträgen, 14 Kategorien und 29 Anleitungen veröffentlicht.
+- [x] Beide PDF-Handbücher in DE/EN erstellt, visuell geprüft und öffentlich erreichbar.
+- [x] Katalogdaten, Webdateien mit Bildern, PDFs und Prüfsummen in GitHub dokumentiert.
+
+[Praxistest und vollständiger Abschlussbericht](PRAXISTEST-2026-10-17.md) · [Katalog und Downloads](docs/catalogue/README.md).
+
 ## Noch offen
 
-- [ ] Vollständiger Spieltest des aktuellen Versionspaars mit zwei echten Fahrern.
 - [ ] Alle Sattelzug-Parkgeometrien und Fahrzeugabmessungen gemeinsam erproben.
 - [ ] Wirtschafts-Anbieter für Euro-Zahlungen und bestätigte kostenpflichtige Leistungen.
 - [ ] Elektrofahrzeug-Gegenstelle für tatsächliches Laden.

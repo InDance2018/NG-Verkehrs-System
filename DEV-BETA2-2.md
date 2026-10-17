@@ -1,5 +1,8 @@
 # 0.1.0-beta2-dev2 – Sechs Aufgaben gemeinsam
 
+**Testnachtrag vom 17.10.2026:** Der Projektinhaber bestätigt alle bisherigen DEV-Stände auf MC02 sowie den bestandenen Drei-Spieler-/Chunk-/Neustarttest. [Aktueller Testbericht](PRAXISTEST-2026-10-17.md). Ältere Testangaben im folgenden Dokument beschreiben den damaligen Prüfstand.
+
+
 Private Entwicklungsfassung nach beta2-dev1. Alle sechs angekündigten Bereiche sind in dieser Testfassung enthalten. **Client-Sicht-/Bedienprüfung und Tests mit konkreten fremden Fahrzeugmods stehen noch aus.**
 
 ## 1. Schilderbrücken und Befestigungen

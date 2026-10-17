@@ -1,5 +1,8 @@
 # 0.1.0-beta2-dev5 – Parkzonen abgesichert und Belegung sichtbar
 
+**Testnachtrag vom 17.10.2026:** Der Projektinhaber bestätigt alle bisherigen DEV-Stände auf MC02 sowie den bestandenen Drei-Spieler-/Chunk-/Neustarttest. [Aktueller Testbericht](PRAXISTEST-2026-10-17.md). Ältere Testangaben im folgenden Dokument beschreiben den damaligen Prüfstand.
+
+
 Private Testfassung vom 16. Oktober 2026. Der Schilderausbau bleibt bei **181 festen Schildvarianten** pausiert.
 
 ## Änderungen

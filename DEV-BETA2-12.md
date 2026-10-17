@@ -1,5 +1,8 @@
 # NG-Verkehr · 0.1.0-beta2-dev12
 
+**Testnachtrag vom 17.10.2026:** Der Projektinhaber bestätigt alle bisherigen DEV-Stände auf MC02 sowie den bestandenen Drei-Spieler-/Chunk-/Neustarttest. [Aktueller Testbericht](PRAXISTEST-2026-10-17.md). Ältere Testangaben im folgenden Dokument beschreiben den damaligen Prüfstand.
+
+
 17. Oktober 2026 · Minecraft 1.20.2 · Forge 48.1.0 · Java 17.
 
 Diese Wartungsfassung ergänzt die explizite Unterstützung von NG-Fahrzeuge 0.1.0-dev12. Sie enthält den Umfang von Verkehr dev11 und die 20 Betriebsgeräte aus dev10. Die unveränderliche Fahrzeugansicht wird für dev11 und dev12 verwendet; unbekannte Versionen bleiben gesperrt.
@@ -23,6 +26,6 @@ Die früheren 171 Tests, zwei echten Clients und 20 Bedienansichten gehören zum
 
 Ungebundene Kennzeichenlisten älterer Verkehrsfassungen müssen mit dem tatsächlichen Fahrzeug neu registriert werden. Kopierte Kennzeichen übernehmen keine Zufahrt.
 
-Elektroantrieb und Wirtschafts-Anbieter fehlen weiterhin; kostenpflichtige externe Dienstleistungen bleiben gesperrt. Die Starterbatterie ist kein Traktionsakku. Sattelzug-Rangieren, sämtliche Parkgeometrien und alle Fahrzeugfunktionen mit zwei echten Fahrern benötigen weiterhin Spieltests.
+Elektroantrieb und Wirtschafts-Anbieter fehlen weiterhin; kostenpflichtige externe Dienstleistungen bleiben gesperrt. Die Starterbatterie ist kein Traktionsakku. Der Projektinhaber hat inzwischen alle bisherigen DEV-Stände auf MC02 sowie den Drei-Spieler-/Chunk-/Neustarttest als bestanden bestätigt; [Testnachtrag](PRAXISTEST-2026-10-17.md).
 
 Beide Mods auf Client und Server ersetzen; ältere aktive JARs entfernen. Öffentliche Beta-1-Downloads bleiben separat. Diese Fassung ist eine Entwicklungs-/Testfassung.

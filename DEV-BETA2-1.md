@@ -1,5 +1,8 @@
 # 0.1.0-beta2-dev1 – Wegweisung
 
+**Testnachtrag vom 17.10.2026:** Der Projektinhaber bestätigt alle bisherigen DEV-Stände auf MC02 sowie den bestandenen Drei-Spieler-/Chunk-/Neustarttest. [Aktueller Testbericht](PRAXISTEST-2026-10-17.md). Ältere Testangaben im folgenden Dokument beschreiben den damaligen Prüfstand.
+
+
 Private Entwicklungsfassung nach der öffentlichen Beta 1. Zwei zusammengehörige Aufgaben gemeinsam umgesetzt:
 
 1. Beschriftbare Ortseingangs-/Ortsausgangsschilder und einfache Straßenwegweiser.

@@ -1,5 +1,8 @@
 # 0.1.0-beta2-dev3 – 163 zusätzliche Verkehrszeichen
 
+**Testnachtrag vom 17.10.2026:** Der Projektinhaber bestätigt alle bisherigen DEV-Stände auf MC02 sowie den bestandenen Drei-Spieler-/Chunk-/Neustarttest. [Aktueller Testbericht](PRAXISTEST-2026-10-17.md). Ältere Testangaben im folgenden Dokument beschreiben den damaligen Prüfstand.
+
+
 Private Entwicklungsfassung auf Basis von beta2-dev2. Die Schilder erhalten auf Nutzerwunsch Vorrang vor den zwölf weiteren Ausbauvorschlägen. Der Umfang wurde vor der Umsetzung in [PLAN-BETA2-DEV3.md](PLAN-BETA2-DEV3.md) angekündigt.
 
 ## Umfang

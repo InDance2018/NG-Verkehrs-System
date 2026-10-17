@@ -1,5 +1,8 @@
 # 0.1.0-beta2-dev6 – Parksystem-Paket mit elf Arbeitspunkten
 
+**Testnachtrag vom 17.10.2026:** Der Projektinhaber bestätigt alle bisherigen DEV-Stände auf MC02 sowie den bestandenen Drei-Spieler-/Chunk-/Neustarttest. [Aktueller Testbericht](PRAXISTEST-2026-10-17.md). Ältere Testangaben im folgenden Dokument beschreiben den damaligen Prüfstand.
+
+
 Private Testfassung vom 16. Oktober 2026 für Minecraft Java **1.20.2 / Forge 48.1.0 / Java 17**. **281 Blöcke plus zwei Verknüpfer = 283 Gegenstände**, elf Inventarreiter. Schilderausbau bleibt bei **181 festen Schildvarianten** pausiert.
 
 ## Status aller elf freigegebenen Punkte

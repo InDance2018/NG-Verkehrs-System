@@ -1,5 +1,12 @@
 # NG-Verkehrs-System
 
+## Aktualisierung vom 17. Oktober 2026: Kataloge, PDFs und bestandener Praxistest
+
+**Praxistest vom 17. Oktober 2026 bestanden – vom Projektinhaber bestätigt:** Alle bisherigen DEV-Stände beider Projekte wurden auf MC02 getestet. Zusätzlich bestanden auf einem externen Minecraft-1.20.2-Server der Test mit drei Spielern, 15 Minuten Chunk-Laden/-Entladen und vier Serverneustarts nach dem Aufbau. Nach den Neustarts waren alle Aufbauten vorhanden und funktionsfähig. [Vollständiger Test- und Abschlussbericht](PRAXISTEST-2026-10-17.md).
+
+**[Aktueller Webkatalog](https://nevergate.de/ng-verkehr/)**: 350 Einträge, 14 Kategorien und 29 zweisprachige Anleitungen. Neue PDF-Ausgaben: [Deutsch](docs/catalogue/downloads/NG-Verkehrs-System-Handbuch-DE.pdf) (73 Seiten) · [English](docs/catalogue/downloads/NG-Verkehrs-System-Handbuch-EN.pdf) (70 Seiten). [Webdateien, Bilder, Katalogdaten und Prüfsummen](docs/catalogue/README.md).
+
+
 **Partnerprojekt in Entwicklung:** [NG-Fahrzeuge](https://github.com/InDance2018/NG-Fahrzeuge) – eigene NeverGate-Fahrzeugmod mit elf Fahrzeugtypen bis zum Sattelzug. Eigenständig nutzbar; optionale Anbindung mit versionsgebundenen Prüfständen. Das Fahrzeug-Repository ist öffentlich.
 
 ## Aktuelle Entwicklungsfassung: 0.1.0-beta2-dev12
@@ -136,6 +143,13 @@ Der Ausbau wurde vor der Umsetzung hier angekündigt und anschließend innerhalb
 
 Weitere Ansichten, Neustart-/Mehrspielertests und der vollständige Ausbau bleiben offen.
 
+## Webhandbuch und PDFs · aktueller Stand dev12
+
+350 Einträge, 14 Kategorien und 29 zweisprachige Anleitungen mit Originalmodellbildern, Verwendung und Rezepten. PDF Deutsch: 73 Seiten; PDF English: 70 Seiten. Beide Kataloge sind auf der NeverGate-Startseite und untereinander verlinkt. [Onlinekatalog](https://nevergate.de/ng-verkehr/) · [PDFs, Webdateien und Prüfsummen](docs/catalogue/README.md).
+
+<details>
+<summary>Historische Webhandbuch-Vorbereitung der Beta 1: 98 Einträge</summary>
+
 ## Beta-1-Vorbereitung – Webhandbuch und NeverGate-Angaben
 
 - **[Webhandbuch und Katalog](https://nevergate.de/ng-verkehr/)** veröffentlicht und auf der NeverGate-Startseite verlinkt. Deutsch/Englisch umschaltbar, elf Kategorien und Suche.
@@ -150,6 +164,11 @@ Weitere Ansichten, Neustart-/Mehrspielertests und der vollständige Ausbau bleib
 **Teststand:** Nutzer bestätigt weiterhin alle Spielstände bis dev20. Neues Taster-Inventarsymbol und neue Metadaten noch im Client ansehen. Web-Sprachwechsel, Suche, Filter und Dialoge per DOM geprüft; eine echte Browser-Sichtprüfung des Layouts war hier nicht verfügbar. Zusätzliche reale Server-Neustart-, Chunk- und Mehrspielerprüfungen für das Basispaket bleiben ein separater offener Arbeitspunkt. Keine Änderung an MC02.
 
 Öffentlich bereitgestellt sind Handbuch, Bilder und PDF-Ausgaben. Weiterhin kein öffentlicher GitHub-JAR- oder Quellcode-Upload.
+
+
+**Aktualisierung:** Diese Ausgabe wurde am 17.10.2026 durch den oben verlinkten dev12-Katalog ersetzt. Der aktuelle Spielteststatus steht im [Praxistestbericht](PRAXISTEST-2026-10-17.md).
+
+</details>
 
 ## 0.1.0-dev20 – Getrennte Inventarreiter
 
