@@ -1,8 +1,8 @@
 # NeverGate · projektübergreifende Arbeitsanweisung
 
-Vor Änderungen mit Auswirkungen auf andere NeverGate-Mods über die GitHub-Anbindung das private Repository **InDance2018/NeverGate-Schnittstellen** lesen:
+Vor Änderungen mit Auswirkungen auf andere NeverGate-Mods über die GitHub-Anbindung das private Repository **InDance2018/NG-Projektzentrale** lesen:
 
-- [Einstieg und Zuständigkeiten](https://github.com/InDance2018/NeverGate-Schnittstellen)
+- [Einstieg und Zuständigkeiten](https://github.com/InDance2018/NG-Projektzentrale)
 - Dort: AGENTS.md, docs/SCHNITTSTELLEN.md, STATUS.json und die zum Auftrag passenden offenen Issues frisch lesen.
 - Vorhandene Funktionen im eigenen Projekt zuerst prüfen und wiederverwenden. Eigene Implementierung, benötigte Gegenstelle und gemeinsame Testnachweise getrennt melden.
 - Arbeitsbeginn, Änderungen am Vertrag, Blocker und Abschluss im passenden privaten Issue dokumentieren. Ein erfolgreicher Einzelbuild bestätigt kein gemeinsam geprüftes Versionspaar.
