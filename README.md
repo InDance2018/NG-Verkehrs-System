@@ -260,3 +260,9 @@ Ein Veröffentlichungstermin für die fertige Mod steht noch nicht fest. Neue En
 
 ---
 **Ein Projekt von NeverGate · GitHub: [InDance2018](https://github.com/InDance2018)**
+
+## NG-City · Stadt und Wirtschaft
+
+[NG-City dev-0.0.2](https://github.com/InDance2018/NG-City) ergänzt Bank, Konto, NG-Bargeld, Karten-PIN, Hotel und Ankauf als eigenständige Mod. Der Eigentümer hat NG-Citys bisherigen Funktionsumfang am 19.10.2026 im Einzelspieler als getestet bestätigt; der NG-City-Mehrspielertest folgt nach Abschluss des Minecraft-Interface-Umbaus. [Katalog und Downloads](https://nevergate.de/ng-city/) · [Änderungen und Abnahme](https://github.com/InDance2018/NG-City/blob/main/CHANGELOG-dev-0.0.2.md).
+
+NG-Verkehrs-System bleibt ohne NG-City eigenständig nutzbar. Eine optionale gemeinsame Wirtschaftsanbindung ist weiterhin offen und durch diesen Dokumentationsnachtrag nicht implementiert oder geprüft. Die bisherigen eigenen Fahrzeug-/Verkehrs-Testberichte bleiben davon getrennt.
