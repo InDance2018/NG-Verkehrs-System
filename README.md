@@ -1,3 +1,7 @@
+# Aktueller Abgleich · 21.10.2026
+
+[Verwaltungsanbindung und Straßenmodule](PLANUNG-2026-10-21.md): neue Planung, keine Änderung des Verkehrsbuilds. NG-Verkehr bleibt zusammen und eigenständig nutzbar. Aktuelle rein lesende MC02-Inventur: für den City-Test deaktiviert; dort ist City dev-0.2.10 aktiv. Nachfolgende frühere Installations- und Testangaben behalten ihren ursprünglichen Datums-/Versionsbezug.
+
 # NG-Verkehrs-System
 
 ## Aktualisierung vom 17. Oktober 2026: Kataloge, PDFs und bestandener Praxistest
