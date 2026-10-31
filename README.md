@@ -1,3 +1,18 @@
+# NG-Verkehrs-System
+
+Eigene Straßen-, Ampel-, Park- und Verkehrstechnik für Minecraft Java 1.20.2.
+
+**Stand: 31.10.2026.** Öffentliche Downloadfassung: **Beta 1**. Ausführlich dokumentierter Entwicklungsstand: **beta2-dev12**. Neuerer erfasster Testbuild: **beta2-montage2**, dessen vollständige Build-/Client-/Änderungsnachweise noch nachzuführen sind.
+
+[Aktueller Status und Testgrenzen](STATUS.md) · [Öffentlicher Download](https://github.com/InDance2018/NG-Verkehrs-System/releases/tag/v0.1.0-beta1) · [Webhandbuch](https://nevergate.de/ng-verkehr/) · [Entwicklungsplan](ROADMAP.md) · [Änderungen](CHANGELOG.md)
+
+Das dokumentierte dev12-Paar mit NG-Fahrzeuge besitzt 16 gemeinsame Tests. Der Eigentümer-Praxistest vom 17.10. ist separat belegt. City-Wirtschaft und Elektro-Gegenstelle bleiben offen. Diese Dokumentationspflege veröffentlicht keine neue JAR und setzt bestehende Entwicklungsnachweise nicht mit einem neuen Release gleich.
+
+
+<details><summary>Frühere Projektbeschreibung und datierte Entwicklungsnachweise</summary>
+
+Die folgenden Angaben bleiben als Historie erhalten. Als „aktuell“ bezeichnete Versionen, Installationen und offene Tests beziehen sich dort auf das jeweils genannte Datum. Für den heutigen Überblick gilt der Status oben.
+
 # Aktueller Abgleich · 21.10.2026
 
 [Verwaltungsanbindung und Straßenmodule](PLANUNG-2026-10-21.md): neue Planung, keine Änderung des Verkehrsbuilds. NG-Verkehr bleibt zusammen und eigenständig nutzbar. Aktuelle rein lesende MC02-Inventur: für den City-Test deaktiviert; dort ist City dev-0.2.10 aktiv. Nachfolgende frühere Installations- und Testangaben behalten ihren ursprünglichen Datums-/Versionsbezug.
@@ -270,3 +285,6 @@ Ein Veröffentlichungstermin für die fertige Mod steht noch nicht fest. Neue En
 [NG-City dev-0.0.2](https://github.com/InDance2018/NG-City) ergänzt Bank, Konto, NG-Bargeld, Karten-PIN, Hotel und Ankauf als eigenständige Mod. Der Eigentümer hat NG-Citys bisherigen Funktionsumfang am 19.10.2026 im Einzelspieler als getestet bestätigt; der NG-City-Mehrspielertest folgt nach Abschluss des Minecraft-Interface-Umbaus. [Katalog und Downloads](https://nevergate.de/ng-city/) · [Änderungen und Abnahme](https://github.com/InDance2018/NG-City/blob/main/CHANGELOG-dev-0.0.2.md).
 
 NG-Verkehrs-System bleibt ohne NG-City eigenständig nutzbar. Eine optionale gemeinsame Wirtschaftsanbindung ist weiterhin offen und durch diesen Dokumentationsnachtrag nicht implementiert oder geprüft. Die bisherigen eigenen Fahrzeug-/Verkehrs-Testberichte bleiben davon getrennt.
+
+
+</details>

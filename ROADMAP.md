@@ -1,3 +1,12 @@
+# Entwicklungsplan · Abgleich 31.10.2026
+
+Maßgeblicher heutiger Überblick: [STATUS.md](STATUS.md). Der folgende Entwicklungsplan dokumentiert den Prüfumfang und die Aufgaben seiner damaligen Version. Installationsangaben vom 17.10. sind historische Nachweise, keine aktuelle Serverbelegung. Neuere Testkandidaten werden getrennt im aktuellen Status geführt. Keine neue Funktions-/Releasefreigabe durch diesen Dokumentationsabgleich.
+
+
+<details><summary>Frühere Projektbeschreibung und datierte Entwicklungsnachweise</summary>
+
+Die folgenden Angaben bleiben als Historie erhalten. Als „aktuell“ bezeichnete Versionen, Installationen und offene Tests beziehen sich dort auf das jeweils genannte Datum. Für den heutigen Überblick gilt der Status oben.
+
 # Entwicklungsplan – NG-Verkehrs-System
 
 Stand: **17. Oktober 2026 · 0.1.0-beta2-dev12 · Entwicklungs-/Testfassung**.
@@ -323,5 +332,8 @@ Im normalen Kreuzungsprogramm gilt N/S = A, O/W = B. Im Baustellenprogramm gilt 
 Dieser Punkt ist für die Zeit nach Fertigstellung vorgemerkt. Ein Verkauf ist weder beschlossen noch als erlaubt bestätigt; eine Anfrage wurde noch nicht versandt.
 
 Es gibt derzeit keinen fest zugesagten Termin für die fertige Mod.
+
+</details>
+
 
 </details>
