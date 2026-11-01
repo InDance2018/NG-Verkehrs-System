@@ -1,3 +1,7 @@
+# Quellimport · 01.11.2026
+
+Originalquell-Snapshot von 0.1.0-beta2-montage2 wiedergefunden und veröffentlicht (3.620 Dateien); Java-Quellen zusätzlich lesbar. Archivintegrität geprüft, Lizenz unverändert. Lokale Java-Prüfung mangels javac nicht gestartet. Kein neuer Binärrelease und keine erneute Clientabnahme. [Umfang und Grenzen](QUELLSTAND.md).
+
 # Dokumentationsabgleich · 31.10.2026
 
 ## 01.11.2026 – Quellstand und Montage2-Bericht eingeordnet

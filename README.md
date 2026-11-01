@@ -2,7 +2,7 @@
 
 Eigene Straßen-, Ampel-, Park- und Verkehrstechnik für Minecraft Java 1.20.2.
 
-**Stand: 01.11.2026.** Öffentliche Downloadfassung: **Beta 1**. Ausführlich dokumentierter Entwicklungsstand: **beta2-dev12**. Neuerer erfasster Testbuild: **beta2-montage2**, dessen vollständige Build-/Client-/Änderungsnachweise noch nachzuführen sind.
+**Stand: 01.11.2026.** Öffentliche Downloadfassung: **Beta 1**. Ausführlich dokumentierter Entwicklungsstand: **beta2-dev12**. Neuerer erfasster Testbuild: **beta2-montage2**, mit wiedergefundenem Originalquell-Snapshot; neuer vollständiger Build und Clientabnahme bleiben offen.
 
 [Aktueller Status und Testgrenzen](STATUS.md) · [Öffentlicher Download](https://github.com/InDance2018/NG-Verkehrs-System/releases/tag/v0.1.0-beta1) · [Webhandbuch](https://nevergate.de/ng-verkehr/) · [Entwicklungsplan](ROADMAP.md) · [Änderungen](CHANGELOG.md)
 
@@ -11,7 +11,7 @@ Das dokumentierte dev12-Paar mit NG-Fahrzeuge besitzt 16 gemeinsame Tests. Der E
 
 ## Quellcode und neuere Testfassung
 
-Die Veröffentlichung eigener Minecraft-Projektquellen ist freigegeben. **Ein vollständiger, einer Version zugeordneter Mod-Quellbaum wurde noch nicht in dieses Repository übernommen.** Katalogdaten und Webdateien sind kein Ersatz dafür. Bestehende Nutzungsbedingungen bleiben unverändert; die Freigabe zum Hochladen ist keine neue offene Lizenz.
+Die Veröffentlichung eigener Minecraft-Projektquellen ist freigegeben. **Der geprüfte Originalquell-Snapshot für 0.1.0-beta2-montage2 ist jetzt als [Quellarchiv](source/NG-Verkehr-0.1.0-beta2-montage2-source-reviewed.zip) verfügbar.** Java-Quellen und ausgewählte Textdateien sind zusätzlich unter [source](source/) lesbar; vollständige Originalressourcen liegen im Archiv. Bestehende Nutzungsbedingungen bleiben unverändert; die Freigabe zum Hochladen ist keine neue offene Lizenz.
 
 Zur Testfassung **montage2** liegt ein Entwicklungsbericht vom 24.10.2026 vor: hellere Ampeln, direkte Gehäusekontakte, vollständige Pfeile und korrigierte Auswahlflächen wurden gemeldet. Das ist keine hier erneut durchgeführte Clientabnahme oder vollständige Source-/Buildprüfung. [Einordnung und nächste Nachweise](QUELLSTAND.md).
 

@@ -6,7 +6,7 @@ Stand: **01.11.2026** · Minecraft Java 1.20.2 · Forge 48.1.0 · Java 17.
 |---|---|
 | Öffentlicher Download | [0.1.0-beta1](https://github.com/InDance2018/NG-Verkehrs-System/releases/tag/v0.1.0-beta1), erster öffentlicher Beta-Release |
 | Vollständig dokumentierter Entwicklungsstand | 0.1.0-beta2-dev12 vom 17.10.2026 |
-| Neuerer erfasster Testbuild | 0.1.0-beta2-montage2; kein zusätzlicher öffentlicher Release und kein vollständiger neuer Quell-/Client-/Testnachweis im Repository |
+| Neuerer erfasster Testbuild | 0.1.0-beta2-montage2; Originalquell-Snapshot veröffentlicht; kein zusätzlicher öffentlicher Release, Neubuild und Clientabnahme offen |
 | Fahrzeuganbindung | beta2-dev12 mit Fahrzeuge dev12: 16 gezielte gemeinsame Servertests |
 | Gemeinsame City-Wirtschaft | Weiterhin offen; keine bestätigte neue Zahlungs-/Leistungsgegenstelle |
 
@@ -18,7 +18,7 @@ Straßen, Markierungen, 181 feste Schildvarianten, Ampelsteuerung, Baustellen- u
 
 - [beta2-dev12 und Integration](DEV-BETA2-12.md): 16 gezielte Tests mit Fahrzeuge dev12, getrennte Serverprozesse für Fahrzeug-/Belegpersistenz, tatsächliche Chunk-Rückkehr und Wiederholschutz.
 - [Praxistest vom 17.10.](PRAXISTEST-2026-10-17.md): vom Eigentümer bestätigt, drei Spieler, 15 Minuten Chunk-Laden/-Entladen, vier Neustarts. Dieser Nachweis gilt für die damals getesteten Builds und wird nicht auf montage2 übertragen.
-- montage2 wurde als neuerer Testbuild erfasst. Zugehörige vollständige Änderungsbeschreibung, Quell-/Artefaktzuordnung, passende Clientfassung und eigenständige Abnahme sind nachzutragen. Aus dem Versionsnamen werden keine Funktionen abgeleitet.
+- montage2 wurde als neuerer Testbuild erfasst. Originalquell-Snapshot und historische Artefaktzuordnung sind jetzt dokumentiert; reproduzierter Neubuild und eigenständige Clientabnahme bleiben offen. Aus dem Versionsnamen werden keine Funktionen abgeleitet.
 - NG-Verkehr bleibt ohne NG-City und NG-Fahrzeuge eigenständig. Elektro-Ladung und kostenpflichtige externe Services brauchen passende Gegenstellen.
 - NG-City dev-0.2.10 besitzt eine dokumentierte Eigentümerabnahme im Einzel- und Mehrspieler vom 21.10.; das bestätigt noch keine gemeinsame Mod-Wirtschaft.
 
@@ -36,4 +36,4 @@ Dokumentationsabgleich vom 31.10.2026. Versionsnachweise, berichtete Versuche, N
 
 ## Fortschreibung 01.11.2026
 
-Der Entwicklungsbericht vom 24.10. nennt für montage2 hellere Ampeln, direkte Gehäusekontakte, vollständige Pfeile und korrigierte Auswahlflächen. Diese Angaben sind als Bericht eingeordnet; die vollständige Quell-/Build-/Clientzuordnung und unabhängige Abnahme bleiben offen. Eigene Quellen dürfen veröffentlicht werden, sind aber noch nicht importiert. Siehe [Quellstand](QUELLSTAND.md). Keine neue JAR veröffentlicht und keine Tests erneut ausgeführt.
+Der Originalquell-Snapshot von montage2 wurde wiedergefunden, geprüft und veröffentlicht: 3.620 Dateien im ZIP, 128 Textdateien zusätzlich direkt lesbar. Ein lokaler Java-Testversuch konnte wegen fehlendem javac nicht starten. Keine neue JAR, kein neuer Release und keine neue Clientabnahme. Siehe [Quellstand und Prüfgrenzen](QUELLSTAND.md).
