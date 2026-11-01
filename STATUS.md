@@ -1,6 +1,6 @@
 # NG-Verkehr · aktueller Stand
 
-Stand: **31.10.2026** · Minecraft Java 1.20.2 · Forge 48.1.0 · Java 17.
+Stand: **01.11.2026** · Minecraft Java 1.20.2 · Forge 48.1.0 · Java 17.
 
 | Bereich | Stand |
 |---|---|
@@ -33,3 +33,7 @@ Neue Testbuilds vollständig nachführen; Sattelzug-/Parkgeometrien gemeinsam er
 ## Einordnung
 
 Dokumentationsabgleich vom 31.10.2026. Versionsnachweise, berichtete Versuche, Nutzerabnahmen und öffentliche Releases werden getrennt geführt. Bestehende Tests werden mit ihrem ursprünglichen Datum übernommen; diese Aktualisierung führt keinen neuen Build oder Spieltest aus und veröffentlicht keine neue Binärdatei.
+
+## Fortschreibung 01.11.2026
+
+Der Entwicklungsbericht vom 24.10. nennt für montage2 hellere Ampeln, direkte Gehäusekontakte, vollständige Pfeile und korrigierte Auswahlflächen. Diese Angaben sind als Bericht eingeordnet; die vollständige Quell-/Build-/Clientzuordnung und unabhängige Abnahme bleiben offen. Eigene Quellen dürfen veröffentlicht werden, sind aber noch nicht importiert. Siehe [Quellstand](QUELLSTAND.md). Keine neue JAR veröffentlicht und keine Tests erneut ausgeführt.

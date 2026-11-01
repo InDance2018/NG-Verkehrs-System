@@ -1,5 +1,12 @@
 # Dokumentationsabgleich · 31.10.2026
 
+## 01.11.2026 – Quellstand und Montage2-Bericht eingeordnet
+
+- Freigabe zur Veröffentlichung eigener Minecraft-Quellen dokumentiert; vollständiger Mod-Quellbaum noch nicht importiert.
+- Entwicklungsbericht vom 24.10. zu Ampelhelligkeit, Gehäusekontakten, Pfeilen und Auswahlflächen aufgenommen, ausdrücklich ohne neue Testabnahme.
+- Bestehende Releases, Lizenzen und historische Berichte unverändert. Keine neue JAR.
+
+
 - Aktuellen [Projektstatus](STATUS.md) mit getrennten Entwicklungs-, Kandidaten- und Releaseangaben ergänzt.
 - Montage2 als neueren erfassten Testbuild aufgenommen; fehlende Quell-/Client-/Funktionsnachweise benannt.
 - Veraltete momentane Installationsaussagen der Hauptseite als datierte Historie eingeordnet.

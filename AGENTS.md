@@ -11,3 +11,7 @@ Vor Änderungen mit Auswirkungen auf andere NeverGate-Mods über die GitHub-Anbi
 - Entwicklung, Serverinstallation und öffentliche Veröffentlichung getrennt behandeln. Die ursprüngliche Nutzerfreigabe bestimmt den Umfang.
 
 Die Datei ist ein verbindlicher Einstieg für Arbeiten in diesem Repository. Andere Chat-Sitzungen werden dadurch nicht automatisch benachrichtigt; sie müssen die Quelle aktiv über GitHub lesen.
+
+## Veröffentlichungsregel ab 01.11.2026
+
+Eigene, überprüfte Minecraft-Projektquellen dürfen nach Eigentümerauftrag in diesem öffentlichen Repository gepflegt werden. Vor Import Herkunft, Versionsbezug, Vollständigkeit und Fremdlizenzen prüfen. Keine Geheimnisse, privaten Projektunterlagen, Arbeitszeiten oder personenbezogenen Daten veröffentlichen. Keine Lizenzänderung allein aus der Freigabe zum Hochladen ableiten. Fehlende Originalquellen nicht durch erfundene oder ungekennzeichnet dekompilierte Quellen ersetzen.
